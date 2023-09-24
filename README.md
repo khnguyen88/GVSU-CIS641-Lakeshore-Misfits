@@ -5,8 +5,8 @@ The website color generator is a lightweight web application and tool intended t
 ## Team Members and Roles
 
 -   Khiem Nguyen (Repository Owner, Note Taker, Developer, and etc.)
--   Member 2 (Role 3, Role 4)
--   Member 3 (Role 5, Role 6)
+-   Selena Cade (Note Taker, etc. )
+-   [Munmi Thakuria (Note Taker, Developer, etc.)](https://github.com/munmithakuria/CIS641-HW2-Thakuria)
 
 ## Prerequisites
 
