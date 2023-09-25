@@ -70,6 +70,32 @@ The team has already investigated the technologies needed for the proposed web a
 
 The team agreed that before implementing the actual project, the team should spend some time investigating, implementing, and playing with some of the required technologies to get familiar with it. This effort will be done during the earlier workflows and phases of the project. The team is considering using an online sandbox IDE environment, known as StackBlitz, to play and get acquainted with specific React libraries, dependencies, and features like Axios, React Router/Routing, JEST, Props, Hooks, etc., before implementing it for the actual project. The benefit of StackBlitz is that applications created on there can be shared between team members via hyperlinks and documented. Another advantage of this approach is that it keeps rough/dirty code separate from the project repository. Further discussion with the Project Sponsor is needed to determine if this is a route that we can take.
 
+In terms of stories and tasks, the team believes most major modules (components and services) can be built independently and later integrated together. The team will utilize mock data as placeholder until real data can be recieved from the APIs. Here is a rough layout of our file system:
+
+**Component Folder**
+
+-   Main App/Root Component
+    -   Control Panel Component (Left or Top)
+        -   Button Components
+            -   Generate Palette Button Component
+            -   Adjust Color Contrast Button Component
+            -   Undo Color Contrast Adjustment Button Component
+        -   Palette (Preview) Component
+        -   Navigation Component
+            -   Link Components (Associated w/ URL assigned to Routes)
+    -   View Component (Right or Bottom)
+        -   Switch / Router Component
+            -   Route Components (Associated w/ URL assigned to Links and Screen Components)
+    -   Screen Components
+        -   Color Layout Render Screen Component (Main)
+        -   Color Contrast Checker Screen Component
+
+**Service Folder**
+
+-   Color Palette API Service File
+-   Contrast Checker API Service File
+-   Color Contrast Adjustment Service File
+
 Ideally, the team hopes to begin the first sprint of the project and start on implementation right after the midterm. The group plans to timebox the project and stop implementation at least two weeks before the presentation's date. The purpose of this hard stop is to provide the team with sufficient time to build and host the web application, finalize documents needed for the deliverables, work on the presentation slide, and practice for the presentation.
 
 # Estimated Timeline
