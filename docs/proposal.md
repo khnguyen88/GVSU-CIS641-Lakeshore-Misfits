@@ -26,7 +26,7 @@ Team members:
 
 -   **GitHub Project** - GitHub Project is a feature the GitHub repository application provides. The feature offers a collection of basic "agile-like" project management tools to allow individuals or teams to document and track the progress of the project and the development of their software. The tools available in GitHub Project include Task Table (Backlog List), Task Board (Kaban Board), RoadMap (Gantt Chart), Issues (Bug List), Insights (Burndown Chart), and Milestones. It is anticipated that most of the tools will be used to track the team project's progress, schedule, and deadlines.
 
-## Software & Dependencies
+## Software & Libraries/Dependencies
 
 -   **Visual Studio Code** - A free integrated development environment (IDE) each team member uses to code and implement the proposed software application.
 
@@ -40,6 +40,14 @@ Team members:
 
 -   **React Router** - A library and a dependency of React needed to route between pages and manage URL paths in the React-based web application.
 
+-   **JEST** - A JavaScript testing framework, that can be used in conjunction with React to possibly provide some unit testing for the project if time allows for it.
+
+-   **AwesomeIcons** - An online open-source icon library that allows user to place visually pleasing icons on their web application
+
+-   **Bootstrap** - A free and easy-to-use CSS framework that allows users to implement aesthetically pleasing components and elements in their web applications.
+
+-   **StackBlitz** - A online web IDE that allow users to develop, build, preview, and save web application with frameworks like React and Angular. The online web IDE allows for the installation of dependncies and libraries.
+
 ## APIs
 
 -   **[Colormind Color Palette Generator](http://colormind.io/api-access/)** - A color palette generator API of the Colormind web application. It will generate and return a 5-color color-palette. The data return will be a nested array of five elements, each element representing a color. Within each child element is an array of three numeric elements, each representing a color's R, G, and B values.
@@ -48,7 +56,21 @@ Team members:
 
 # Method/Approach
 
-(What is your estimated "plan of attack" for developing this project)
+The team plans to use the Agile Software Methodology to develop our project. The team's current plan of attack is to complete all required in-class and homework assignments to help us develop the necessary documents and models needed in the software development life cycle's planning, analysis, and design phases. The team will verify with the Project Sponsor and determine if more effort is needed beyond the course assignments to develop the initial documents and models for the project to start the initial implementation. In addition, the team will work with the Project Sponsor to estimate anticipated completion dates for specific documents, such as the requirements definition report and UML models/diagrams, so that the team can begin creating the user stories and tasks of the first sprint of the project as soon as possible. Due to short time window of the semester and the project, each sprint cycle will only be a week long.
+
+The team will use Git and GitHub repositories to centralize our project files and documents, locally and remotely. Our project's GitHub repository is the primary source of truth and records that can be shared amongst the group.
+
+Team members should avoid working directly from the main branch for code implementations of individual tasks or features. Team members should create a sub-branch from the main branch to work on the task. Upon completion, team members must make a pull request and review their code or peers' code before merging the changes into the main branch.
+
+The team will use GitHub Project and its tools to manage the project during its development life cycle. The team will use tools of GitHub Project to track the team project's progress, schedule, and deadlines. The team will also use GitHub Project in finer detail to create a collection of tasks required for the project and check the status and progress of individual tasks.
+
+The team plans to be in constant communication with each other throughout the life cycle of the project. The team will use text messaging to keep in touch with each other casually to plan and coordinate meetings. The team will use Discord and in-person meetings to have more in-depth discussions about the project, such as stand-ups, backlog and task refinement, planning poker, requirement and model revisions, task assignments, bugs, scheduling, and deadlines. The team will meet at least once a week but will try and meet more frequently to keep the project moving and all project members on the same page. Each major meeting
+
+The team has already investigated the technologies needed for the proposed web application's features through our in-class and online meetings and discussions. The team created and shared a resource document on Discord from this investigation. The team has already discussed our expertise in the technologies required to develop the system, and we have a general idea of the essential features needed to make the project scope feasible. It was determined that while the team has some programming experience, everyone has little to no experience with the React library or some of the dependencies needed to implement the features desired for the project.
+
+The team agreed that before implementing the actual project, the team should spend some time investigating, implementing, and playing with some of the required technologies to get familiar with it. This effort will be done during the earlier workflows and phases of the project. The team is considering using an online sandbox IDE environment, known as StackBlitz, to play and get acquainted with specific React libraries, dependencies, and features like Axios, React Router/Routing, JEST, Props, Hooks, etc., before implementing it for the actual project. The benefit of StackBlitz is that applications created on there can be shared between team members via hyperlinks and documented. Another advantage of this approach is that it keeps rough/dirty code separate from the project repository. Further discussion with the Project Sponsor is needed to determine if this is a route that we can take.
+
+Ideally, the team hopes to begin the first sprint of the project and start on implementation right after the midterm. The group plans to timebox the project and stop implementation at least two weeks before the presentation's date. The purpose of this hard stop is to provide the team with sufficient time to build and host the web application, finalize documents needed for the deliverables, work on the presentation slide, and practice for the presentation.
 
 # Estimated Timeline
 
