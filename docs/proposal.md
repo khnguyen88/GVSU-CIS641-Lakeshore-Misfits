@@ -8,7 +8,12 @@ Team members:
 
 # Introduction
 
-(In 2-4 paragraphs, describe your project concept)
+Color Generator Website is a single platform which provides the users the ability to generate and pick a color palette and use for their website.
+Users can preview and adjust the colors' intensities be it the value or the contrast as per their requirement.
+It will be a user-friendly website, where users can play with the color combinations and choose from the various color schemes.
+The website will also allow user the preview the color in a static mock webpage. The users will also have the ability to copy the color values in each color palette so that they use it for reference in the future.
+Nowadays, illustrators play around with different colors for their art designs. So, this website will benefit them to refer the color palette for their work, even the developers, artists and the designers can benefit from this. The website will have proper information for the users who would be new to this platform or to the process of choosing from the color palette, based on the Web Content Accessibility Guidelines, on the combinations of colors they should or shouldn't use. This will be better for users who has no understanding of colors mashing up. Our application intent to produce harmonious color palettes and wide accessibility of colors.
+
 
 # Anticipated Technologies
 
