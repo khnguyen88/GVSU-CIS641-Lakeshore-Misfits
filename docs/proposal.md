@@ -43,7 +43,6 @@ Team members:
 ## APIs
 
 -   **[Colormind Color Palette Generator](http://colormind.io/api-access/)** - A color palette generator API of the Colormind web application. It will generate and return a 5-color color-palette. The data return will be a nested array of five elements, each element representing a color. Within each child element is an array of three numeric elements, each representing a color's R, G, and B values.
-    o
 
 -   **[WebAim Contrast Checker](https://webaim.org/resources/contrastchecker/)** – A color contrast checker API. It takes two color values in HEX format, one as a foreground color and the other as a background color, calculates the contrast ratio between the two colors, and determines if the value meets the standard online web accessibility's AA, AAA, AA-Large, AAA-Large requirements. The data will be returned in a JSON format.
 
