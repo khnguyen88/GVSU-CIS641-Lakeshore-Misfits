@@ -13,7 +13,7 @@ Users will be able to preview and adjust the colors' intensities be it the value
 It will be a user-friendly website, where users can play with the color combinations and choose from the various color schemes.
 The website will also allow user the preview the color in a static mock webpage. The users will also have the ability to copy the color values in each color palette so that they use it for reference in the future.
 
-Nowadays, illustrators play around with different colors for their art designs. So, this website will benefit them to refer the color palette for their work, even the developers, artists and the designers can benefit from this. The website will have proper information for the users who would be new to this platform or to the process of choosing from the color palette, based on the Web Content Accessibility Guidelines, on the combinations of colors they should or shouldn't use. This will be better for users who has no understanding of colors mashing up. Our application intent to produce harmonious color palettes and wide accessibility of colors.
+Nowadays, illustrators play around with different colors for their art designs. So, this website will benefit them to refer the color palette for their work, even the developers, artists and the designers can benefit from this. For the users, who would be new to this platform or to the process of choosing from the color palette, the website will have proper information based on the Web Content Accessibility Guidelines, on the combinations of colors they should or shouldn't use. This will be better for users who has no understanding of colors mashing up. Our application intent to produce harmonious color palettes and wide accessibility of colors.
 
 # Anticipated Technologies
 
