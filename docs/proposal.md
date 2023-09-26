@@ -133,15 +133,17 @@ Ideally, the team hopes to begin the first sprint of the project and start on im
 
 ### Implementation and Testing
 
--   Start Experiementing and learn the technologies needed to implement the project (Elaboration Workflow) by October 11
--   Kickoff the first sprint cycle and iteration of implmentation by October 25 (or November 1st at the latest)
--   At a minimum, user acceptance test will be performed each iteration.
+-   Start experimenting and learn the technologies needed to implement the project (Elaboration Workflow) by October 11
+-   Kickoff the first sprint cycle and iteration of implementation by October 25 (or November 1st at the latest)
+-   A timebox is set to stop any significant implementation work one week before the project presentation.
+-   At a minimum, a user acceptance test will be performed each iteration.
 
 ### Agile Iterations
 
--   Due to the short length of semester, the duration of our sprint cycle will be one week.
+-   Due to the short semester-length, our sprint cycle will be only one week long.
 -   The first sprint kickoff will occur by October 25 (or November 1st at the latest).
--   Small adjustments and updates to our initial documents, such as the requirements, models, and user stories, at the end of each sprint.
+-   The last sprint will end at least one week before the project presentation.
+-   At the start of each new sprint cycle, refinements will be made to our initial documents, such as the requirements, models, and user stories.
 
 # Anticipated Problems
 
