@@ -111,32 +111,28 @@ Ideally, the team hopes to begin the first sprint of the project and start on im
 - Project Status and Midterm Presentation due Mid October
 - Fall Break October 22-24
 - Class Diagrams due Late October or Early November
+- Thanksgiving Break 22-26
 - Project Presentation due The Week of December 3
 
-## Software Design Lifecycle
+## Software Design Lifecycle: Agile Approach
 
 ### Planning 
 - Create System Request Document by September 21
 - Create System Proposal Document by September 27
 
-### Analysis 
+### Analysis and Design
+- Watch videos and tutorials on the technology being used between September 27 and October 8
 - Determine the technical, econmic, and organizational feasibilities for the project by October 4
 - Determine Functional and Non-funcitonal Requirements by October 8
 - Create UML Diagrams by October 11 
+- Create first prototype by October 20
 - Create Class Diagrams by October 25
-- Watch videos and tutorials on the technology being used throughout the project by October 31
-
-### Design 
-- Still thinking but will be working on throughout November (This will be done at the same time as implementation and testing)
-
-
+ 
 ### Implementation 
-- Still thinking but will be working on throughout November(This will be done at the same time as design and testing)
-
+- Implement first prototype by October 27
 
 ### Testing
-- Still thinking but will be working on throughout November (This will be done at the same time as implementation and design)
-
+- Test first prototype by October 31
 
 
 # Anticipated Problems
