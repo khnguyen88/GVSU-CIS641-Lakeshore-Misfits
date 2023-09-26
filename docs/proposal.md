@@ -8,8 +8,8 @@ Team members:
 
 # Introduction
 
-Color Generator Website would be a single platform which would provide the users the ability to generate and pick a color palette and use for their website.
-Users would be able to preview and adjust the colors' intensities be it the value or the contrast as per their requirement.
+Color Generator Website will be a single platform which will provide the users the ability to generate and pick a color palette and use for their website.
+Users will be able to preview and adjust the colors' intensities be it the value or the contrast as per their requirement.
 It will be a user-friendly website, where users can play with the color combinations and choose from the various color schemes.
 The website will also allow user the preview the color in a static mock webpage. The users will also have the ability to copy the color values in each color palette so that they use it for reference in the future.
 
