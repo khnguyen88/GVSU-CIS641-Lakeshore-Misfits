@@ -129,12 +129,20 @@ Ideally, the team hopes to begin the first sprint of the project and start on im
 - Create UML Diagrams by October 11 
 - Create first prototype by October 20
 - Create Class Diagrams by October 25
- 
-### Implementation 
-- Implement first prototype by October 27
+- Create the initial set of User Stories/Tasks by October 25
 
-### Testing
-- Test first prototype by October 31
+### Implementation and Testing
+- Start experimenting and learn the technologies needed to implement the project (Elaboration Workflow) by October 11
+- Kickoff the first sprint cycle and iteration of implementation by October 25 (or November 1st at the latest)
+- A timebox is set to stop any significant implementation work one week before the project presentation.
+- At a minimum, a user acceptance test will be performed each iteration.
+
+### Agile Iterations 
+- Due to the short semester-length, our sprint cycle will be only one week long.
+- The first sprint kickoff will occur by October 25 (or November 1st at the latest).
+- The last sprint will end at least one week before the project presentation.
+- At the start of each new sprint cycle, refinements will be made to our initial documents, such as the requirements, models, and user stories.
+
 
 
 # Anticipated Problems
