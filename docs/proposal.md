@@ -52,6 +52,12 @@ Nowadays, many professionals, such as developers, illustrators, designers, and d
 
 -   **StackBlitz** - A online web IDE that allow users to develop, build, preview, and save web application with frameworks like React and Angular. The online web IDE allows for the installation of dependncies and libraries.
 
+-   **Google Docs/Microsoft Office** - Word and powerpoint desktop and cloud applications that allow the team to make notes and and a powerpoint presentation for the proejct.
+
+-   **Adobe Acrobat** - A PDF reader that allows users to read, create, and comments PDF file. The application will allow users to convert word documents into PDF format. Also through the powerful comment tools, users should be able to draw and sketch out the various models and diagrams required for the project.
+
+-   **Figma (Optional)** - A UX/UI web application that allows users to mock up and design UI and screen. Figma might be used to provide teams with a high level understanding of the project application's layout of the screens and componments from a visual perspective. Might be able to use to draw and sketch out the various models and diagrams required for the project.
+
 ## APIs
 
 -   **[Colormind Color Palette Generator](http://colormind.io/api-access/)** - A color palette generator API of the Colormind web application. It will generate and return a 5-color color-palette. The data return will be a nested array of five elements, each element representing a color. Within each child element is an array of three numeric elements, each representing a color's R, G, and B values.
@@ -123,35 +129,37 @@ Ideally, the team hopes to begin the first sprint of the project and start on im
 -   Create System Proposal Document by September 27
 
 ### Analysis and Design
-- Watch videos and tutorials on the technology being used between September 27 and October 8
-- Determine the technical, econmic, and organizational feasibilities for the project by October 4
-- Determine Functional and Non-funcitonal Requirements by October 8
-- Create UML Diagrams by October 11 
-- Create first prototype by October 20
-- Create Class Diagrams by October 25
-- Create the initial set of User Stories/Tasks by October 25
+
+-   Watch videos and tutorials on the technology being used between September 27 and October 8
+-   Determine the technical, econmic, and organizational feasibilities for the project by October 4
+-   Determine Functional and Non-funcitonal Requirements by October 8
+-   Create UML Diagrams by October 11
+-   Create first prototype by October 20
+-   Create Class Diagrams by October 25
+-   Create the initial set of User Stories/Tasks by October 25
 
 ### Implementation and Testing
-- Start experimenting and learn the technologies needed to implement the project (Elaboration Workflow) by October 11
-- Kickoff the first sprint cycle and iteration of implementation by October 25 (or November 1st at the latest)
-- A timebox is set to stop any significant implementation work one week before the project presentation.
-- At a minimum, a user acceptance test will be performed each iteration.
 
-### Agile Iterations 
-- Due to the short semester-length, our sprint cycle will be only one week long.
-- The first sprint kickoff will occur by October 25 (or November 1st at the latest).
-- The last sprint will end at least one week before the project presentation.
-- At the start of each new sprint cycle, refinements will be made to our initial documents, such as the requirements, models, and user stories.
+-   Start experimenting and learn the technologies needed to implement the project (Elaboration Workflow) by October 11
+-   Kickoff the first sprint cycle and iteration of implementation by October 25 (or November 1st at the latest)
+-   A timebox is set to stop any significant implementation work one week before the project presentation.
+-   At a minimum, a user acceptance test will be performed each iteration.
 
+### Agile Iterations
 
+-   Due to the short semester-length, our sprint cycle will be only one week long.
+-   The first sprint kickoff will occur by October 25 (or November 1st at the latest).
+-   The last sprint will end at least one week before the project presentation.
+-   At the start of each new sprint cycle, refinements will be made to our initial documents, such as the requirements, models, and user stories.
 
 # Anticipated Problems
-- As stated above, we are using tehcnologies such as React and Axios. Our team isn't familar with these technologies so we need to watch tutorials and read any articles that will help us. Before starting the design and implementation phase, we have to go through each technology and make sure every group members understands it enough to perorm the tasks needed for this project.
 
-- Another problem we anticpate is the actual setup of the technologies. In order to understand the setup, we need to do proper research for each technology. We also need to spend time understanding the different versions of the technologies and make sure they are all compatible with one another. Each team members needs to communicate to ensure we all have the same versions of each technology.
+-   As stated above, we are using tehcnologies such as React and Axios. Our team isn't familar with these technologies so we need to watch tutorials and read any articles that will help us. Before starting the design and implementation phase, we have to go through each technology and make sure every group members understands it enough to perorm the tasks needed for this project.
 
-- Along with having little experience with Axios and React, we also have little experience with using GitHub Pages or Google Cloud's Virtual Machine. Each memeber needs to dedicate time to watch tutorials, performing demos, and communicating with our project sponsor about using one of those applications to deploy our project. These steps need to be done well in advance before we can work on the implemenation and testing phases of our project. We have created a reasonable schedule and scope to accomodate this forseen problem.
+-   Another problem we anticpate is the actual setup of the technologies. In order to understand the setup, we need to do proper research for each technology. We also need to spend time understanding the different versions of the technologies and make sure they are all compatible with one another. Each team members needs to communicate to ensure we all have the same versions of each technology.
 
-- NEED TO UPDATE There are time constraints with all project members since we are taking other courses and working. We strive to communicate and find a time for every member to meet to work on the project. To ensure we meet our schedule properly and complete our project on time, we will create a realistic scope, factor setbacks or slack time into our schedule, and adjust our requirements as necessary.
+-   Along with having little experience with Axios and React, we also have little experience with using GitHub Pages or Google Cloud's Virtual Machine. Each memeber needs to dedicate time to watch tutorials, performing demos, and communicating with our project sponsor about using one of those applications to deploy our project. These steps need to be done well in advance before we can work on the implemenation and testing phases of our project. We have created a reasonable schedule and scope to accomodate this forseen problem.
 
-- NEED TO UPDATE While the APIs we use are free, there might be constraints if those APIs switch over to a pay-to-use model. We will watch closely for each API and ensure they remain free and accessible for the duration of the course.
+-   NEED TO UPDATE There are time constraints with all project members since we are taking other courses and working. We strive to communicate and find a time for every member to meet to work on the project. To ensure we meet our schedule properly and complete our project on time, we will create a realistic scope, factor setbacks or slack time into our schedule, and adjust our requirements as necessary.
+
+-   NEED TO UPDATE While the APIs we use are free, there might be constraints if those APIs switch over to a pay-to-use model. We will watch closely for each API and ensure they remain free and accessible for the duration of the course.
