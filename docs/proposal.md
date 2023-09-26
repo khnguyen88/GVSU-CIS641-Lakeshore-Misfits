@@ -102,26 +102,45 @@ In terms of stories and tasks, the team believes most major modules (components 
 
 Ideally, the team hopes to begin the first sprint of the project and start on implementation right after the midterm. The group plans to timebox the project and stop implementation at least two weeks before the presentation's date. The purpose of this hard stop is to provide the team with sufficient time to build and host the web application, finalize documents needed for the deliverables, work on the presentation slide, and practice for the presentation.
 
-# Estimated Timeline: Major Deliverables
-- System Request Document Due The Week of September 24
-- Midterm Exam Due October 11
-- Project status updates Due Mid October
+# Estimated Timeline
+
+## Important Dates and Team Homework Deliverables
+- System Request Document due September 21
+- System Proposal Document due September 27
+- UML Diagrams due before October 11
+- Project Status and Midterm Presentation due Mid October
 - Fall Break October 22-24
-- Project Presentation Due The Week of December 3
+- Class Diagrams due Late October or Early November
+- Project Presentation due The Week of December 3
 
 ## Planning 
-- System Request Document Due The Week of September 24
-## Analysis 
+- Create System Request Document by September 21
+- Create System Proposal Document by September 27
 
-## Design
+## Analysis 
+- Determine the technical, econmic, and organizational feasibilities for the project by October 4
+- Determine Functional and Non-funcitonal Requirements by October 8
+- Create UML Diagrams by October 11 
+- Create Class Diagrams by October 25
+- Watch videos and tutorials on the technology being used throughout the project by October 31
+
+## Design 
+- 
+- 
 
 ## Implementation 
+- 
 
 ## Testing and Integration 
 
-## Maintenance 
-(Figure out what your major milestones for this project will be, including how long you anticipate it _may_ take to reach that point)
 
 # Anticipated Problems
+- The project members have limited or no experience with React and other technologies/dependencies, such as Axios, required for the project. To overcome the team's shortcomings, we will watch tutorials and read articles to understand those technologies better and implement small proofs-of-concept to ensure we can get these technologies to work before we utilize them for the project.
 
-(Describe any problems you foresee that you will need to overcome)
+- The environmental setup of each technology might be an issue if they don’t all align with one another and aren’t consistent across the team members' workstations. We intend to do more research to ensure that each technology and version is compatible. We will also coordinate with each other on the work environment setup to ensure they are consistent for all members across the board.
+
+- We have limited experience deploying an application on either GitHub Pages or Google Cloud’s Virtual Machines, and we understand deploying an application takes time and resources. To ensure we understand how to deploy our application on hosting sites or web servers, we intend to watch tutorials, look over old notes, and communicate with each other and our project sponsor to help us with this issue. To guarantee we deploy the application on time, we will create a realistic scope and schedule for the project. If we need funding for the hosting site or server, we will ask our project sponsor or champion for some monetary credits for the semester.
+
+- There are time constraints with all project members since we are taking other courses and working. We strive to communicate and find a time for every member to meet to work on the project. To ensure we meet our schedule properly and complete our project on time, we will create a realistic scope, factor setbacks or slack time into our schedule, and adjust our requirements as necessary.
+
+- While the APIs we use are free, there might be constraints if those APIs switch over to a pay-to-use model. We will watch closely for each API and ensure they remain free and accessible for the duration of the course.
