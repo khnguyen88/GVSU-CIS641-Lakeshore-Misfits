@@ -113,25 +113,30 @@ Ideally, the team hopes to begin the first sprint of the project and start on im
 - Class Diagrams due Late October or Early November
 - Project Presentation due The Week of December 3
 
-## Planning 
+## Software Design Lifecycle
+
+### Planning 
 - Create System Request Document by September 21
 - Create System Proposal Document by September 27
 
-## Analysis 
+### Analysis 
 - Determine the technical, econmic, and organizational feasibilities for the project by October 4
 - Determine Functional and Non-funcitonal Requirements by October 8
 - Create UML Diagrams by October 11 
 - Create Class Diagrams by October 25
 - Watch videos and tutorials on the technology being used throughout the project by October 31
 
-## Design 
-- 
-- 
+### Design 
+- Still thinking but will be working on throughout November (This will be done at the same time as implementation and testing)
 
-## Implementation 
-- 
 
-## Testing and Integration 
+### Implementation 
+- Still thinking but will be working on throughout November(This will be done at the same time as design and testing)
+
+
+### Testing
+- Still thinking but will be working on throughout November (This will be done at the same time as implementation and design)
+
 
 
 # Anticipated Problems
