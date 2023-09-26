@@ -129,7 +129,7 @@ Ideally, the team hopes to begin the first sprint of the project and start on im
 -   Determine Functional and Non-funcitonal Requirements by October 8
 -   Create UML Diagrams by October 11
 -   Create Class Diagrams by October 25
--   Create the set of User Stories/Tasks by October 25
+-   Create the initial set of User Stories/Tasks by October 25
 
 ### Implementation and Testing
 
