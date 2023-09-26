@@ -102,8 +102,24 @@ In terms of stories and tasks, the team believes most major modules (components 
 
 Ideally, the team hopes to begin the first sprint of the project and start on implementation right after the midterm. The group plans to timebox the project and stop implementation at least two weeks before the presentation's date. The purpose of this hard stop is to provide the team with sufficient time to build and host the web application, finalize documents needed for the deliverables, work on the presentation slide, and practice for the presentation.
 
-# Estimated Timeline
+# Estimated Timeline: Major Deliverables
+- System Request Document Due The Week of September 24
+- Midterm Exam Due October 11
+- Project status updates Due Mid October
+- Fall Break October 22-24
+- Project Presentation Due The Week of December 3
 
+## Planning 
+- System Request Document Due The Week of September 24
+## Analysis 
+
+## Design
+
+## Implementation 
+
+## Testing and Integration 
+
+## Maintenance 
 (Figure out what your major milestones for this project will be, including how long you anticipate it _may_ take to reach that point)
 
 # Anticipated Problems
