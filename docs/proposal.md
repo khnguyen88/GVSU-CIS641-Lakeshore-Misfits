@@ -8,12 +8,11 @@ Team members:
 
 # Introduction
 
-Color Generator Website will be a single platform which will provide the users the ability to generate and pick a color palette and use for their website.
-Users will be able to preview and adjust the colors' intensities be it the value or the contrast as per their requirement.
-It will be a user-friendly website, where users can play with the color combinations and choose from the various color schemes.
-The website will also allow user the preview the color in a static mock webpage. The users will also have the ability to copy the color values in each color palette so that they use it for reference in the future.
+The Color Generator Website will be a user-friendly web application that allows users to generate and select a color palette for their personal use, such as illustration, graphic design, or web design. Users can preview and auto-adjust the generated colors' intensities by values and contrast.
 
-Nowadays, illustrators play around with different colors for their art designs. So, this website will benefit them to refer the color palette for their work, even the developers, artists and the designers can benefit from this. For the users, who would be new to this platform or to the process of choosing from the color palette, the website will have proper information based on the Web Content Accessibility Guidelines, on the combinations of colors they should or shouldn't use. This will be better for users who has no understanding of colors mashing up. Our application intent to produce harmonious color palettes and wide accessibility of colors.
+The website will allow users to preview the color in a static mock webpage. Users can also check all of the colors from the generated palette to determine which pairs of colors meet or fail the Web Accessibility's AA, AA-Large, AAA, and AAA-Large ratings in terms of contrast ratio values. The website will allow users to copy the color values from their favorite palette to reference and use for future projects.
+
+Nowadays, many professionals, such as developers, illustrators, designers, and developers, must work with colors and consider accessibility in their design or work. Users who do not understand color theories or do not account for accessibility in their work users will benefit from our application by streamlining the process of identifying and selecting harmonious colors and light values that meet web accessibility guidelines. The application will also provide proper information about combinations of colors they should or shouldn't use in the palette based on the Web Content Accessibility Guidelines for educational purposes.
 
 # Anticipated Technologies
 
