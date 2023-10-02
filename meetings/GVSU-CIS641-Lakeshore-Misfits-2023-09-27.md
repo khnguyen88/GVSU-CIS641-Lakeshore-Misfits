@@ -59,4 +59,4 @@ Time: 4:40PM - 5:20PM
 -   The team will discuss what the UI of the screens/components will look like. A team member will try to get a general mock sketches of the UI interface of the project.
 
     -   Responsibilities: Drafter, Khiem
-    -   Responsibilities: Reviewers & Commenters, Selean & Munmi
+    -   Responsibilities: Reviewers & Commenters, Selena & Munmi
