@@ -9,7 +9,7 @@ Date: 2023-09-13
 Time: 4:30PM - 5:00PM
 
 ## Discussion points:
-- We discussed on the scope of the project
+-   We discussed on the scope of the project
     -	Recalled Professor Fredericks, said our final product only has to be functional and a prototype or proof of concept. It might not even work, and that’s okay.
 
     -	The project will focus more on the planning, analysis, and design component.
@@ -19,7 +19,7 @@ Time: 4:30PM - 5:00PM
 
         -	Professor Fredericks also said don’t have to run a database through the cloud or backend server, we can run it on a local server, and show that it works.
 
-- We discussed on the project scope/considerations
+-   We discussed on the project scope/considerations
     -	Met with the team after class. We decided from our three project ideas to pick the website color palette generator and contrast checker (first pick).
 
         -	It’s something fun, exciting, and something that hasn’t been done too much before, especially a team project.
@@ -66,7 +66,7 @@ Time: 4:30PM - 5:00PM
 
         -	It requires too many screens to step through ticketing and movie options.
 
-- We discussed on the team member experiences:
+-   We discussed on the team member experiences:
     -	Technologies
         -	Selena:
             -	Familiar with HTML, CSS, JS
