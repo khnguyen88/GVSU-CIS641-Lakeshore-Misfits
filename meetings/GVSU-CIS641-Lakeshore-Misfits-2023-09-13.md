@@ -82,4 +82,10 @@ Time: 4:30PM - 5:00PM
 ## Goals for next week (include responsibilities):
 
 -   The team will meet again next week to discuss on the use cases of the project.
+    -   Responsibilities: Attendees, All
 
+    -   Responsibilities: Note-Takers, Selena, Munmi & Khiem
+
+    -   Responsibilities: Meeting-Minutes Writers, Khiem
+
+    -   Responsibilities: Meeting-Minute Reviewers, Munmi & Selena
