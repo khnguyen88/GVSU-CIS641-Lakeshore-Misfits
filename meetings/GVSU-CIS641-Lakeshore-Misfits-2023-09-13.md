@@ -79,5 +79,7 @@ Time: 4:30PM - 5:00PM
             -	Had some exposure with React, will need a refresher and relearn concepts
     -   We need to factor in team experiences with the technologies when considering the scale and scope of work.
 
+## Goals for next week (include responsibilities):
 
+-   The team will meet again next week to discuss on the use cases of the project.
 
