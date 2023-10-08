@@ -1,6 +1,6 @@
 # Overview
 
-Describe the purpose of this document in 1 paragraph of less … hint: it is your SRS
+The purpose of this SRS document is a list out the a requirements for Website Color Generator Application. The requirements specify the features and functionalities that the application will have or should exhibit. The requirements are broken down into functional and non-functional requirements. Functional requirements will focus on input, output, or process of a feature. Non-functional requirements will focus on the behaviors and constraints placed on it. In terms of functional requirements, our team focused on the layout, the content, the style, and the features of the application. In terms of non-functional requirements, our team focused on usability, security, and accessibility of the application.
 
 # Functional Requirements
 
