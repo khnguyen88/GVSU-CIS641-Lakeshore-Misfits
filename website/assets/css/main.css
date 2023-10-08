@@ -1660,17 +1660,3 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
-
-/* Custom */
-.landing-image {
-	max-height: 400px;
-	width: auto;
-}
-.landing-image:first-child {
-	padding-right: 1em;
-}
-
-#header .content .inner {
-	height: 100%;
-	overflow-y: scroll;
-}
