@@ -4,14 +4,63 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 # Functional Requirements
 
-1. Name of Feature 1
-    1. Functional Requirement 1
-    2. Functional Requirement 2
-    3. And so on
+1. Application Layout
+
+    1. The application should have a two-section layout, with the control and navigation panels in the left or top section and the pages in the right or bottom section.
+
+    2. The control panel and navigation panel should be accessible regardless of what page the user is on.
+
+    3. The application should start off with a default color palette of white background, black font color, and grey accents.
+
+2. Control Panel
+
+    1. The application must have a control panel with buttons that allow users to generate, adjust, and copy the color palette.
+
+3. Navigation Panel
+
+    1. The application must have a navigation panel that allows access to all pages through hyperlinked buttons.
+
+4. Application Pages
+
+    1. The application must have a static mock page where all elements’ background color and font styles update with the current color palette.
+
+    2. The application must have a contrast check page that displays all combinations of paired colors in the palette and their contrast ratio and accessibility ratings.
+
+    3. The application must have an about page that provides information about the project and the team.
+
+5. API Services and Custom Services
+
+    1. The application should generate a new palette if the Color Generator API works.
+
+    2. The application should get the contrast ratio and web accessibility ratings of a color pair if the Contrast Checker API works.
+
+    3. The application should be able to convert between the RGB, HSV, HSL, and HEX color values.
+
+6. Error Handling
+
+    1. The application should alert the user if the Color Generator API cannot create a new palette.
+
+    2. The application should output a set of “ERROR” values for the accessibility ratings of pair colors when the Contrast Checker API is not working.
 
 # Non-Functional Requirements
 
-1. Name of Feature 1
-    1. Non-Functional Requirement 1
-    2. Non-Functional Requirement 2
-    3. And so on
+1. Operational Requirements
+
+    1. The user should be able to view all screens even if the APIs are down.
+
+    2. The application should still work with limited functionality even if the APIs are down.
+
+    3. The application should still be usable on the major browsers on Windows OS.
+
+2. Performance Requirements
+
+    1. The application should be able to load up all pages within 10 seconds.
+
+3. Security Requirements
+
+    1. The application must not request or store any personal user information.
+
+    2. The users should not have the ability to navigate to pages that do not exist.
+
+4. Cultural and Political Requirements
+    1. There are no cultural and political requirements for this project.
