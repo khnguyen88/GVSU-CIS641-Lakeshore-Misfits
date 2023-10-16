@@ -28,6 +28,8 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
     3. The application must have an about page that provides information about the project and the team.
 
+    4. The color palette generator shall pass through the Web Content Accessibility Guidelines.
+
 5. API Services and Custom Services
 
     1. The application shall generate a new palette if the Color Generator API works.
