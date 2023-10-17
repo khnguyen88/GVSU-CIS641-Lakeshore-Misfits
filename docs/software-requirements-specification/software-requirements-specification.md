@@ -16,7 +16,6 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
     1. The application shall have a control panel with buttons that allow users to generate, adjust, and copy the color palette.
 
-    2. The application shall have the adjust color functionality, which will adjust the saturation level, brightness or lighting.
 
 3. Navigation Panel
 
@@ -41,6 +40,9 @@ The purpose of this SRS document is a list out the a requirements for Website Co
     3. The application shall be able to convert between the RGB, HSV, HSL, and HEX color values.
 
     4. The successful API responses shall be in proper JSON format.
+
+    5. The application shall have the adjust color functionality, which will adjust the saturation level, brightness or lighting.
+
 
 
 6. Error Handling
