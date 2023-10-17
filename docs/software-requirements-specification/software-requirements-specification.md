@@ -38,7 +38,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
     3. The application shall be able to convert between the RGB, HSV, HSL, and HEX color values.
 
-    4. The successful API responses shall be in proper json format.
+    4. The successful API responses shall be in proper JSON format.
 
 
 6. Error Handling
