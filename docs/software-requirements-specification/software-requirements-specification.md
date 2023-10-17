@@ -14,7 +14,9 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 2. Control Panel
 
-    1. The application must have a control panel with buttons that allow users to generate, adjust, and copy the color palette.
+    1. The application shall have a control panel with buttons that allow users to generate, adjust, and copy the color palette.
+
+    2. The application shall have the adjust color functionality, which will adjust the saturation level, brightness or lighting.
 
 3. Navigation Panel
 
