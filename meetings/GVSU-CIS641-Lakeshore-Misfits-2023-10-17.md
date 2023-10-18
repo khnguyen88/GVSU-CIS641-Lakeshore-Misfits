@@ -30,11 +30,11 @@ Time: 8:30 PM - 9:00 PM
 
 ### Implementation
 
--   Khiem thinks the group should start implementation sooner than initially anticipated.
+-   The group agress to start implementation sooner than initially anticipated.
 
--   Khiem will set up the project's React application for the team and the routes this coming week (Sprint 1).
+-   Khiem iterated again that he will set up the project's React application for the team and the routes this week.
 
--   Khiem thinks the group should start investigating how to implement their respective responsibilities and technologies and start implementing them the following week (Sprint 2).
+-   The group agrees to start investigating and get familiar React and any related features or dependencies needed for their respective responsibilities, and all start implementation next week.
 
 ## Goals for this week (include responsibilities):
 
