@@ -38,9 +38,10 @@
 
 -   From the The VSCode Explorer (or through the terminal), copy the .gitignore file react created in the react project directory
 
-    -   Copy the existing path and files to ignore
+    -   Duplicate the existing paths and files to ignore
     -   Add paths from starting at the course project folder down into the react project subdirectory
-    -   This is very important so that node-module won't get tracked!!!
+    -   **Note:** This is very important so that node-module won't get tracked!!!
+    -   **Example:** `/node_modules --> /src/website-color-generator-app/node_modules`
 
 -   Install react bootstrap dependencies
 
