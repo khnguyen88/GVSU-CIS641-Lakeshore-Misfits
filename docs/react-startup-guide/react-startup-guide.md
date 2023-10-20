@@ -51,6 +51,6 @@
 
     -   npm install axios
 
--   Instal the react router dependencies
+-   Install the react router dependencies
 
     -   npm install react-router react-router-dom --save
