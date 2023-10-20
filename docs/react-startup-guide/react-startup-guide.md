@@ -1,13 +1,55 @@
-cd src/website-color-generator-app
+# Existing React Project Setup
 
-cd src/
+-   Open up the course project folder
 
-npx create-react-app website-color-generator-app
+-   From the VS Code terminal do the following steps below:
 
-cd website-color-generator-app/
+-   From the course project folder go into the react project directory (subdirectory):
 
-npm install react-bootstrap bootstrap
+    -   cd src/website-color-generator-app
 
-npm install react-router react-router-dom --save
+-   Install all dependencies
 
-npm install axios
+    -   npm install
+
+-   If the previous steps does not work, try to enter this command before trying it again:
+
+    -   $env:NODE_OPTIONS='--openssl-legacy-provider'
+
+# First Time React Project Setup
+
+**Note:** This is section is for documentation purposes only. The steps does not need to be follow. This is just the process took to set up the initial react project.
+
+-   Open up course project folder
+
+-   From the VS Code terminal do the following steps below:
+
+-   Change directory to the source folder. This is where we will install the project.
+
+    -   cd src/
+
+-   Create the react project
+
+    -   npx create-react-app website-color-generator-app
+
+-   From the source folder go into the react project directory
+
+    -   cd website-color-generator-app/
+
+-   From the The VSCode Explorer (or through the terminal), copy the .gitignore file react created in the react project directory
+
+    -   Copy the existing path and files to ignore
+    -   Add paths from starting at the course project folder down into the react project subdirectory
+    -   This is very important so that node-module won't get tracked!!!
+
+-   Install react bootstrap dependencies
+
+    -   npm install react-bootstrap bootstrap
+
+-   Install axios dependencies
+
+    -   npm install axios
+
+-   Instal the react router dependencies
+
+    -   npm install react-router react-router-dom --save
