@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Button from 'react-bootstrap/Button'; // For testing purposes only!
+import 'bootstrap/dist/css/bootstrap.css'; // For testing purposes only!
 
 function App() {
   return (
@@ -17,6 +19,12 @@ function App() {
         >
           Learn React
         </a>
+        <Button as="a" variant="primary">
+          Button as link
+        </Button>
+        <Button as="a" variant="success">
+          Button as link
+        </Button>
       </header>
     </div>
   );
