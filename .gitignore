@@ -4,12 +4,22 @@
 /node_modules
 /.pnp
 .pnp.js
+/src/website-color-generator-app/node_modules
+/src/website-color-generator-app/.pnp
+/src/website-color-generator-app/.pnp.js
+/src/node_modules
+/src/.pnp
+/src/.pnp.js
 
 # testing
 /coverage
+/src/website-color-generator-app/coverage
+/src/coverage
 
 # production
 /build
+/src/website-color-generator-app/build
+/src/build
 
 # misc
 .DS_Store
@@ -21,3 +31,23 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/src/website-color-generator-app/.DS_Store
+/src/website-color-generator-app/.env.local
+/src/website-color-generator-app/.env.development.local
+/src/website-color-generator-app/.env.test.local
+/src/website-color-generator-app/.env.production.local
+
+/src/website-color-generator-app/npm-debug.log*
+/src/website-color-generator-app/yarn-debug.log*
+/src/website-color-generator-app/yarn-error.log*
+
+/src/.DS_Store
+/src/.env.local
+/src/.env.development.local
+/src/.env.test.local
+/src/.env.production.local
+
+/src/npm-debug.log*
+/src/yarn-debug.log*
+/src/yarn-error.log*
