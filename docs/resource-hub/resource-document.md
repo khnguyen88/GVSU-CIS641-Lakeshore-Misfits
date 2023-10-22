@@ -98,67 +98,67 @@
 
 ## How can we manage and store data within a component?
 
-    -   We should investigate and learn how to use **React's State Hook**.
-    -   Resource links:
-        -   [https://react.dev/learn/state-as-a-snapshot](https://react.dev/learn/state-as-a-snapshot)
+-   We should investigate and learn how to use **React's State Hook**.
+-   Resource links:
+    -   [https://react.dev/learn/state-as-a-snapshot](https://react.dev/learn/state-as-a-snapshot)
 
 ### What technologies do we need to make API calls in React? How do we use it?
 
-    -   We should investigate and learn how to use **Axios (Dependency)**.
-    -   We should investigate and learn how to use **React's Effect Hook**.
-    -   Resource Links:
-        -   [https://www.npmjs.com/package/react-axios](https://www.npmjs.com/package/react-axios)
-        -   [https://www.geeksforgeeks.org/axios-in-react-a-guide-for-beginners/](https://www.geeksforgeeks.org/axios-in-react-a-guide-for-beginners/)
-        -   [https://stackoverflow.com/questions/54224164/trouble-getting-local-json-data-with-axios](https://stackoverflow.com/questions/54224164/trouble-getting-local-json-data-with-axios)
-        -   [https://stackoverflow.com/questions/59559168/react-js-how-to-call-axios-sequentially](https://stackoverflow.com/questions/59559168/react-js-how-to-call-axios-sequentially)
-        -   [https://dev.to/rajeshj3/api-request-to-local-json-file-in-react-n7f](https://dev.to/rajeshj3/api-request-to-local-json-file-in-react-n7f)
-        -   [https://stackoverflow.com/questions/54224164/trouble-getting-local-json-data-with-axios](https://stackoverflow.com/questions/54224164/trouble-getting-local-json-data-with-axios)
-        -   [https://builtin.com/software-engineering-perspectives/react-api](https://builtin.com/software-engineering-perspectives/react-api)
-        -   [https://react.dev/reference/react/useEffect](https://react.dev/reference/react/useEffect)
+-   We should investigate and learn how to use **Axios (Dependency)**.
+-   We should investigate and learn how to use **React's Effect Hook**.
+-   Resource Links:
+    -   [https://www.npmjs.com/package/react-axios](https://www.npmjs.com/package/react-axios)
+    -   [https://www.geeksforgeeks.org/axios-in-react-a-guide-for-beginners/](https://www.geeksforgeeks.org/axios-in-react-a-guide-for-beginners/)
+    -   [https://stackoverflow.com/questions/54224164/trouble-getting-local-json-data-with-axios](https://stackoverflow.com/questions/54224164/trouble-getting-local-json-data-with-axios)
+    -   [https://stackoverflow.com/questions/59559168/react-js-how-to-call-axios-sequentially](https://stackoverflow.com/questions/59559168/react-js-how-to-call-axios-sequentially)
+    -   [https://dev.to/rajeshj3/api-request-to-local-json-file-in-react-n7f](https://dev.to/rajeshj3/api-request-to-local-json-file-in-react-n7f)
+    -   [https://stackoverflow.com/questions/54224164/trouble-getting-local-json-data-with-axios](https://stackoverflow.com/questions/54224164/trouble-getting-local-json-data-with-axios)
+    -   [https://builtin.com/software-engineering-perspectives/react-api](https://builtin.com/software-engineering-perspectives/react-api)
+    -   [https://react.dev/reference/react/useEffect](https://react.dev/reference/react/useEffect)
 
 ### How do we switch or change to a new screen in React?
 
-    -   We should investigate and learn how to use **React Routers (Dependency)**.
-    -   Resource links:
-        -   [https://reactrouter.com/en/main](https://reactrouter.com/en/main)
-        -   [https://www.w3schools.com/react/react_router.asp](https://www.w3schools.com/react/react_router.asp)
-        -   [https://hygraph.com/blog/routing-in-react](https://hygraph.com/blog/routing-in-react)
-        -   [https://stackoverflow.com/questions/73746766/how-to-define-another-routes-inside-a-routes-component-in-a-child-component](https://stackoverflow.com/questions/73746766/how-to-define-another-routes-inside-a-routes-component-in-a-child-component)
+-   We should investigate and learn how to use **React Routers (Dependency)**.
+-   Resource links:
+    -   [https://reactrouter.com/en/main](https://reactrouter.com/en/main)
+    -   [https://www.w3schools.com/react/react_router.asp](https://www.w3schools.com/react/react_router.asp)
+    -   [https://hygraph.com/blog/routing-in-react](https://hygraph.com/blog/routing-in-react)
+    -   [https://stackoverflow.com/questions/73746766/how-to-define-another-routes-inside-a-routes-component-in-a-child-component](https://stackoverflow.com/questions/73746766/how-to-define-another-routes-inside-a-routes-component-in-a-child-component)
 
 ### How do we send data from the parent component to the child components?
 
-    -   We should investigate and learn how to use **React's Props** and **Context API**.
-    -   Resource links:
-        -   [https://react.dev/learn/sharing-state-between-components](https://react.dev/learn/sharing-state-between-components)
-        -   [https://www.freecodecamp.org/news/pass-data-between-components-in-react/](https://www.freecodecamp.org/news/pass-data-between-components-in-react/)
-        -   [https://www.pluralsight.com/guides/passing-state-of-parent-to-child-component-as-props](https://www.pluralsight.com/guides/passing-state-of-parent-to-child-component-as-props)
-        -   [https://www.altogic.com/blog/passing-data-from-parent-to-child-in-react](https://www.altogic.com/blog/passing-data-from-parent-to-child-in-react)
+-   We should investigate and learn how to use **React's Props** and **Context API**.
+-   Resource links:
+    -   [https://react.dev/learn/sharing-state-between-components](https://react.dev/learn/sharing-state-between-components)
+    -   [https://www.freecodecamp.org/news/pass-data-between-components-in-react/](https://www.freecodecamp.org/news/pass-data-between-components-in-react/)
+    -   [https://www.pluralsight.com/guides/passing-state-of-parent-to-child-component-as-props](https://www.pluralsight.com/guides/passing-state-of-parent-to-child-component-as-props)
+    -   [https://www.altogic.com/blog/passing-data-from-parent-to-child-in-react](https://www.altogic.com/blog/passing-data-from-parent-to-child-in-react)
 
 ### How do we send data from the child components to the parent component?
 
-    -   We should investigate and learn how to use **React's Props** and **Context API**.
-    -   Resource links:
-        -   [https://stackoverflow.com/questions/38394015/how-to-pass-data-from-child-component-to-its-parent-in-reactjs](https://stackoverflow.com/questions/38394015/how-to-pass-data-from-child-component-to-its-parent-in-reactjs)
-        -   [https://stackoverflow.com/questions/55726886/react-hook-send-data-from-child-to-parent-component](https://stackoverflow.com/questions/55726886/react-hook-send-data-from-child-to-parent-component)
-        -   [https://www.geeksforgeeks.org/how-to-pass-data-from-child-component-to-its-parent-in-reactjs/](https://www.geeksforgeeks.org/how-to-pass-data-from-child-component-to-its-parent-in-reactjs/)
+-   We should investigate and learn how to use **React's Props** and **Context API**.
+-   Resource links:
+    -   [https://stackoverflow.com/questions/38394015/how-to-pass-data-from-child-component-to-its-parent-in-reactjs](https://stackoverflow.com/questions/38394015/how-to-pass-data-from-child-component-to-its-parent-in-reactjs)
+    -   [https://stackoverflow.com/questions/55726886/react-hook-send-data-from-child-to-parent-component](https://stackoverflow.com/questions/55726886/react-hook-send-data-from-child-to-parent-component)
+    -   [https://www.geeksforgeeks.org/how-to-pass-data-from-child-component-to-its-parent-in-reactjs/](https://www.geeksforgeeks.org/how-to-pass-data-from-child-component-to-its-parent-in-reactjs/)
 
 ### How do we send data between child component to child component?
 
-    -   We should investigate and learn how to use **Props** and **Context API**.
-    -   Resource links:
-        -   [https://react.dev/learn/sharing-state-between-components](https://react.dev/learn/sharing-state-between-components)
-        -   [https://www.freecodecamp.org/news/pass-data-between-components-in-react/](https://www.freecodecamp.org/news/pass-data-between-components-in-react/)
+-   We should investigate and learn how to use **Props** and **Context API**.
+-   Resource links:
+    -   [https://react.dev/learn/sharing-state-between-components](https://react.dev/learn/sharing-state-between-components)
+    -   [https://www.freecodecamp.org/news/pass-data-between-components-in-react/](https://www.freecodecamp.org/news/pass-data-between-components-in-react/)
 
 ### How do we update an element's style properties in React?
 
-    -   [https://upmostly.com/tutorials/changing-the-background-color-in-react](https://upmostly.com/tutorials/changing-the-background-color-in-react)
-    -   [https://stackoverflow.com/questions/55987002/how-to-change-style-property-on-one-react-component-without-changing-them-all](https://stackoverflow.com/questions/55987002/how-to-change-style-property-on-one-react-component-without-changing-them-all)
+-   [https://upmostly.com/tutorials/changing-the-background-color-in-react](https://upmostly.com/tutorials/changing-the-background-color-in-react)
+-   [https://stackoverflow.com/questions/55987002/how-to-change-style-property-on-one-react-component-without-changing-them-all](https://stackoverflow.com/questions/55987002/how-to-change-style-property-on-one-react-component-without-changing-them-all)
 
 ### How do we update an element's text in React?
 
-    -   We should investigate and learn how to use **React's State Hook**.
-    -   Resource links:
-    -   [https://react.dev/learn/state-as-a-snapshot](https://react.dev/learn/state-as-a-snapshot)
+-   We should investigate and learn how to use **React's State Hook**.
+-   Resource links:
+-   [https://react.dev/learn/state-as-a-snapshot](https://react.dev/learn/state-as-a-snapshot)
 
 ## Resource Links Related to Website Color Palette Test
 
