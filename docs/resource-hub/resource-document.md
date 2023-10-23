@@ -84,6 +84,15 @@
     -   [https://dev.to/chema/services-layer-approach-in-reactjs-1eo2](https://dev.to/chema/services-layer-approach-in-reactjs-1eo2)
     -   [https://react.dev/learn/tutorial-tic-tac-toe](https://react.dev/learn/tutorial-tic-tac-toe)
 
+### How do we create react components with CLI?
+
+-   Resource Links:
+
+    -   [https://www.npmjs.com/package/generate-react-cli](https://www.npmjs.com/package/generate-react-cli)
+
+    -   Template we are using:
+    -   `{ "usesTypeScript": false, "usesCssModule": false, "cssPreprocessor": "scss", "testLibrary": "Testing Library", "component": { "default": { "path": "src/components", "withLazy": false, "withStory": false, "withStyle": true, "withTest": true }, "page": { "path": "src/pages", "withLazy": false, "withStory": false, "withStyle": true, "withTest": true }, "layout": { "path": "src/layouts", "withLazy": false, "withStory": false, "withStyle": true, "withTest": true }, "section": { "path": "src/sections", "withLazy": false, "withStory": false, "withStyle": true, "withTest": true }, "service": { "path": "src/services", "withLazy": false, "withStory": false, "withStyle": false, "withTest": true } }, "usesStyledComponents": false }`
+
 ### What is the naming conventions we should use in our React Project?
 
 -   Resource Links:
@@ -121,6 +130,9 @@
 -   We should investigate and learn how to use **React Routers (Dependency)**.
 -   Resource links:
     -   [https://reactrouter.com/en/main](https://reactrouter.com/en/main)
+    -   [https://reactrouter.com/en/main/start/tutorial](https://reactrouter.com/en/main/start/tutorial)
+    -   [https://github.com/remix-run/react-router/tree/dev/examples](https://github.com/remix-run/react-router/tree/dev/examples)
+    -   [https://stackblitz.com/edit/react-yjfvnm?file=src%2FApp.js](https://stackblitz.com/edit/react-yjfvnm?file=src%2FApp.js)
     -   [https://www.w3schools.com/react/react_router.asp](https://www.w3schools.com/react/react_router.asp)
     -   [https://hygraph.com/blog/routing-in-react](https://hygraph.com/blog/routing-in-react)
     -   [https://stackoverflow.com/questions/73746766/how-to-define-another-routes-inside-a-routes-component-in-a-child-component](https://stackoverflow.com/questions/73746766/how-to-define-another-routes-inside-a-routes-component-in-a-child-component)
