@@ -145,6 +145,7 @@
     -   [https://www.freecodecamp.org/news/pass-data-between-components-in-react/](https://www.freecodecamp.org/news/pass-data-between-components-in-react/)
     -   [https://www.pluralsight.com/guides/passing-state-of-parent-to-child-component-as-props](https://www.pluralsight.com/guides/passing-state-of-parent-to-child-component-as-props)
     -   [https://www.altogic.com/blog/passing-data-from-parent-to-child-in-react](https://www.altogic.com/blog/passing-data-from-parent-to-child-in-react)
+    -   [https://www.geeksforgeeks.org/how-to-share-state-across-react-components-with-context/](https://www.geeksforgeeks.org/how-to-share-state-across-react-components-with-context/)
 
 ### How do we send data from the child components to the parent component?
 
@@ -171,6 +172,10 @@
 -   We should investigate and learn how to use **React's State Hook**.
 -   Resource links:
 -   [https://react.dev/learn/state-as-a-snapshot](https://react.dev/learn/state-as-a-snapshot)
+
+### How to use bootstrap CSS framework in React?
+
+-   [https://react-bootstrap.netlify.app/](https://react-bootstrap.netlify.app/)
 
 ## Resource Links Related to Website Color Palette Test
 
