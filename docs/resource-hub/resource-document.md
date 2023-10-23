@@ -162,6 +162,12 @@
     -   [https://react.dev/learn/sharing-state-between-components](https://react.dev/learn/sharing-state-between-components)
     -   [https://www.freecodecamp.org/news/pass-data-between-components-in-react/](https://www.freecodecamp.org/news/pass-data-between-components-in-react/)
 
+### Understanding UseContext and UseState?
+
+-   [https://medium.com/comsystoreply/how-to-use-react-context-with-usestate-c8ae4fe72fb9](https://medium.com/comsystoreply/how-to-use-react-context-with-usestate-c8ae4fe72fb9)
+-   [https://github.com/pmndrs/zustand#react-context](https://github.com/pmndrs/zustand#react-context)
+-   [https://stackoverflow.com/questions/57144498/how-to-use-react-context-with-usestate-hook-to-share-state-from-different-compon](https://stackoverflow.com/questions/57144498/how-to-use-react-context-with-usestate-hook-to-share-state-from-different-compon)
+
 ### How do we update an element's style properties in React?
 
 -   [https://upmostly.com/tutorials/changing-the-background-color-in-react](https://upmostly.com/tutorials/changing-the-background-color-in-react)
