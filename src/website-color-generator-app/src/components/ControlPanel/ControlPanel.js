@@ -4,7 +4,7 @@ import './ControlPanel.scss';
 
 const ControlPanel = () => (
   <div className="ControlPanel" data-testid="ControlPanel">
-    ControlPanel Component
+    <h2>Control Panel</h2>
   </div>
 );
 
