@@ -24,6 +24,14 @@
     -   Layout Components: `npx generate-react-cli component <FileName> --type=layout`
     -   Service Components: `npx generate-react-cli component <FileName> --type=service`
 
+-   To Start The Application Locally:
+
+    -   `npm start`
+
+-   To quit the application while it's running:
+
+    -   `CTRL+C`
+
 # First Time React Project Setup
 
 **Note:** This is section is for documentation purposes only. The steps does not need to be follow. This is just the process took to set up the initial react project.
