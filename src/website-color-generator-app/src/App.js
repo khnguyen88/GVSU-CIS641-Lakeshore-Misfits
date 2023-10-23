@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import Button from 'react-bootstrap/Button'; // For testing purposes only!
 import 'bootstrap/dist/css/bootstrap.css'; // For testing purposes only!
 import React from "react";
@@ -9,7 +9,7 @@ import PagesSection from "./sections/PagesSection/PagesSection";
 
 function App() {
   return (
-    <div className='MainApp'>
+    <div className="App">
       <Router>
         <PanelsSection />
         <PagesSection />
