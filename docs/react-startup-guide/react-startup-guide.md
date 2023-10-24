@@ -91,6 +91,12 @@
 
     -   `npm install -g sass`
 
+-   Install tinycolor2 library (A JS color and color manipulation library);
+
+    -   `npm i tinycolor2`
+
+    -   Saves time since I don't need to write the code from scratch!
+
 -   Create new pages: `npx generate-react-cli component <FileName> --type=page`
 
     -   MockSite
