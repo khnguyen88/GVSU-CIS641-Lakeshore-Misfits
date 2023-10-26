@@ -97,6 +97,14 @@
 
     -   Saves time since I don't need to write the code from scratch!
 
+-   Install font awesome icon libraries
+
+    -   ```
+        npm i --save @fortawesome/fontawesome-svg-core
+        npm install --save @fortawesome/free-solid-svg-icons
+        npm install --save @fortawesome/react-fontawesome
+        ```
+
 -   Create new pages: `npx generate-react-cli component <FileName> --type=page`
 
     -   MockSite
