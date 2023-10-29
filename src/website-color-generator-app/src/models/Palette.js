@@ -1,3 +1,7 @@
+import ColorMindAPIService from "../services/ColorMindAPIService/ColorMindAPIService";
+import ColorService from "../services/ColorService/ColorService";
+import ContrastCheckerApiService from "../services/ContrastCheckerAPIService/ContrastCheckerAPIService";
+
 export default class Palette {
   colors = []; //TinyColor[]
   pairedColors = []; //ColorPair[]
@@ -12,9 +16,15 @@ export default class Palette {
       tinycolor('rgb (128, 128, 128)'), // Brand Color
       tinycolor('rgb (25, 25, 25)'), // Accent #2
       tinycolor('rgb (0, 0, 0)'), // Dark Primary
-    ]
-  ) {
+    ],
+    colorService = new ColorService(),
+    colorGeneratorService = new ColorMindAPIService(),
+    contrastCheckerService = new ContrastCheckerApiService()) {
+    
     this.StorePalette(newPalette);
+    this._colorService = colorService;
+    this._colorGeneratorService = colorGeneratorService;
+    this._contrastCheckerService = contrastCheckerService;
   }
 
   GeneratePalette() {}
