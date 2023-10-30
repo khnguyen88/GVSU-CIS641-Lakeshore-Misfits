@@ -6,15 +6,18 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import PanelsSection from "./sections/PanelsSection/PanelsSection";
 import PagesSection from "./sections/PagesSection/PagesSection";
+import { PaletteProvider } from './context/PaletteContext';
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <PanelsSection />
-        <PagesSection />
-    </Router>
-    </div>
+    <PaletteProvider>
+      <div className="App">
+        <Router>
+          <PanelsSection />
+          <PagesSection />
+        </Router>
+      </div>
+    </PaletteProvider>  
   );
 }
 
