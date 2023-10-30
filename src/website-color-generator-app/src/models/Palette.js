@@ -1,6 +1,8 @@
 import ColorMindAPIService from "../services/ColorMindAPIService/ColorMindAPIService";
 import ColorService from "../services/ColorService/ColorService";
 import ContrastCheckerApiService from "../services/ContrastCheckerAPIService/ContrastCheckerAPIService";
+import RandomColorGeneratorService from "../services/RandomColorGeneratorService/RandomColorGeneratorService";
+import tinycolor from 'tinycolor2';
 
 export default class Palette {
   colors = []; //TinyColor[]
@@ -18,7 +20,7 @@ export default class Palette {
       tinycolor('rgb (0, 0, 0)'), // Dark Primary
     ],
     colorService = new ColorService(),
-    colorGeneratorService = new ColorMindAPIService(),
+    colorGeneratorService = new RandomColorGeneratorService(),
     contrastCheckerService = new ContrastCheckerApiService()) {
     
     this.StorePalette(newPalette);
@@ -27,7 +29,9 @@ export default class Palette {
     this._contrastCheckerService = contrastCheckerService;
   }
 
-  GeneratePalette() {}
+  GeneratePalette() {
+    return new Palette(this._colorGeneratorService.GenerateNewRandomPalette());
+  }
 
   AdjustPalette() {}
 

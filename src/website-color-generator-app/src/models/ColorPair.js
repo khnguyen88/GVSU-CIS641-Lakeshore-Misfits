@@ -1,4 +1,5 @@
 import ContrastRatings from "./ContrastRating";
+import tinycolor from 'tinycolor2';
 
 export default class ColorPair {
   pairedColorsIds = []; // int[], 2 elements only
