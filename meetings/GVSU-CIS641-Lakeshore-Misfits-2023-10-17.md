@@ -53,3 +53,9 @@ Time: 8:30 PM - 9:00 PM
 -   Khiem will set up the initial project's React application.
 
     -   Responsibilities: Developer, Khiem
+
+## Goals for next week (include responsibilities):
+
+-   The team will go over their Week 2 Sprint tasks and begin working on it.
+
+    -   Responsibilities: Developers, All
