@@ -166,6 +166,7 @@
 
 -   [https://stackblitz.com/edit/react-usecontext-demo?file=index.js](https://stackblitz.com/edit/react-usecontext-demo?file=index.js)
 -   [https://stackblitz.com/edit/react-usecontext-example?file=index.tsx](https://stackblitz.com/edit/react-usecontext-example?file=index.tsx)
+-   [https://stackoverflow.com/questions/57840535/passing-multiple-value-and-setter-pairs-to-context-provider-in-react](https://stackoverflow.com/questions/57840535/passing-multiple-value-and-setter-pairs-to-context-provider-in-react)
 -   [https://medium.com/comsystoreply/how-to-use-react-context-with-usestate-c8ae4fe72fb9](https://medium.com/comsystoreply/how-to-use-react-context-with-usestate-c8ae4fe72fb9)
 -   [https://github.com/pmndrs/zustand#react-context](https://github.com/pmndrs/zustand#react-context)
 -   [https://stackoverflow.com/questions/57144498/how-to-use-react-context-with-usestate-hook-to-share-state-from-different-compon](https://stackoverflow.com/questions/57144498/how-to-use-react-context-with-usestate-hook-to-share-state-from-different-compon)
