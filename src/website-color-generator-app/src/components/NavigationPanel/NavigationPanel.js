@@ -17,6 +17,9 @@ const NavigationPanel = () => (
         <li>
           <Link to="/about-us">About Us</Link>
         </li>
+        <li>
+          <Link to="/test-page">Test Page</Link>
+        </li>
       </ul>
     </nav>
   </div>
