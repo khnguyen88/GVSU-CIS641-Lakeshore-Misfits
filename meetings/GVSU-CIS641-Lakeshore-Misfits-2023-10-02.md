@@ -1,6 +1,6 @@
 # CIS641 Meeting Minutes Info
 
-Team name: Khiem Nguyen, Selena Cade, Munmi Thakuria
+Team name: Lakeshore Misfits
 
 Members present: Khiem Nguyen, Selena Cade, Munmi Thakuria
 
