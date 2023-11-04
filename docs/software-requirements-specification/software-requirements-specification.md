@@ -36,13 +36,13 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
     2. The application shall get the contrast ratio and web accessibility ratings of a color pair if the Contrast Checker API works.
 
-    3. The application shall be able to convert between the RGB, HSV, HSL, and HEX color values.
-
-    4. The successful API responses shall be in proper JSON format.
+    3. The successful API responses shall be in proper JSON format.
 
 6. Model Classes
 
     1. The application shall have the adjust color functionality, which will adjust the saturation level, brightness or lighting.
+
+    2. The application shall be able to convert between the RGB, HSV, HSL, and HEX color values.
 
 7. Error Handling
 
