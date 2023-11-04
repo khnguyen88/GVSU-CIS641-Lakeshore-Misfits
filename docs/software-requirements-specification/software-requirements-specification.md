@@ -16,7 +16,6 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
     1. The application shall have a control panel with buttons that allow users to generate, adjust, and copy the color palette.
 
-
 3. Navigation Panel
 
     1. The application must have a navigation panel that allows access to all pages through hyperlinked buttons.
@@ -31,7 +30,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
     4. The color palette generator shall pass through the Web Content Accessibility Guidelines.
 
-5. API Services and Custom Services
+5. API Services
 
     1. The application shall generate a new palette if the Color Generator API works.
 
@@ -41,11 +40,11 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
     4. The successful API responses shall be in proper JSON format.
 
-    5. The application shall have the adjust color functionality, which will adjust the saturation level, brightness or lighting.
+6. Model Classes
 
+    1. The application shall have the adjust color functionality, which will adjust the saturation level, brightness or lighting.
 
-
-6. Error Handling
+7. Error Handling
 
     1. The application shall alert the user if the Color Generator API cannot create a new palette.
 
