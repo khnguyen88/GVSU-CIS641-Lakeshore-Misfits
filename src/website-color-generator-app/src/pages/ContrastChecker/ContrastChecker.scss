@@ -1,5 +1,28 @@
 .ContrastChecker {
-    background-color: yellow;
+    background-color: rgb(145, 145, 145);
     color: black;
     min-height: 100vh;
+
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-gap: 25px;
+  }
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 20px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 45px;
+    text-align: center;
+    font-weight: bolder;
+  }

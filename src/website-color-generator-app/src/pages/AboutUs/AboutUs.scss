@@ -1,5 +1,38 @@
 .AboutUs {
-    background-color: green;
+    background-color: #6B8E23;
     color: white;
     min-height: 100vh;
+}
+
+.AboutUs p {
+    margin: 2em;
+    padding: .5em;
+    font-size: larger;
+}
+
+.AboutUs h1 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-left: .5em; 
+    text-align: center;
+}
+
+.AboutUs h2 {
+    font-style: italic;
+    font-size: 1.5em;
+    margin-left: 1em; 
+    text-align: center;
+
+}
+
+.AboutUs h3 {
+    font-size: 1.25em;
+    margin-left: 1em; 
+    text-align: left;
+}
+
+.AboutUs ul {
+    margin: 1em;
+    font-size: large;
+
 }
