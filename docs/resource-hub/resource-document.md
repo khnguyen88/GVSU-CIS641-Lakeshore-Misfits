@@ -116,7 +116,12 @@
 -   We should investigate and learn how to use **Axios (Dependency)**.
 -   We should investigate and learn how to use **React's Effect Hook**.
 -   Resource Links:
+
     -   [https://www.npmjs.com/package/react-axios](https://www.npmjs.com/package/react-axios)
+    -   [https://axios-http.com/docs/post_example](https://axios-http.com/docs/post_example)
+
+    -   [https://axios-http.com/docs/api_intro](https://axios-http.com/docs/api_intro)
+
     -   [https://www.geeksforgeeks.org/axios-in-react-a-guide-for-beginners/](https://www.geeksforgeeks.org/axios-in-react-a-guide-for-beginners/)
     -   [https://stackoverflow.com/questions/54224164/trouble-getting-local-json-data-with-axios](https://stackoverflow.com/questions/54224164/trouble-getting-local-json-data-with-axios)
     -   [https://stackoverflow.com/questions/59559168/react-js-how-to-call-axios-sequentially](https://stackoverflow.com/questions/59559168/react-js-how-to-call-axios-sequentially)
