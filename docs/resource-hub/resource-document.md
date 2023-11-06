@@ -171,6 +171,16 @@
 -   [https://github.com/pmndrs/zustand#react-context](https://github.com/pmndrs/zustand#react-context)
 -   [https://stackoverflow.com/questions/57144498/how-to-use-react-context-with-usestate-hook-to-share-state-from-different-compon](https://stackoverflow.com/questions/57144498/how-to-use-react-context-with-usestate-hook-to-share-state-from-different-compon)
 
+### How to use async, await, and return await?
+
+-   [https://stackoverflow.com/questions/73157933/react-native-axios-return-undefined-from-another-file](https://stackoverflow.com/questions/73157933/react-native-axios-return-undefined-from-another-file)
+-   [https://stackoverflow.com/questions/49938266/how-to-return-values-from-async-functions-using-async-await-from-function](https://stackoverflow.com/questions/49938266/how-to-return-values-from-async-functions-using-async-await-from-function)
+-   [https://www.digitalocean.com/community/tutorials/react-axios-react](https://www.digitalocean.com/community/tutorials/react-axios-react)
+
+### How to use axios then and catch?
+
+-   [https://stackoverflow.com/questions/45017822/catching-error-body-using-axios-post](https://stackoverflow.com/questions/45017822/catching-error-body-using-axios-post)
+
 ### How do we update an element's style properties in React?
 
 -   [https://upmostly.com/tutorials/changing-the-background-color-in-react](https://upmostly.com/tutorials/changing-the-background-color-in-react)
