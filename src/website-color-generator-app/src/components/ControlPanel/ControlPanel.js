@@ -12,7 +12,7 @@ const ControlPanel = () => {
   <div className="ControlPanel" data-testid="ControlPanel">
     <h2>Control Panel</h2>
       <PalettePreviewer palette={palette} />
-      <ActionButton name='Generate Button' propPalette={palette} propAction={() => { setPalette(palette.GeneratePalette()) }} />
+      <ActionButton name='Generate Button' propPalette={palette} propAction={async () => { setPalette(await palette.GeneratePalette()) }} />
       <ActionButton name='Copy Button' propPalette={palette} propAction={() => { palette.CopyPalette() }} />
   </div>
   );
