@@ -1,5 +1,4 @@
 import ColorMindAPIService from "../services/ColorMindAPIService/ColorMindAPIService";
-import ColorService from "../services/ColorService/ColorService";
 import ContrastCheckerApiService from "../services/ContrastCheckerAPIService/ContrastCheckerAPIService";
 import RandomColorGeneratorService from "../services/RandomColorGeneratorService/RandomColorGeneratorService";
 import tinycolor from 'tinycolor2';
@@ -7,30 +6,30 @@ import tinycolor from 'tinycolor2';
 export default class Palette {
   colors = []; //TinyColor[]
   pairedColors = []; //ColorPair[]
-  _colorService = null; //DI ColorService
   _contrastCheckerService = null; //DI ContrastCheckerService
   _colorGeneratorService = null; //DI ColorGeneratorService
 
   constructor(
-    newPalette = [
+    newColors = [
       tinycolor('rgb (255, 255, 255)'), // Light Primary
       tinycolor('rgb (230, 230, 230)'), // Accent #1
       tinycolor('rgb (128, 128, 128)'), // Brand Color
       tinycolor('rgb (25, 25, 25)'), // Accent #2
       tinycolor('rgb (0, 0, 0)'), // Dark Primary
     ],
-    colorService = new ColorService(),
-    colorGeneratorService = new RandomColorGeneratorService(),
+    colorGeneratorService = new ColorMindAPIService(),
     contrastCheckerService = new ContrastCheckerApiService()) {
     
-    this.StorePalette(newPalette);
-    this._colorService = colorService;
+    this.StorePalette(newColors);
     this._colorGeneratorService = colorGeneratorService;
     this._contrastCheckerService = contrastCheckerService;
   }
 
-  GeneratePalette() {
-    return new Palette(this._colorGeneratorService.GenerateNewRandomPalette());
+  async GeneratePalette() {
+    // return new Palette(this._colorGeneratorService.GenerateNewRandomPalette());
+    let newGenColors = await this._colorGeneratorService.GetGeneratedColors();
+    // alert(JSON.stringify(newGenColors));
+    return new Palette(newGenColors);
   }
 
   AdjustPalette() {}
