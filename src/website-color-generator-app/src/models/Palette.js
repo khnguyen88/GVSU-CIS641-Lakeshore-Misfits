@@ -26,7 +26,6 @@ export default class Palette {
   }
 
   async GeneratePalette() {
-    // return new Palette(this._colorGeneratorService.GenerateNewRandomPalette());
     let newGenColors = await this._colorGeneratorService.GetGeneratedColors();
     // alert(JSON.stringify(newGenColors));
     return new Palette(newGenColors);
