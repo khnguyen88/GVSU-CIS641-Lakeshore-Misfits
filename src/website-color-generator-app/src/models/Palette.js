@@ -2,6 +2,7 @@ import ColorMindAPIService from "../services/ColorMindAPIService/ColorMindAPISer
 import ContrastCheckerApiService from "../services/ContrastCheckerAPIService/ContrastCheckerAPIService";
 import RandomColorGeneratorService from "../services/RandomColorGeneratorService/RandomColorGeneratorService";
 import tinycolor from 'tinycolor2';
+import ColorPair from './ColorPair'
 
 export default class Palette {
   colors = []; //TinyColor[]
@@ -20,9 +21,10 @@ export default class Palette {
     colorGeneratorService = new ColorMindAPIService(),
     contrastCheckerService = new ContrastCheckerApiService()) {
     
-    this.StorePalette(newColors);
     this._colorGeneratorService = colorGeneratorService;
     this._contrastCheckerService = contrastCheckerService;
+    this.StorePalette(newColors);
+    this.UpdatePairedColors(this.colors);
   }
 
   async GeneratePalette() {
@@ -44,28 +46,41 @@ export default class Palette {
     alert(HEXStringCollection);
   }
 
-  StorePalette(newPalette) {
-    if (newPalette.length > 0 && newPalette.length <= 5) {
-      if (Array.isArray(newPalette[0]) && typeof newPalette[0][0] == 'number') {
-        for (let i = 0; i < newPalette.length; i++) {
+  StorePalette(newColors) {
+    if (newColors.length > 0 && newColors.length <= 5) {
+      if (Array.isArray(newColors[0]) && typeof newColors[0][0] == 'number') {
+        for (let i = 0; i < newColors.length; i++) {
           this.colors.push(
             tinycolor(
-              `rgb (${newPalette[i][0]}, ${newPalette[i][1]}, ${newPalette[i][2]})`
+              `rgb (${newColors[i][0]}, ${newColors[i][1]}, ${newColors[i][2]})`
             )
           );
         }
       } else if (
-        !Array.isArray(newPalette[0]) &&
-        typeof newPalette[0] == 'string'
+        !Array.isArray(newColors[0]) &&
+        typeof newColors[0] == 'string'
       ) {
-        for (let i = 0; i < newPalette.length; i++) {
-          this.colors.push(tinycolor(newPalette[i]));
+        for (let i = 0; i < newColors.length; i++) {
+          this.colors.push(tinycolor(newColors[i]));
         }
       } else {
-        this.colors = newPalette;
+        this.colors = newColors;
       }
     }
   }
 
-  UpdatePairedColors() {}
+  async UpdatePairedColors(colors) {
+    let colorArrayLength = colors.length;
+
+    for (let i = 0; i < colorArrayLength; i++){
+      for (let j = 0; j < colorArrayLength; j++){
+        let colorPair = new ColorPair(i, colors[i], j, colors[j]);
+
+        //TODO: Uncomment and check once the Contrast Checker Service has been populated
+        // colorPair.contrastRatings = await this._contrastCheckerService(colors[i].toHex(), colors[j].toHex());
+
+        this.pairedColors.push(colorPair);
+      }
+    }
+  }
 }
