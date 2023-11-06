@@ -116,7 +116,12 @@
 -   We should investigate and learn how to use **Axios (Dependency)**.
 -   We should investigate and learn how to use **React's Effect Hook**.
 -   Resource Links:
+
     -   [https://www.npmjs.com/package/react-axios](https://www.npmjs.com/package/react-axios)
+    -   [https://axios-http.com/docs/post_example](https://axios-http.com/docs/post_example)
+
+    -   [https://axios-http.com/docs/api_intro](https://axios-http.com/docs/api_intro)
+
     -   [https://www.geeksforgeeks.org/axios-in-react-a-guide-for-beginners/](https://www.geeksforgeeks.org/axios-in-react-a-guide-for-beginners/)
     -   [https://stackoverflow.com/questions/54224164/trouble-getting-local-json-data-with-axios](https://stackoverflow.com/questions/54224164/trouble-getting-local-json-data-with-axios)
     -   [https://stackoverflow.com/questions/59559168/react-js-how-to-call-axios-sequentially](https://stackoverflow.com/questions/59559168/react-js-how-to-call-axios-sequentially)
@@ -170,6 +175,16 @@
 -   [https://medium.com/comsystoreply/how-to-use-react-context-with-usestate-c8ae4fe72fb9](https://medium.com/comsystoreply/how-to-use-react-context-with-usestate-c8ae4fe72fb9)
 -   [https://github.com/pmndrs/zustand#react-context](https://github.com/pmndrs/zustand#react-context)
 -   [https://stackoverflow.com/questions/57144498/how-to-use-react-context-with-usestate-hook-to-share-state-from-different-compon](https://stackoverflow.com/questions/57144498/how-to-use-react-context-with-usestate-hook-to-share-state-from-different-compon)
+
+### How to use async, await, and return await?
+
+-   [https://stackoverflow.com/questions/73157933/react-native-axios-return-undefined-from-another-file](https://stackoverflow.com/questions/73157933/react-native-axios-return-undefined-from-another-file)
+-   [https://stackoverflow.com/questions/49938266/how-to-return-values-from-async-functions-using-async-await-from-function](https://stackoverflow.com/questions/49938266/how-to-return-values-from-async-functions-using-async-await-from-function)
+-   [https://www.digitalocean.com/community/tutorials/react-axios-react](https://www.digitalocean.com/community/tutorials/react-axios-react)
+
+### How to use axios then and catch?
+
+-   [https://stackoverflow.com/questions/45017822/catching-error-body-using-axios-post](https://stackoverflow.com/questions/45017822/catching-error-body-using-axios-post)
 
 ### How do we update an element's style properties in React?
 
