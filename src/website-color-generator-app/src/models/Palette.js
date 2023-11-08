@@ -2,11 +2,11 @@ import ColorMindAPIService from "../services/ColorMindAPIService/ColorMindAPISer
 import ContrastCheckerApiService from "../services/ContrastCheckerAPIService/ContrastCheckerAPIService";
 import RandomColorGeneratorService from "../services/RandomColorGeneratorService/RandomColorGeneratorService";
 import tinycolor from 'tinycolor2';
-import ColorPair from './ColorPair'
+import ColorPair from './ColorPair';
 
 export default class Palette {
   colors = []; //TinyColor[]
-  pairedColors = []; //ColorPair[]
+  colorPairs = []; //ColorPair[]
   _contrastCheckerService = null; //DI ContrastCheckerService
   _colorGeneratorService = null; //DI ColorGeneratorService
 
@@ -24,13 +24,19 @@ export default class Palette {
     this._colorGeneratorService = colorGeneratorService;
     this._contrastCheckerService = contrastCheckerService;
     this.StorePalette(newColors);
-    this.UpdatePairedColors(this.colors);
+    this.UpdateColorPairs(this.colors);
   }
 
   async GeneratePalette() {
     let newGenColors = await this._colorGeneratorService.GetGeneratedColors();
-    // alert(JSON.stringify(newGenColors));
-    return new Palette(newGenColors);
+
+    if (newGenColors !== null) {
+      return new Palette(newGenColors);
+    }
+    else {
+      alert("API Network Error! A New Color Palette Could Not Be Generated, Please Try Again!");
+      return new Palette(this.colors);
+    }
   }
 
   AdjustPalette() {}
@@ -69,18 +75,26 @@ export default class Palette {
     }
   }
 
-  async UpdatePairedColors(colors) {
+  async UpdateColorPairs(colors) {
     let colorArrayLength = colors.length;
 
     for (let i = 0; i < colorArrayLength; i++){
       for (let j = 0; j < colorArrayLength; j++){
         let colorPair = new ColorPair(i, colors[i], j, colors[j]);
 
-        //TODO: Uncomment and check once the Contrast Checker Service has been populated
-        // colorPair.contrastRatings = await this._contrastCheckerService(colors[i].toHex(), colors[j].toHex());
+        let contrastRatingResults = await this._contrastCheckerService.GetColorPairContrastRatings(colors[i].toHex(), colors[j].toHex());
+        
+        if (contrastRatingResults !== null) {
+          colorPair.contrastRatings = contrastRatingResults;
+        }
+        else {
+          alert(`API Network Error! Constrast Rating Could Not Be Estimated for the ${colors[i].toHex()} and ${colors[j].toHex()} color pair`);
+        }
 
-        this.pairedColors.push(colorPair);
+        this.colorPairs.push(colorPair);
       }
     }
+    
+    // alert(JSON.stringify(this.colorPairs.map(cPairs => cPairs.contrastRatings)));
   }
 }
