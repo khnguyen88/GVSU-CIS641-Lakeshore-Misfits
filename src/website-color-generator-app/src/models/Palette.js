@@ -2,7 +2,7 @@ import ColorMindAPIService from "../services/ColorMindAPIService/ColorMindAPISer
 import ContrastCheckerApiService from "../services/ContrastCheckerAPIService/ContrastCheckerAPIService";
 import RandomColorGeneratorService from "../services/RandomColorGeneratorService/RandomColorGeneratorService";
 import tinycolor from 'tinycolor2';
-import ColorPair from './ColorPair'
+import ColorPair from './ColorPair';
 
 export default class Palette {
   colors = []; //TinyColor[]
@@ -81,8 +81,7 @@ export default class Palette {
       for (let j = 0; j < colorArrayLength; j++){
         let colorPair = new ColorPair(i, colors[i], j, colors[j]);
 
-        //TODO: Uncomment and check once the Contrast Checker Service has been populated
-        // colorPair.contrastRatings = await this._contrastCheckerService(colors[i].toHex(), colors[j].toHex());
+        colorPair.contrastRatings = await this._contrastCheckerService.GetColorPairContrastRatings(colors[i].toHex(), colors[j].toHex());
 
         this.pairedColors.push(colorPair);
       }
