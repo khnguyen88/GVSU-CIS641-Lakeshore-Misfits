@@ -29,8 +29,13 @@ export default class Palette {
 
   async GeneratePalette() {
     let newGenColors = await this._colorGeneratorService.GetGeneratedColors();
-    // alert(JSON.stringify(newGenColors));
-    return new Palette(newGenColors);
+    if (newGenColors !== null) {
+      return new Palette(newGenColors);
+    }
+    else {
+      alert("API Network Error! A New Color Palette Could Not Be Generated, Please Try Again!");
+      return new Palette(this.colors);
+    }
   }
 
   AdjustPalette() {}
