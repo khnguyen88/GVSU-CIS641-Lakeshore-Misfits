@@ -17,7 +17,7 @@ const MockSite = () => (
     <h2>Aside Title</h2>
 		<img src= "https://www.gigacalculator.com/img/randomizers/color-wheel-picker.jpg" alt="Random Color Generator"/>
 		<p> Ea vero modi aut velit itaque hic iusto necessitatibus est totam dolor. Non corporis iure aut illo dolorem 33 Quis dolorum est nisi distinctio. Et vitae quas est ipsum debitis et ipsa fugit aut quibusdam eaque cum cumque sint id nihil veniam? Et minus sequi vel perferendis nulla hic nihil maxime.</p>
-    <button class="button">Test Button</button>
+    <button className="button">Test Button</button>
 	</aside>
   </div>
 );

@@ -5,8 +5,8 @@ import './ContrastChecker.scss';
 const ContrastChecker = () => (
   <div className="ContrastChecker" data-testid="ContrastChecker">
     <h1> Contrast Checker</h1>
-    <div class ="grid-container">
-      <div class="grid-item">
+    <div className ="grid-container">
+      <div className="grid-item">
         Font Size: 12, Reg
         Font-Size: 12, Bold
         Font-Size: 14, Reg
@@ -18,7 +18,7 @@ const ContrastChecker = () => (
         AAA: "Pass/Fail"
         AAA-large: "Pass/Fail"
       </div>
-      <div class="grid-item">
+      <div className="grid-item">
         Font Size: 12, Reg
         Font-Size: 12, Bold
         Font-Size: 14, Reg
@@ -30,7 +30,7 @@ const ContrastChecker = () => (
         AAA: "Pass/Fail"
         AAA-large: "Pass/Fail"
       </div>
-      <div class="grid-item">
+      <div className="grid-item">
         Font Size: 12, Reg
         Font-Size: 12, Bold
         Font-Size: 14, Reg
@@ -42,7 +42,7 @@ const ContrastChecker = () => (
         AAA: "Pass/Fail"
         AAA-large: "Pass/Fail"
       </div>
-      <div class="grid-item">
+      <div className="grid-item">
         Font Size: 12, Reg
         Font-Size: 12, Bold
         Font-Size: 14, Reg
@@ -54,7 +54,7 @@ const ContrastChecker = () => (
         AAA: "Pass/Fail"
         AAA-large: "Pass/Fail"
       </div>
-      <div class="grid-item">
+      <div className="grid-item">
         Font Size: 12, Reg
         Font-Size: 12, Bold
         Font-Size: 14, Reg
@@ -66,7 +66,7 @@ const ContrastChecker = () => (
         AAA: "Pass/Fail"
         AAA-large: "Pass/Fail"
       </div>
-      <div class="grid-item">
+      <div className="grid-item">
         Font Size: 12, Reg
         Font-Size: 12, Bold
         Font-Size: 14, Reg
