@@ -18,7 +18,7 @@ const PalettePreviewer = (props) =>
                   height: '2em',
                   width: '12em',
                   backgroundColor: c.toHexString(),
-                  color: 'blue',
+                  color: c.isLight() ? 'black' : 'white',
                 }}
               >
                 {c.toHexString()}
