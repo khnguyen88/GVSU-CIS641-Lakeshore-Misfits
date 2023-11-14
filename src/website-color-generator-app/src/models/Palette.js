@@ -39,7 +39,39 @@ export default class Palette {
     }
   }
 
-  AdjustPalette() {}
+  AdjustPalette() {
+    //Palette
+    let lightPrimary = this.colors[0];
+    let darkPrimary = this.colors[4];
+    let secondaryOpt1 = this.colors[1];
+    let secondaryOpt2 = this.colors[3];
+    let mainBrandColor = this.colors[2];
+    
+    let isPaletteShade = true;
+
+    this.colors.map(c => { isPaletteShade = c.toHsl().s == 0 ? true : false });
+
+    if(!isPaletteShade){
+      // Light Primary Color, Neutral Tone, Saturation: 1-10, Brightness: 77-99
+      this.AdjustColorBrightnessSaturation(lightPrimary, 1, 10, 77, 99);
+
+      // Secondary Color 1, Soft Pop Tone, Saturation: 50-60, Brightness: 70-80
+      this.AdjustColorBrightnessSaturation(secondaryOpt1, 50, 60, 70, 80);
+
+      //Dark Primary Color, Dark Jewel Tone - Saturation: 73-83, Brightness: 5-20
+      this.AdjustColorBrightnessSaturation(darkPrimary, 73, 83, 5, 20);
+
+      // Secondary Color 2, Dim Earth Tones - Saturation: 36-41, Brightness: 30-55
+      this.AdjustColorBrightnessSaturation(secondaryOpt2, 36, 41, 30, 55);
+
+      //Brand Color, Jewel Tones - Saturation: 73-83, Brightness: 56-76
+      this.AdjustColorBrightnessSaturation(mainBrandColor, 73, 83, 56, 76);
+    }
+    else {
+      alert("This is the default shade tone palette! Please generate a new color palette to adjust saturation, brightness, and value");
+    }
+    return new Palette(this.colors);
+  }
 
   CopyPalette() {
     let HEXStringCollection = JSON.stringify(
@@ -96,5 +128,54 @@ export default class Palette {
     }
     
     // alert(JSON.stringify(this.colorPairs.map(cPairs => cPairs.contrastRatings)));
+  }
+
+  RandomRange(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+  AdjustColorBrightnessSaturation(color, satMin, satMax, brightMin, brightMax) {
+    //TODO:  Adjust for saturation of HSV/HSB and not HSL. Might have to be rewritten
+
+    let colorBrightness = color.getBrightness() / 255 * 100; //Adjust brightness values in terms of 0-100 value.
+    let brightnessRange = brightMax - brightMin;
+    let colorBrightnessDelta = 0;
+
+    let colorSaturation = color.toHsl().s * 100; //Adjust saturation values in terms of 0-100 value.
+    let saturationRange = satMax - satMin;
+    let colorSaturationDelta = 0;
+
+    // alert(`Initial Brightness: ${colorBrightness}`);
+    // alert(`Initial Saturation: ${colorSaturation}`);
+    
+    while ((colorBrightness < brightMin || colorBrightness > brightMax) || (colorSaturation < satMin || colorSaturation > satMax)) {
+      if (colorBrightness < brightMin) {
+        colorBrightnessDelta = (brightMin - colorBrightness) + this.RandomRange(0, brightnessRange);
+        color.brighten(colorBrightnessDelta);
+      }
+
+      if (colorBrightness > brightMax) {
+        colorBrightnessDelta = -(colorBrightness - brightMax) - this.RandomRange(0, brightnessRange);
+        color.brighten(colorBrightnessDelta);
+      }
+      
+      colorBrightness = color.getBrightness() / 255 * 100;
+      colorSaturation = color.toHsl().s * 100;
+
+      if (colorSaturation < satMin) {
+        colorSaturationDelta = (satMin - colorSaturation) + this.RandomRange(0, saturationRange);
+        color.saturate(colorSaturationDelta);
+      }
+
+      if (colorSaturation > satMax) {
+        colorSaturationDelta = (colorSaturation - satMax) + this.RandomRange(0, saturationRange);
+        color.desaturate(colorSaturationDelta);
+      }
+
+      colorBrightness = color.getBrightness() / 255 * 100;
+      colorSaturation = color.toHsl().s * 100;
+    }
+    // alert(`Final Brightness: ${colorBrightness}`);
+    // alert(`Final Saturation: ${colorSaturation}`);
   }
 }
