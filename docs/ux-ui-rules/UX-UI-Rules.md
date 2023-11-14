@@ -15,7 +15,7 @@
 
 # UI/UX Design Rules
 
-### 60/30/10 Rule
+## 60/30/10 Rule (Jesse Showalter / Rachel How / Tristan Parker / UXPlanet)
 
 -   60/30/10 Visual Balance Rules for Main Colors
 
@@ -30,6 +30,8 @@
     -   Navigation Bar
     -   Key Sections
     -   Headers or Subheaders
+    -   Non Critical Sections
+    -   Non Critical Buttons
 
 -   10% of site should be a accent color(s)
     -   Call to actions items
@@ -42,7 +44,7 @@
 
 -   Brand Color can fall in any cateogry, but it depends on user preferences. Usually its used as secondary or accent colors.
 
-### Variant and Extensions
+## Variant and Extensions (Rachel How)
 
 -   Dominant and Secondary Colors can have variants or extension, consider either the Material Design or Atlassian color system
 
@@ -52,13 +54,17 @@
 
 -   Semantic/utility colors outside color palette can be used to notify success, error, warning, disabled, etc.
 
-## Understanding Colors
+## Understanding Colors (DesignerUp)
 
--   Color is composed of Hue, Tint, Tone
+-   Color is composed of Hue, Tint, Tone, Shade, and Temperature
 
 -   Hue - Dominant color family of the specific color. White, Black, and Gray are never referred as a hue.
 
--   Tint - Hue with only white added (or moving towards white). Lightens color but does not make brighter.
+-   Tint - Hue with only white added (or moving towards white).
+
+    -   Lightens color but does not make brighter.
+
+    -   Tint ranges from original color to white.
 
 -   Tone - HUE WITH only gray added (or moving towards gray).
 
@@ -66,19 +72,71 @@
 
     -   Gray will tone down the intensity of any colors
 
--   Shade - Hue with only black added (or moving towards white). Lightens color but does not make brighter.
+-   Shade - Hue with only black added (or moving towards black).
 
-## Colors Harmonies
+    -   Darkens color
 
--   Monochromatic - Uses one hue, with different saturation and brightness.
+    -   Shade ranges from the original color to black.
+
+-   Temperature - How color as being warm or cool is percieved
+
+    -   Warm - Can come from increasing red/yellow tones in color wheel
+
+    -   Cool - Can come from increasing blue/green tones in color wheel
+
+    -   Color wheel is split between warm and cool colors
+
+        -   (R, Y, O) = warm
+        -   (B, G, P) = cool
+
+    -   Hue shift towards
+
+### Color Models
+
+-   RGB - Color represented by the adding mixture of Red, Green, and Blue
+
+-   HEX - RGB color values represented as hexadecimals
+
+-   HSB / HSV - An alternative way to represent RGB
+
+    -   H: Hue
+    -   S: Saturation
+    -   V/B: Value/Brightness (The Same)
+        -   value or brightness is not impact saturation
+
+-   HSL - An alternative way to represent RGB and HSL / HSV
+
+    -   lightness is impacted by the saturation
+
+## Colors Harmonies (Adobe / DesignerUp)
+
+-   Monochromatic - Uses one hue, with varying saturation and brightness.
 
 -   Analogous - Use hues that are next to each other on the wheel.
 
 -   Complementary - Use hues that are on opposite of the color wheels.
 
+-   Split-Complementary - Use hues that are on either side of the complementing hue.
+
+-   Double-Split Complementary - Uses hues on either side of main hue, and on either side of the complementing hue.
+
+-   Triadic - Use three hues that are spaced evenly along the color wheel.
+
+-   Square - Uses four hues that are spaced evenly along the color wheel.
+
 -   Play with saturation and brightness to create more refine palette.
 
-## Colors Tones Categories
+## Color Palette Guide (DesignerUp / Futur Academy)
+
+-   Colors need to be harmonious, see color harmonies below!
+
+-   Darker Color Variants = Increase Saturation, Decrease Brightness
+
+-   Lighter Color Variants = Decrease Saturation, Increase Brigthness
+
+## Colors Tones Categories (DesignerUp / Malewicz)
+
+-   Note: This is intended to be used as a rough guideline, and can be adjusted to user preferences
 
 -   Jewel Tones
 
@@ -130,3 +188,23 @@
     -   80% to 90% in saturation
     -   80% to 90% in brightness
     -   Avoid Hues between 40 - 120 degrees
+
+## Sources
+
+-   [https://youtu.be/wuZuvhF4u6U?si=-5-Z3vDGqPStAySS](https://youtu.be/wuZuvhF4u6U?si=-5-Z3vDGqPStAySS)
+
+-   [https://youtu.be/GyVMoejbGFg?si=axrZOz61i7Jbt4am](https://youtu.be/GyVMoejbGFg?si=axrZOz61i7Jbt4am)
+
+-   [https://youtu.be/u5AnzLg1HxY?si=hKAYOeoOV4P_LT-f](https://youtu.be/u5AnzLg1HxY?si=hKAYOeoOV4P_LT-f)
+
+-   [https://www.youtube.com/watch?v=nrN2axSSOKg](https://www.youtube.com/watch?v=nrN2axSSOKg)
+
+-   [https://color.adobe.com/create/color-wheel](https://color.adobe.com/create/color-wheel)
+
+-   [https://www.youtube.com/watch?v=ewRYw4pnKQU](https://www.youtube.com/watch?v=ewRYw4pnKQU)
+
+-   [https://www.youtube.com/watch?v=wWJMe_TCo7c](https://www.youtube.com/watch?v=wWJMe_TCo7c)
+
+-   [https://uxplanet.org/the-60-30-10-rule-a-foolproof-way-to-choose-colors-for-your-ui-design-d15625e56d25](https://uxplanet.org/the-60-30-10-rule-a-foolproof-way-to-choose-colors-for-your-ui-design-d15625e56d25)
+
+### Note/Disclaimer: This is for personal note taking purposes, I do not claim ownership to any of these information. Credits for these information are all located in the resource links.
