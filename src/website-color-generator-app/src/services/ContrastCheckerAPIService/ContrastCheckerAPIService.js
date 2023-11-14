@@ -19,7 +19,7 @@ export default class ContrastCheckerApiService {
         }
         catch(err) {
             console.log(err);
-            alert(JSON.stringify(err));
+            // alert(JSON.stringify(err));
             return null;
         }
     }

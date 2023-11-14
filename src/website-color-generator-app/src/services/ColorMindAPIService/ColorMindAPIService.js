@@ -53,7 +53,7 @@ export default class ColorMindApiService{
         }
         catch(err) {
             console.log(err);
-            alert(JSON.stringify(err));
+            // alert(JSON.stringify(err));
             return null;
         }
     }
