@@ -1,9 +1,14 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import './MockSite.scss';
+import { PaletteContext } from '../../context/PaletteContext';
+import PalettePreviewer from '../../components/PalettePreviewer/PalettePreviewer';
+import React, { useContext } from 'react';
 
-const MockSite = () => (
+
+const MockSite = () => {
+  const [palette, setPalette] = useContext(PaletteContext);
   <div className="MockSite" data-testid="MockSite">
+    <PalettePreviewer palette={palette} />
     <h1> Mock Site Page</h1>
      <section>
       <h2>Title 1</h2>
@@ -17,10 +22,10 @@ const MockSite = () => (
     <h2>Aside Title</h2>
 		<img src= "https://www.gigacalculator.com/img/randomizers/color-wheel-picker.jpg" alt="Random Color Generator"/>
 		<p> Ea vero modi aut velit itaque hic iusto necessitatibus est totam dolor. Non corporis iure aut illo dolorem 33 Quis dolorum est nisi distinctio. Et vitae quas est ipsum debitis et ipsa fugit aut quibusdam eaque cum cumque sint id nihil veniam? Et minus sequi vel perferendis nulla hic nihil maxime.</p>
-    <button class="button">Test Button</button>
+    <button className="button">Test Button</button>
 	</aside>
   </div>
-);
+};
 
 MockSite.propTypes = {};
 

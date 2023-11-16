@@ -16,12 +16,12 @@ const PalettePreviewer = (props) =>
                 key={key}
                 style={{
                   height: '2em',
-                  width: '12em',
+                  width: '20em',
                   backgroundColor: c.toHexString(),
-                  color: 'blue',
+                  color: c.isLight() ? 'black' : 'white',
                 }}
               >
-                {c.toHexString()}
+                {c.toHexString()}, {c.toHslString()}, v: {Math.round(c.toHsv().v * 100)}
               </div>
             );
           })

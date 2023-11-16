@@ -11,7 +11,7 @@ const ContrastChecker = () => (
       body='Font size 12, Reg Font-size:12'
       />
   </div>
-  
+ 
 );
 
 ContrastChecker.propTypes = {};
