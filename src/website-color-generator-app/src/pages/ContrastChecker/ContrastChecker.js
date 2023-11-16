@@ -1,85 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './ContrastChecker.scss';
+import Card from '../../components/Card';
 
 const ContrastChecker = () => (
   <div className="ContrastChecker" data-testid="ContrastChecker">
     <h1> Contrast Checker</h1>
-    <div className ="grid-container">
-      <div className="grid-item">
-        Font Size: 12, Reg
-        Font-Size: 12, Bold
-        Font-Size: 14, Reg
-        Font-Size: 14, Bold
-        Foreground: #XXXXX
-        Background: #XXXXX
-        AA: "Pass/Fail"
-        AA-Large: "Pass/Fail"
-        AAA: "Pass/Fail"
-        AAA-large: "Pass/Fail"
-      </div>
-      <div className="grid-item">
-        Font Size: 12, Reg
-        Font-Size: 12, Bold
-        Font-Size: 14, Reg
-        Font-Size: 14, Bold
-        Foreground: #XXXXX
-        Background: #XXXXX
-        AA: "Pass/Fail"
-        AA-Large: "Pass/Fail"
-        AAA: "Pass/Fail"
-        AAA-large: "Pass/Fail"
-      </div>
-      <div className="grid-item">
-        Font Size: 12, Reg
-        Font-Size: 12, Bold
-        Font-Size: 14, Reg
-        Font-Size: 14, Bold
-        Foreground: #XXXXX
-        Background: #XXXXX
-        AA: "Pass/Fail"
-        AA-Large: "Pass/Fail"
-        AAA: "Pass/Fail"
-        AAA-large: "Pass/Fail"
-      </div>
-      <div className="grid-item">
-        Font Size: 12, Reg
-        Font-Size: 12, Bold
-        Font-Size: 14, Reg
-        Font-Size: 14, Bold
-        Foreground: #XXXXX
-        Background: #XXXXX
-        AA: "Pass/Fail"
-        AA-Large: "Pass/Fail"
-        AAA: "Pass/Fail"
-        AAA-large: "Pass/Fail"
-      </div>
-      <div className="grid-item">
-        Font Size: 12, Reg
-        Font-Size: 12, Bold
-        Font-Size: 14, Reg
-        Font-Size: 14, Bold
-        Foreground: #XXXXX
-        Background: #XXXXX
-        AA: "Pass/Fail"
-        AA-Large: "Pass/Fail"
-        AAA: "Pass/Fail"
-        AAA-large: "Pass/Fail"
-      </div>
-      <div className="grid-item">
-        Font Size: 12, Reg
-        Font-Size: 12, Bold
-        Font-Size: 14, Reg
-        Font-Size: 14, Bold
-        Foreground: #XXXXX
-        Background: #XXXXX
-        AA: "Pass/Fail"
-        AA-Large: "Pass/Fail"
-        AAA: "Pass/Fail"
-        AAA-large: "Pass/Fail"
-      </div>
-    </div>
+    <Card
+      title = 'Contrast Card'
+      body='Font size 12, Reg Font-size:12'
+      />
   </div>
+ 
 );
 
 ContrastChecker.propTypes = {};
