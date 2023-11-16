@@ -8,6 +8,7 @@ import PanelsSection from "./sections/PanelsSection/PanelsSection";
 import PagesSection from "./sections/PagesSection/PagesSection";
 import { PaletteProvider } from './context/PaletteContext';
 
+
 function App() {
   return (
     <PaletteProvider>
