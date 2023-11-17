@@ -51,7 +51,9 @@ export default class Palette {
 
     this.colors.map(c => { isPaletteShade = c.toHsl().s == 0 ? true : false });
 
-    if(!isPaletteShade){
+    if (!isPaletteShade) {
+      // TODO: This is a bunch of magic numbers. Should create a ColorTone class that contains this information.
+      
       // Light Primary Color, Neutral Tone, Saturation: 1-10, Brightness: 77-99
       this.AdjustColorBrightnessSaturation(lightPrimary, 1, 10, 77, 99);
 
