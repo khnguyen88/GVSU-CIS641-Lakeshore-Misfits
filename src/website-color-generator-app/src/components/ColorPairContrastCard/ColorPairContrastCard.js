@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import './Card.css'
-import { PaletteContext } from '../context/PaletteContext';
+import './ColorPairContrastCard.css'
+import { PaletteContext } from '../../context/PaletteContext';
 
-function Card(body) {
+function ColorPairContrastCard(body) {
     const [palette, setPalette] = useContext(PaletteContext);
     return (
         <div className="card-container"> 
@@ -100,4 +100,4 @@ function Card(body) {
 
     );
 };
-export default Card
+export default ColorPairContrastCard
