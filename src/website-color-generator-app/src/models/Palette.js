@@ -39,7 +39,7 @@ export default class Palette {
     }
   }
 
-  AdjustPalette() {
+  async AdjustPalette() {
     //Palette
     let lightPrimary = this.colors[0];
     let darkPrimary = this.colors[4];
@@ -70,7 +70,16 @@ export default class Palette {
     else {
       alert("This is the default shade tone palette! Please generate a new color palette to adjust saturation, brightness, and value");
     }
-    return new Palette(this.colors);
+
+    let newLightPrimary = tinycolor(this.colors[0].toHexString());
+    let newDarkPrimary = tinycolor(this.colors[4].toHexString());
+    let newSecondaryOpt1 = tinycolor(this.colors[1].toHexString());
+    let newSecondaryOpt2 = tinycolor(this.colors[3].toHexString());
+    let newMainBrandColor = tinycolor(this.colors[2].toHexString());
+
+    let newColorArray = [newLightPrimary, newSecondaryOpt1, newMainBrandColor, newSecondaryOpt2, newDarkPrimary];
+
+    return new Palette(newColorArray);
   }
 
   CopyPalette() {

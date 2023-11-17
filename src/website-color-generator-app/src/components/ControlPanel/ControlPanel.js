@@ -14,7 +14,7 @@ const ControlPanel = () => {
     <h2>Control Panel</h2>
       <PalettePreviewer palette={palette} />
       <ActionButton name='Generate Palette' propPalette={palette} propAction={async () => { setPalette(await palette.GeneratePalette()) }} />
-      <ActionButton name='Adjust Palette' propPalette={palette} propAction={() => { setPalette(palette.AdjustPalette()) }} />
+      <ActionButton name='Adjust Palette' propPalette={palette} propAction={async () => { setPalette(await palette.AdjustPalette()) }} />
       <ActionButton name='Copy Palette' propPalette={palette} propAction={() => { palette.CopyPalette() }} />
   </div>
   );
