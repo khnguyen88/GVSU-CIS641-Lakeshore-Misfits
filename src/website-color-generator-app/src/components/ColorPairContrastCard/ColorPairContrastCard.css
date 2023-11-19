@@ -1,6 +1,6 @@
 .card-content{
      margin: 1rem;
-     margin-top: 0.5re;
+     margin-top: 0.5rem;
      background-color:darkturquoise ;
      padding: 10px;
      justify-content: center;
@@ -14,7 +14,6 @@
      display: grid;
      grid-template-columns: auto auto auto;
      padding: 10px;
-     grid-gap: 25px;
    }
  
 .card-body {
