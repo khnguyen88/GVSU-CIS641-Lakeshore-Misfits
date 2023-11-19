@@ -129,14 +129,14 @@ export default class Palette {
         //----------------------------------------------
         //Get ratio 
         colorPair.contrastRatings.ratio = tinycolor.readability(colors[i], colors[j]).toFixed(2);
-        //WCAG AA, normal font = 12pt(16px) or larger size, "pass" if ratio > 4.5:1
-        colorPair.contrastRatings.AA = colorPair.contrastRatings.ratio > 4.5 ? "pass" : "fail";
-        //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio > 3.1:1
-        colorPair.contrastRatings.AALarge = colorPair.contrastRatings.ratio > 3.1 ? "pass" : "fail";
-        //WCAG AAA, normal font = 12pt(16px) or larger size, "pass" if ratio > 7:1
-        colorPair.contrastRatings.AAA = colorPair.contrastRatings.ratio > 7.1 ? "pass" : "fail";
-        //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio > 4.5:1
-        colorPair.contrastRatings.AAALarge = colorPair.contrastRatings.ratio > 4.5 ? "pass" : "fail";
+        //WCAG AA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 4.5:1
+        colorPair.contrastRatings.AA = colorPair.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
+        //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 3.1:1
+        colorPair.contrastRatings.AALarge = colorPair.contrastRatings.ratio >= 3.1 ? "pass" : "fail";
+        //WCAG AAA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 7:1
+        colorPair.contrastRatings.AAA = colorPair.contrastRatings.ratio >= 7.1 ? "pass" : "fail";
+        //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 4.5:1
+        colorPair.contrastRatings.AAALarge = colorPair.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
 
         //Populating the Color Pairs Array
         //----------------------------------------------
