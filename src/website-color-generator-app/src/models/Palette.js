@@ -24,7 +24,7 @@ export default class Palette {
     this._colorGeneratorService = colorGeneratorService;
     this._contrastCheckerService = contrastCheckerService;
     this.StorePalette(newColors);
-    this.PopulateColorPairs(this.colors); //Note: Async does not work in method
+    this.PopulateColorPairs(this.colors); //Note: Async does not work in constructor, must call outside of class.
   }
 
   async GeneratePalette() {
@@ -124,37 +124,43 @@ export default class Palette {
     for (let i = 0; i < colorArrayLength; i++){
       for (let j = 0; j < colorArrayLength; j++){
         let colorPair = new ColorPair(i, colors[i], j, colors[j]);
-        
-        //Estimating a Color Pair's Contrast Ratings
-        //----------------------------------------------
-        //Get ratio 
-        colorPair.contrastRatings.ratio = tinycolor.readability(colors[i], colors[j]).toFixed(2);
-        //WCAG AA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 4.5:1
-        colorPair.contrastRatings.AA = colorPair.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
-        //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 3.1:1
-        colorPair.contrastRatings.AALarge = colorPair.contrastRatings.ratio >= 3.1 ? "pass" : "fail";
-        //WCAG AAA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 7:1
-        colorPair.contrastRatings.AAA = colorPair.contrastRatings.ratio >= 7.1 ? "pass" : "fail";
-        //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 4.5:1
-        colorPair.contrastRatings.AAALarge = colorPair.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
-
         //Populating the Color Pairs Array
         //----------------------------------------------
         this.colorPairs.push(colorPair);
       }
     }
+    //Estimating a Color Pair's Contrast Ratings
+    //----------------------------------------------
+    this.UpdateColorPairs();
   }
 
-  async UpdateColorPairs() {
-    this.colorPairs.map(async (cp) => {
-        let contrastRatingResults = await this._contrastCheckerService.GetColorPairContrastRatings(cp.colorPair[0].toHex(), cp.colorPair[1].toHex());
+  UpdateColorPairs() {
+    this.colorPairs.map((cp) => {
+      //Estimating a Color Pair's Contrast Ratings
+      //----------------------------------------------
+      //Get ratio 
+      cp.contrastRatings.ratio = tinycolor.readability(cp.colorPair[0], cp.colorPair[1]).toFixed(2);
+      //WCAG AA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 4.5:1
+      cp.contrastRatings.AA = cp.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
+      //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 3.1:1
+      cp.contrastRatings.AALarge = cp.contrastRatings.ratio >= 3.1 ? "pass" : "fail";
+      //WCAG AAA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 7:1
+      cp.contrastRatings.AAA = cp.contrastRatings.ratio >= 7.1 ? "pass" : "fail";
+      //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 4.5:1
+      cp.contrastRatings.AAALarge = cp.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
+    });
+
+
+    // this.colorPairs.map(async (cp) => {
+    //   let contrastRatingResults = await this._contrastCheckerService.GetColorPairContrastRatings(cp.colorPair[0].toHex(), cp.colorPair[1].toHex());
         
-        if (contrastRatingResults !== null) {
-          cp.contrastRatings = contrastRatingResults;
-        }
-        else {
-          alert(`API Network Error! Constrast Rating Could Not Be Estimated for the ${cp.colorPair[0].toHex()} and ${cp.colorPair[1].toHex()} color pair`);
-        }});
+    //   if (contrastRatingResults !== null) {
+    //     cp.contrastRatings = contrastRatingResults;
+    //   }
+    //   else {
+    //     alert(`API Network Error! Constrast Rating Could Not Be Estimated for the ${cp.colorPair[0].toHex()} and ${cp.colorPair[1].toHex()} color pair`);
+    //   }
+    // });
 
     // alert(JSON.stringify(this.colorPairs.map(cPairs => cPairs.contrastRatings)));
   }
