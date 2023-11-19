@@ -8,10 +8,11 @@
      box-shadow: 1px 1px 15px -5px;
      border: 1px solid hsl(0, 0%, 80%);
      border-radius: 10px;
+     width: auto;
 }
 
 .card-container {
-     display: grid;
+     display: flex;
      grid-template-columns: auto auto auto;
      padding: 10px;
    }

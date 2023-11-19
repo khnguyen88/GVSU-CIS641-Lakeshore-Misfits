@@ -11,17 +11,19 @@ const ContrastChecker = () => {
   return palette.colorPairs && (
     <div className="ContrastChecker" data-testid="ContrastChecker">
       <h1>Contrast Checker</h1>
-      <>
-        {
-          palette.colorPairs.map((cp, key) => {
-            return (
-              <ColorPairContrastCard
-                colorPair={cp} key={key}
-              />
-            );
-          })
-        }
-      </>
+      <div className="card-collection">
+        <>
+          {
+            palette.colorPairs.map((cp, key) => {
+              return (
+                <ColorPairContrastCard
+                  colorPair={cp} key={key}
+                />
+              );
+            })
+          }
+        </>
+      </div>
     </div>
   );
 };
