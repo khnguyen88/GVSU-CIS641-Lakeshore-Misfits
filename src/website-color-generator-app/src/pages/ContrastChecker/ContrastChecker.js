@@ -8,10 +8,6 @@ const ContrastChecker = () => {
 
   const [palette, setPalette] = useContext(PaletteContext);
   
-  useEffect(() => {
-    alert(palette.colorPairs.length);
-  }, [palette]);
-  
   return palette.colorPairs && (
     <div className="ContrastChecker" data-testid="ContrastChecker">
       <h1>Contrast Checker</h1>
@@ -34,4 +30,4 @@ ContrastChecker.propTypes = {};
 
 ContrastChecker.defaultProps = {};
 
-export default React.memo(ContrastChecker);
+export default ContrastChecker;
