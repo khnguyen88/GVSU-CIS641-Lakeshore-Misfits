@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import './MockSite.scss';
 import { PaletteContext } from '../../context/PaletteContext';
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 
 
 const MockSite = () => {
@@ -10,12 +10,14 @@ const MockSite = () => {
   //Work-around to get change colors of pseudo classes
   //https://stackoverflow.com/questions/11371550/change-hover-css-properties-with-javascript
   
-  const mockNavItems = document.querySelectorAll('.inactive div');
+  useEffect(() => { 
+    const mockNavItems = document.querySelectorAll('.inactive div');
 
-  mockNavItems.forEach((navItem) => {
-    navItem.style.setProperty('--nav-item-background-color', `${palette.colors[1]}`);
-    navItem.style.setProperty('--nav-item-text-color', `${palette.colors[1].isLight() ? palette.colors[4]: 'white'}`);
-  });
+    mockNavItems.forEach((navItem) => {
+      navItem.style.setProperty('--nav-item-background-color', `${palette.colors[1]}`);
+      navItem.style.setProperty('--nav-item-text-color', `${palette.colors[1].isLight() ? palette.colors[4]: 'white'}`);
+    });
+  }, [palette]);
 
   return (
     <div className="MockSite" data-testid="MockSite" style={{ backgroundColor: palette.colors[0] }}>
