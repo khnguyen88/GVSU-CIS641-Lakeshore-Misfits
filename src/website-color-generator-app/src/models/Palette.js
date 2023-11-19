@@ -24,7 +24,7 @@ export default class Palette {
     this._colorGeneratorService = colorGeneratorService;
     this._contrastCheckerService = contrastCheckerService;
     this.StorePalette(newColors);
-    this.UpdateColorPairs(this.colors);
+    this.PopulateColorPairs(this.colors); //Note: Async does not work in method
   }
 
   async GeneratePalette() {
@@ -118,26 +118,29 @@ export default class Palette {
     }
   }
 
-  async UpdateColorPairs(colors) {
+  PopulateColorPairs(colors) {
     let colorArrayLength = colors.length;
 
     for (let i = 0; i < colorArrayLength; i++){
       for (let j = 0; j < colorArrayLength; j++){
         let colorPair = new ColorPair(i, colors[i], j, colors[j]);
 
-        let contrastRatingResults = await this._contrastCheckerService.GetColorPairContrastRatings(colors[i].toHex(), colors[j].toHex());
-        
-        if (contrastRatingResults !== null) {
-          colorPair.contrastRatings = contrastRatingResults;
-        }
-        else {
-          alert(`API Network Error! Constrast Rating Could Not Be Estimated for the ${colors[i].toHex()} and ${colors[j].toHex()} color pair`);
-        }
-
         this.colorPairs.push(colorPair);
       }
     }
-    
+  }
+
+  async UpdateColorPairs() {
+    this.colorPairs.map(async (cp) => {
+        let contrastRatingResults = await this._contrastCheckerService.GetColorPairContrastRatings(cp.colorPair[0].toHex(), cp.colorPair[1].toHex());
+        
+        if (contrastRatingResults !== null) {
+          cp.contrastRatings = contrastRatingResults;
+        }
+        else {
+          alert(`API Network Error! Constrast Rating Could Not Be Estimated for the ${cp.colorPair[0].toHex()} and ${cp.colorPair[1].toHex()} color pair`);
+        }});
+
     // alert(JSON.stringify(this.colorPairs.map(cPairs => cPairs.contrastRatings)));
   }
 
