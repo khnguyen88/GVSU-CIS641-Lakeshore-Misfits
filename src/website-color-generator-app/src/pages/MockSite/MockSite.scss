@@ -16,7 +16,7 @@
   float: left;
 }
 
-.mock-nav-item a {
+.mock-nav-item div {
   display: block;
   color: white;
   text-align: center;
@@ -24,8 +24,8 @@
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-.inactive a:hover {
+/* Change the link color on hover */
+.inactive div:hover {
   background-color: var(--nav-item-background-color);
   color: var(--nav-item-text-color);
 }
