@@ -24,7 +24,7 @@ export default class Palette {
     this._colorGeneratorService = colorGeneratorService;
     this._contrastCheckerService = contrastCheckerService;
     this.StorePalette(newColors);
-    this.UpdateColorPairs(this.colors);
+    this.PopulateColorPairs(this.colors); //Note: Async does not work in constructor, must call outside of class.
   }
 
   async GeneratePalette() {
@@ -39,7 +39,7 @@ export default class Palette {
     }
   }
 
-  AdjustPalette() {
+  async AdjustPalette() {
     //Palette
     let lightPrimary = this.colors[0];
     let darkPrimary = this.colors[4];
@@ -51,7 +51,9 @@ export default class Palette {
 
     this.colors.map(c => { isPaletteShade = c.toHsl().s == 0 ? true : false });
 
-    if(!isPaletteShade){
+    if (!isPaletteShade) {
+      // TODO: This is a bunch of magic numbers. Should create a ColorTone class that contains this information.
+      
       // Light Primary Color, Neutral Tone, Saturation: 1-10, Brightness: 77-99
       this.AdjustColorBrightnessSaturation(lightPrimary, 1, 10, 77, 99);
 
@@ -70,7 +72,16 @@ export default class Palette {
     else {
       alert("This is the default shade tone palette! Please generate a new color palette to adjust saturation, brightness, and value");
     }
-    return new Palette(this.colors);
+
+    let newLightPrimary = tinycolor(this.colors[0].toHexString());
+    let newDarkPrimary = tinycolor(this.colors[4].toHexString());
+    let newSecondaryOpt1 = tinycolor(this.colors[1].toHexString());
+    let newSecondaryOpt2 = tinycolor(this.colors[3].toHexString());
+    let newMainBrandColor = tinycolor(this.colors[2].toHexString());
+
+    let newColorArray = [newLightPrimary, newSecondaryOpt1, newMainBrandColor, newSecondaryOpt2, newDarkPrimary];
+
+    return new Palette(newColorArray);
   }
 
   CopyPalette() {
@@ -107,26 +118,50 @@ export default class Palette {
     }
   }
 
-  async UpdateColorPairs(colors) {
+  PopulateColorPairs(colors) {
     let colorArrayLength = colors.length;
 
     for (let i = 0; i < colorArrayLength; i++){
       for (let j = 0; j < colorArrayLength; j++){
         let colorPair = new ColorPair(i, colors[i], j, colors[j]);
-
-        let contrastRatingResults = await this._contrastCheckerService.GetColorPairContrastRatings(colors[i].toHex(), colors[j].toHex());
-        
-        if (contrastRatingResults !== null) {
-          colorPair.contrastRatings = contrastRatingResults;
-        }
-        else {
-          alert(`API Network Error! Constrast Rating Could Not Be Estimated for the ${colors[i].toHex()} and ${colors[j].toHex()} color pair`);
-        }
-
+        //Populating the Color Pairs Array
+        //----------------------------------------------
         this.colorPairs.push(colorPair);
       }
     }
-    
+    //Estimating a Color Pair's Contrast Ratings
+    //----------------------------------------------
+    this.UpdateColorPairs();
+  }
+
+  UpdateColorPairs() {
+    this.colorPairs.map((cp) => {
+      //Estimating a Color Pair's Contrast Ratings
+      //----------------------------------------------
+      //Get ratio 
+      cp.contrastRatings.ratio = tinycolor.readability(cp.colorPair[0], cp.colorPair[1]).toFixed(2);
+      //WCAG AA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 4.5:1
+      cp.contrastRatings.AA = cp.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
+      //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 3.1:1
+      cp.contrastRatings.AALarge = cp.contrastRatings.ratio >= 3.1 ? "pass" : "fail";
+      //WCAG AAA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 7:1
+      cp.contrastRatings.AAA = cp.contrastRatings.ratio >= 7.1 ? "pass" : "fail";
+      //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 4.5:1
+      cp.contrastRatings.AAALarge = cp.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
+    });
+
+
+    // this.colorPairs.map(async (cp) => {
+    //   let contrastRatingResults = await this._contrastCheckerService.GetColorPairContrastRatings(cp.colorPair[0].toHex(), cp.colorPair[1].toHex());
+        
+    //   if (contrastRatingResults !== null) {
+    //     cp.contrastRatings = contrastRatingResults;
+    //   }
+    //   else {
+    //     alert(`API Network Error! Constrast Rating Could Not Be Estimated for the ${cp.colorPair[0].toHex()} and ${cp.colorPair[1].toHex()} color pair`);
+    //   }
+    // });
+
     // alert(JSON.stringify(this.colorPairs.map(cPairs => cPairs.contrastRatings)));
   }
 
