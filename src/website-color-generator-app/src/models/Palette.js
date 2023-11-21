@@ -25,8 +25,8 @@ export default class Palette {
     
     this._colorGeneratorService = colorGeneratorService;
     this._contrastCheckerService = contrastCheckerService;
-    this.StorePalette(newColors);
-    this.PopulateColorPairs(this.colors);
+    this.SetPaletteColors(newColors);
+    this.CreateColorPairs(this.colors);
   }
 
   async GeneratePalette() {
@@ -35,7 +35,7 @@ export default class Palette {
     if (newGenColors !== null) {
       const newPalette = new Palette(newGenColors);
 
-      Promise.resolve(await newPalette.UpdateColorPairs(newPalette.colorPairs));
+      Promise.resolve(await newPalette.UpdateColorPairsRatings(newPalette.colorPairs));
 
       return newPalette;
     }
@@ -89,7 +89,7 @@ export default class Palette {
 
     const newPalette = new Palette(newColorArray);
 
-    Promise.resolve(await newPalette.UpdateColorPairs(newPalette.colorPairs));
+    Promise.resolve(await newPalette.UpdateColorPairsRatings(newPalette.colorPairs));
 
     return newPalette;
   }
@@ -105,7 +105,7 @@ export default class Palette {
     alert(HEXStringCollection);
   }
 
-  StorePalette(newColors) {
+  SetPaletteColors(newColors) {
     if (newColors.length > 0 && newColors.length <= 5) {
       if (Array.isArray(newColors[0]) && typeof newColors[0][0] == 'number') {
         for (let i = 0; i < newColors.length; i++) {
@@ -128,7 +128,7 @@ export default class Palette {
     }
   }
 
-  async PopulateColorPairs(colors) {
+  async CreateColorPairs(colors) {
     let colorArrayLength = colors.length;
 
     for (let i = 0; i < colorArrayLength; i++){
@@ -155,10 +155,10 @@ export default class Palette {
     }
     //Estimating a Color Pair's Contrast Ratings
     //----------------------------------------------
-    await this.UpdateColorPairs(this.colorPairs);
+    await this.UpdateColorPairsRatings(this.colorPairs);
   }
 
-  async UpdateColorPairs(colorPairs) {
+  async UpdateColorPairsRatings(colorPairs) {
     // https://stackoverflow.com/questions/65167410/wait-for-array-map-iterations-in-promise-all
     const promises = await colorPairs.map(async (cp) => {
       let contrastRatingResults = await this._contrastCheckerService.GetColorPairContrastRatings(cp.colorPair[0].toHex(), cp.colorPair[1].toHex());
