@@ -36,20 +36,6 @@ export default class ColorMindApiService{
             console.log(JSON.stringify(tinyColorArray));
             
             return tinyColorArray;
-
-            //Original Version, Return Await Did Not Work Below
-            //-------------------------------------------------------
-            // await axios
-            // .post('http://colormind.io/api/', '{"model":"ui"}')
-            // .then((response) => {
-            //      console.log(JSON.stringify(res.data.result));
-            //      console.log(JSON.stringify(this.GetTinyColorArray(res.data.result)));
-            //      return this.GetTinyColorArray(res.data.result);
-            // })
-            // .catch((error) => {
-            //     console.log(error);
-            // });
-
         }
         catch(err) {
             console.log(err);
