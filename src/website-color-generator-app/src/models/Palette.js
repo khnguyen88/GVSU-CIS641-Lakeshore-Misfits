@@ -11,6 +11,8 @@ export default class Palette {
   _colorGeneratorService = null; //DI ColorGeneratorService
 
   constructor(
+    //Note: Async/await does not work in constructor, must call outside of class.
+    
     newColors = [
       tinycolor('rgb (255, 255, 255)'), // Light Primary
       tinycolor('rgb (230, 230, 230)'), // Accent #1
@@ -24,14 +26,18 @@ export default class Palette {
     this._colorGeneratorService = colorGeneratorService;
     this._contrastCheckerService = contrastCheckerService;
     this.StorePalette(newColors);
-    this.PopulateColorPairs(this.colors); //Note: Async does not work in constructor, must call outside of class.
+    this.PopulateColorPairs(this.colors);
   }
 
   async GeneratePalette() {
     let newGenColors = await this._colorGeneratorService.GetGeneratedColors();
 
     if (newGenColors !== null) {
-      return new Palette(newGenColors);
+      const newPalette = new Palette(newGenColors);
+
+      Promise.resolve(await newPalette.UpdateColorPairs(newPalette.colorPairs));
+
+      return newPalette;
     }
     else {
       alert("API Network Error! A New Color Palette Could Not Be Generated, Please Try Again!");
@@ -81,7 +87,11 @@ export default class Palette {
 
     let newColorArray = [newLightPrimary, newSecondaryOpt1, newMainBrandColor, newSecondaryOpt2, newDarkPrimary];
 
-    return new Palette(newColorArray);
+    const newPalette = new Palette(newColorArray);
+
+    Promise.resolve(await newPalette.UpdateColorPairs(newPalette.colorPairs));
+
+    return newPalette;
   }
 
   CopyPalette() {
@@ -118,12 +128,26 @@ export default class Palette {
     }
   }
 
-  PopulateColorPairs(colors) {
+  async PopulateColorPairs(colors) {
     let colorArrayLength = colors.length;
 
     for (let i = 0; i < colorArrayLength; i++){
       for (let j = 0; j < colorArrayLength; j++){
         let colorPair = new ColorPair(i, colors[i], j, colors[j]);
+
+        //Manual estimation for a Color Pair's Contrast Ratings.
+        //----------------------------------------------
+        //Get ratio 
+        colorPair.contrastRatings.ratio = tinycolor.readability(colorPair.colorPair[0], colorPair.colorPair[1]).toFixed(2);
+        //WCAG AA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 4.5:1
+        colorPair.contrastRatings.AA = colorPair.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
+        //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 3.1:1
+        colorPair.contrastRatings.AALarge = colorPair.contrastRatings.ratio >= 3.1 ? "pass" : "fail";
+        //WCAG AAA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 7:1
+        colorPair.contrastRatings.AAA = colorPair.contrastRatings.ratio >= 7.1 ? "pass" : "fail";
+        //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 4.5:1
+        colorPair.contrastRatings.AAALarge = colorPair.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
+
         //Populating the Color Pairs Array
         //----------------------------------------------
         this.colorPairs.push(colorPair);
@@ -131,38 +155,23 @@ export default class Palette {
     }
     //Estimating a Color Pair's Contrast Ratings
     //----------------------------------------------
-    this.UpdateColorPairs();
+    await this.UpdateColorPairs(this.colorPairs);
   }
 
-  UpdateColorPairs() {
-    this.colorPairs.map((cp) => {
-      //Estimating a Color Pair's Contrast Ratings
-      //----------------------------------------------
-      //Get ratio 
-      cp.contrastRatings.ratio = tinycolor.readability(cp.colorPair[0], cp.colorPair[1]).toFixed(2);
-      //WCAG AA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 4.5:1
-      cp.contrastRatings.AA = cp.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
-      //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 3.1:1
-      cp.contrastRatings.AALarge = cp.contrastRatings.ratio >= 3.1 ? "pass" : "fail";
-      //WCAG AAA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 7:1
-      cp.contrastRatings.AAA = cp.contrastRatings.ratio >= 7.1 ? "pass" : "fail";
-      //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 4.5:1
-      cp.contrastRatings.AAALarge = cp.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
+  async UpdateColorPairs(colorPairs) {
+    // https://stackoverflow.com/questions/65167410/wait-for-array-map-iterations-in-promise-all
+    const promises = await colorPairs.map(async (cp) => {
+      let contrastRatingResults = await this._contrastCheckerService.GetColorPairContrastRatings(cp.colorPair[0].toHex(), cp.colorPair[1].toHex());
+        
+      if (contrastRatingResults !== null) {
+        cp.contrastRatings = contrastRatingResults;
+      }
+      else {
+        alert(`API Network Error! Constrast rating cannot be updated for ${cp.colorPair[0].toHex()} and ${cp.colorPair[1].toHex()} color pair. Original estimation will be kept!`);
+        }
     });
 
-
-    // this.colorPairs.map(async (cp) => {
-    //   let contrastRatingResults = await this._contrastCheckerService.GetColorPairContrastRatings(cp.colorPair[0].toHex(), cp.colorPair[1].toHex());
-        
-    //   if (contrastRatingResults !== null) {
-    //     cp.contrastRatings = contrastRatingResults;
-    //   }
-    //   else {
-    //     alert(`API Network Error! Constrast Rating Could Not Be Estimated for the ${cp.colorPair[0].toHex()} and ${cp.colorPair[1].toHex()} color pair`);
-    //   }
-    // });
-
-    // alert(JSON.stringify(this.colorPairs.map(cPairs => cPairs.contrastRatings)));
+    return await Promise.all(promises);
   }
 
   RandomRange(min, max) {
