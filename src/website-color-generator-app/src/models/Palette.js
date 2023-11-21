@@ -69,8 +69,8 @@ export default class Palette {
       //Dark Primary Color, Dark Jewel Tone - Saturation: 73-83, Brightness: 5-20
       this.AdjustColorBrightnessSaturation(darkPrimary, 73, 83, 5, 20);
 
-      // Secondary Color 2, Dim Earth Tones - Saturation: 36-41, Brightness: 30-55
-      this.AdjustColorBrightnessSaturation(secondaryOpt2, 36, 41, 30, 55);
+      // Secondary Color 2, Dim Earth Tones - Saturation: 36-41, Brightness: 25-40
+      this.AdjustColorBrightnessSaturation(secondaryOpt2, 36, 41, 25, 40);
 
       //Brand Color, Jewel Tones - Saturation: 73-83, Brightness: 56-76
       this.AdjustColorBrightnessSaturation(mainBrandColor, 73, 83, 56, 76);
@@ -153,9 +153,6 @@ export default class Palette {
         this.colorPairs.push(colorPair);
       }
     }
-    //Estimating a Color Pair's Contrast Ratings
-    //----------------------------------------------
-    await this.UpdateColorPairsRatings(this.colorPairs);
   }
 
   async UpdateColorPairsRatings(colorPairs) {
