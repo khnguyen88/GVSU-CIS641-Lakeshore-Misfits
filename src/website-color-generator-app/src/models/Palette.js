@@ -11,6 +11,8 @@ export default class Palette {
   _colorGeneratorService = null; //DI ColorGeneratorService
 
   constructor(
+    //Note: Async/await does not work in constructor, must call outside of class.
+    
     newColors = [
       tinycolor('rgb (255, 255, 255)'), // Light Primary
       tinycolor('rgb (230, 230, 230)'), // Accent #1
@@ -23,15 +25,19 @@ export default class Palette {
     
     this._colorGeneratorService = colorGeneratorService;
     this._contrastCheckerService = contrastCheckerService;
-    this.StorePalette(newColors);
-    this.PopulateColorPairs(this.colors); //Note: Async does not work in constructor, must call outside of class.
+    this.SetPaletteColors(newColors);
+    this.CreateColorPairs(this.colors);
   }
 
   async GeneratePalette() {
     let newGenColors = await this._colorGeneratorService.GetGeneratedColors();
 
     if (newGenColors !== null) {
-      return new Palette(newGenColors);
+      const newPalette = new Palette(newGenColors);
+
+      Promise.resolve(await newPalette.UpdateColorPairsRatings(newPalette.colorPairs));
+
+      return newPalette;
     }
     else {
       alert("API Network Error! A New Color Palette Could Not Be Generated, Please Try Again!");
@@ -63,8 +69,8 @@ export default class Palette {
       //Dark Primary Color, Dark Jewel Tone - Saturation: 73-83, Brightness: 5-20
       this.AdjustColorBrightnessSaturation(darkPrimary, 73, 83, 5, 20);
 
-      // Secondary Color 2, Dim Earth Tones - Saturation: 36-41, Brightness: 30-55
-      this.AdjustColorBrightnessSaturation(secondaryOpt2, 36, 41, 30, 55);
+      // Secondary Color 2, Dim Earth Tones - Saturation: 36-41, Brightness: 25-40
+      this.AdjustColorBrightnessSaturation(secondaryOpt2, 36, 41, 25, 40);
 
       //Brand Color, Jewel Tones - Saturation: 73-83, Brightness: 56-76
       this.AdjustColorBrightnessSaturation(mainBrandColor, 73, 83, 56, 76);
@@ -81,7 +87,11 @@ export default class Palette {
 
     let newColorArray = [newLightPrimary, newSecondaryOpt1, newMainBrandColor, newSecondaryOpt2, newDarkPrimary];
 
-    return new Palette(newColorArray);
+    const newPalette = new Palette(newColorArray);
+
+    Promise.resolve(await newPalette.UpdateColorPairsRatings(newPalette.colorPairs));
+
+    return newPalette;
   }
 
   CopyPalette() {
@@ -95,7 +105,7 @@ export default class Palette {
     alert(HEXStringCollection);
   }
 
-  StorePalette(newColors) {
+  SetPaletteColors(newColors) {
     if (newColors.length > 0 && newColors.length <= 5) {
       if (Array.isArray(newColors[0]) && typeof newColors[0][0] == 'number') {
         for (let i = 0; i < newColors.length; i++) {
@@ -118,51 +128,47 @@ export default class Palette {
     }
   }
 
-  PopulateColorPairs(colors) {
+  async CreateColorPairs(colors) {
     let colorArrayLength = colors.length;
 
     for (let i = 0; i < colorArrayLength; i++){
       for (let j = 0; j < colorArrayLength; j++){
         let colorPair = new ColorPair(i, colors[i], j, colors[j]);
+
+        //Manual estimation for a Color Pair's Contrast Ratings.
+        //----------------------------------------------
+        //Get ratio 
+        colorPair.contrastRatings.ratio = tinycolor.readability(colorPair.colorPair[0], colorPair.colorPair[1]).toFixed(2);
+        //WCAG AA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 4.5:1
+        colorPair.contrastRatings.AA = colorPair.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
+        //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 3.1:1
+        colorPair.contrastRatings.AALarge = colorPair.contrastRatings.ratio >= 3.1 ? "pass" : "fail";
+        //WCAG AAA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 7:1
+        colorPair.contrastRatings.AAA = colorPair.contrastRatings.ratio >= 7.1 ? "pass" : "fail";
+        //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 4.5:1
+        colorPair.contrastRatings.AAALarge = colorPair.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
+
         //Populating the Color Pairs Array
         //----------------------------------------------
         this.colorPairs.push(colorPair);
       }
     }
-    //Estimating a Color Pair's Contrast Ratings
-    //----------------------------------------------
-    this.UpdateColorPairs();
   }
 
-  UpdateColorPairs() {
-    this.colorPairs.map((cp) => {
-      //Estimating a Color Pair's Contrast Ratings
-      //----------------------------------------------
-      //Get ratio 
-      cp.contrastRatings.ratio = tinycolor.readability(cp.colorPair[0], cp.colorPair[1]).toFixed(2);
-      //WCAG AA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 4.5:1
-      cp.contrastRatings.AA = cp.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
-      //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 3.1:1
-      cp.contrastRatings.AALarge = cp.contrastRatings.ratio >= 3.1 ? "pass" : "fail";
-      //WCAG AAA, normal font = 12pt(16px) or larger size, "pass" if ratio >= 7:1
-      cp.contrastRatings.AAA = cp.contrastRatings.ratio >= 7.1 ? "pass" : "fail";
-      //WCAG AA-Large, large font = 14pt(18.66px) & bold or 18pt(24px) or larger, "pass" if ratio >= 4.5:1
-      cp.contrastRatings.AAALarge = cp.contrastRatings.ratio >= 4.5 ? "pass" : "fail";
+  async UpdateColorPairsRatings(colorPairs) {
+    // https://stackoverflow.com/questions/65167410/wait-for-array-map-iterations-in-promise-all
+    const promises = await colorPairs.map(async (cp) => {
+      let contrastRatingResults = await this._contrastCheckerService.GetColorPairContrastRatings(cp.colorPair[0].toHex(), cp.colorPair[1].toHex());
+        
+      if (contrastRatingResults !== null) {
+        cp.contrastRatings = contrastRatingResults;
+      }
+      else {
+        alert(`API Network Error! Constrast rating cannot be updated for ${cp.colorPair[0].toHex()} and ${cp.colorPair[1].toHex()} color pair. Original estimation will be kept!`);
+        }
     });
 
-
-    // this.colorPairs.map(async (cp) => {
-    //   let contrastRatingResults = await this._contrastCheckerService.GetColorPairContrastRatings(cp.colorPair[0].toHex(), cp.colorPair[1].toHex());
-        
-    //   if (contrastRatingResults !== null) {
-    //     cp.contrastRatings = contrastRatingResults;
-    //   }
-    //   else {
-    //     alert(`API Network Error! Constrast Rating Could Not Be Estimated for the ${cp.colorPair[0].toHex()} and ${cp.colorPair[1].toHex()} color pair`);
-    //   }
-    // });
-
-    // alert(JSON.stringify(this.colorPairs.map(cPairs => cPairs.contrastRatings)));
+    return await Promise.all(promises);
   }
 
   RandomRange(min, max) {
