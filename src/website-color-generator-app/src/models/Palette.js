@@ -25,7 +25,7 @@ export default class Palette {
     
     this._colorGeneratorService = colorGeneratorService;
     this._contrastCheckerService = contrastCheckerService;
-    this.SetPaletteColors(newColors);
+    this.SetColors(newColors);
     this.CreateColorPairs(this.colors);
   }
 
@@ -105,7 +105,7 @@ export default class Palette {
     alert(HEXStringCollection);
   }
 
-  SetPaletteColors(newColors) {
+  SetColors(newColors) {
     if (newColors.length > 0 && newColors.length <= 5) {
       if (Array.isArray(newColors[0]) && typeof newColors[0][0] == 'number') {
         for (let i = 0; i < newColors.length; i++) {
