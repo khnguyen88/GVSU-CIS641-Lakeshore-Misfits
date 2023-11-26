@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const NavigationPanel = () => (
   <div className="NavigationPanel" data-testid="NavigationPanel">
-    <h2>Navigation Panel</h2>
+    <h2 className="navigation-panel-header">Navigation Panel</h2>
     <nav>
       <ul>
         <li>
