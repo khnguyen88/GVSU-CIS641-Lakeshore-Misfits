@@ -5,6 +5,7 @@ button{
     padding: .25em;
     font-weight: bold;
     border-radius: 6px;
+    background: lightcyan;
 }
 
 @media screen and (max-width: 700px) {
@@ -17,4 +18,8 @@ button{
     button {
         width: 12em;
     }
+}
+
+button:hover{
+    background-color: gold;
 }
