@@ -50,10 +50,10 @@ const ContrastChecker = () => {
           <li className="information-item"><span className="information-subheader">Text-Sizing:</span>
             <ul>
               <li>
-                Normal Text: 12pt (or 16px)
+                Normal Text: 12pt (16px)
               </li>
               <li>
-                Large Text: 14 pt (or 18.66px) and bold, or larger
+                Large Text: 14 pt (18.66px) and bold, or 18pt (24px) and larger
               </li>
             </ul>
           </li>
