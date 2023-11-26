@@ -7,6 +7,15 @@
 }
 
 .color-previewer-item{
+    min-height: 2em;
+    padding: .25em;
     border: 1px solid #000;
     padding-left: 1em;
 }
+
+@media screen and (min-width: 800px) {
+    .color-previewer-item {
+        width: 20em;
+    }
+}
+

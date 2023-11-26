@@ -1,9 +1,20 @@
 .ActionButton {}
 
 button{
-    width: 12em;
     margin: .5em;
     padding: .25em;
     font-weight: bold;
     border-radius: 6px;
+}
+
+@media screen and (max-width: 700px) {
+    button {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    button {
+        width: 12em;
+    }
 }

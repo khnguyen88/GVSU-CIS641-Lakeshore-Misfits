@@ -15,8 +15,6 @@ const PalettePreviewer = (props) =>
               <div className="color-previewer-item"
                 key={key}
                 style={{
-                  height: '2em',
-                  width: '20em',
                   backgroundColor: c.toHexString(),
                   color: c.isLight() ? 'black' : 'white',
                 }}
