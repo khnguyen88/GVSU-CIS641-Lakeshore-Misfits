@@ -12,7 +12,7 @@ const PalettePreviewer = (props) =>
         {
           palette.colors.map((c, key) => {
             return (
-              <div
+              <div className="color-previewer-item"
                 key={key}
                 style={{
                   height: '2em',

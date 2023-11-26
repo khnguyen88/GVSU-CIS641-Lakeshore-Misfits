@@ -1,4 +1,15 @@
 .ControlPanel {
     min-height: 50vh;
-    background-color: lightblue;
+    background-color: rgb(255, 255, 255);
+}
+
+.control-panel-header {
+    padding-bottom: 1em;
+}
+
+.control-panel-button-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
