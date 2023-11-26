@@ -15,7 +15,6 @@ const PagesSection = () => (
       <Route path="/mock-site" element={<MockSite />} />
       <Route path="/contrast-checker" element={<ContrastChecker />} />
       <Route path="/about-us" element={<AboutUs />} /> 
-      <Route path="/test-page" element={<TestPage />} /> 
       <Route path="*" element={<ErrorPage />} />
     </Routes>
   </div>
