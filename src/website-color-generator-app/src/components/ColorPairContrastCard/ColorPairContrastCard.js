@@ -13,6 +13,7 @@ function ColorPairContrastCard(props) {
                         <div className="font12 font-bold">Font-Size: 12, Bold</div>
                         <div className="font14">Font-Size: 14, Reg</div>
                         <div className="font14 font-bold">Font-Size: 14, Bold</div>
+                        <div className="font18">Font-Size: 18, Reg</div>
                     </div>
                     <div className="contrastRatings">
                         <div>
