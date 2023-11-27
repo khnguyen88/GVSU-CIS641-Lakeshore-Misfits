@@ -7,10 +7,6 @@ import ActionButton from '../ActionButton/ActionButton';
 
 const ControlPanel = () => {
   const [palette, setPalette] = useContext(PaletteContext);
-  const [buttonFlag, setButtonFlag] = useState(true);
-
-  const generate = async (palette) => { return await palette.GeneratePalette() };
-  const adjust = async (palette) => { return await palette.AdjustPalette() };
 
   return (
   <div className="ControlPanel" data-testid="ControlPanel">

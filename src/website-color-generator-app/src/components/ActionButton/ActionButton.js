@@ -6,7 +6,7 @@ import Palette from '../../models/Palette';
 import tinycolor from 'tinycolor2';
   
 const ActionButton = (props) => {
-  const { propPalette, name, propAction} = props;
+  const { name, propAction} = props;
 
   return (
     <button
