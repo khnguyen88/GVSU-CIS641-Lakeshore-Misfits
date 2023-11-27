@@ -14,15 +14,17 @@ const ControlPanel = () => {
 
   return (
   <div className="ControlPanel" data-testid="ControlPanel">
-    <h2>Control Panel</h2>
+    <h2 className="control-panel-header">Control Panel</h2>
       <PalettePreviewer palette={palette} />
-      <ActionButton name='Generate Palette' propPalette={palette} propAction={
-        async () => { setPalette(await palette.GeneratePalette());
-        }} />
-      <ActionButton name='Adjust Palette' propPalette={palette} propAction={
-        async () => { setPalette(await palette.AdjustPalette());
-        }} />
-      <ActionButton name='Copy Palette' propPalette={palette} propAction={() => { palette.CopyPalette() }} />
+      <div className="control-panel-button-section">
+        <ActionButton name='Generate Palette' propPalette={palette} propAction={
+          async () => { setPalette(await palette.GeneratePalette());
+          }} />
+        <ActionButton name='Adjust Palette' propPalette={palette} propAction={
+          async () => { setPalette(await palette.AdjustPalette());
+          }} />
+        <ActionButton name='Copy Palette' propPalette={palette} propAction={() => { palette.CopyPalette() }} />
+      </div>
   </div>
   );
 

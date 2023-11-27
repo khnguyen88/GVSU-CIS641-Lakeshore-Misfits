@@ -1,5 +1,5 @@
 .ContrastChecker {
-    background-color: rgb(145, 145, 145);
+    background-color: rgb(225, 225, 225);
     color: black;
     height: 100vh;
     overflow-y: scroll;
@@ -8,10 +8,30 @@
 .card-collection {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 h1 {
   font-size: 45px;
   text-align: center;
   font-weight: bolder;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h3{
+  padding-top: 1em;
+  padding-bottom: .5em;
+}
+
+.contrast-information{
+  padding: 2em;
+}
+
+.information-subheader{
+  font-weight: bold;
+}
+
+.information-item{
+  padding-bottom: 1em;
 }

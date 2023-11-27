@@ -1,1 +1,15 @@
 .ActionButton {}
+
+button{
+    margin: .5em;
+    padding: .25em;
+    font-weight: bold;
+    border-radius: 6px;
+    background: lightcyan;
+    width: 12em;
+}
+
+
+button:hover{
+    background-color: gold;
+}

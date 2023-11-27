@@ -12,9 +12,9 @@ const AboutUs = () => (
       <p>This project was inspired by each members interests. We are interested in Web Content Acessibiility Guideline, art, science,application design, and illustration. </p>
       <h3>Individual Roles </h3> 
       <ul>
-        <li>Selena: project schedules, mock site layout, contrast checker page layout, and about page layout.</li>
-        <li>Khiem: requirments and task refining, initial app setup, navigation routes, and integration</li>
-        <li>Munmi: Colormind API service, WebAim Contrast Checker API, User acceptance, and integration. </li>
+        <li>Selena: Project schedules, mock site layout, contrast checker page layout, and about page layout, and diagram drafting</li>
+        <li>Khiem: Project schedules, requirments and task refining, initial app setup, navigation routes, Colormind API service, WebAim Contrast Checker API, integration, diagram drafting, and UI refinement</li>
+        <li>Munmi: User acceptance testing, card component, diagram drafting. </li>
       </ul>
   </div>
 );

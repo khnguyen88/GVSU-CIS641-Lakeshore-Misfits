@@ -5,20 +5,17 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const NavigationPanel = () => (
   <div className="NavigationPanel" data-testid="NavigationPanel">
-    <h2>Navigation Panel</h2>
+    <h2 className="navigation-panel-header">Navigation Panel</h2>
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Mock Site</Link>
         </li>
         <li>
           <Link to="/contrast-checker">Contrast Checker</Link>
         </li>
         <li>
           <Link to="/about-us">About Us</Link>
-        </li>
-        <li>
-          <Link to="/test-page">Test Page</Link>
         </li>
       </ul>
     </nav>

@@ -13,15 +13,17 @@ function ColorPairContrastCard(props) {
                         <div className="font12 font-bold">Font-Size: 12, Bold</div>
                         <div className="font14">Font-Size: 14, Reg</div>
                         <div className="font14 font-bold">Font-Size: 14, Bold</div>
+                        <div className="font18">Font-Size: 18, Reg</div>
                     </div>
                     <div className="contrastRatings">
-                        <div>Foreground: {colorPair.colorPair[0].toHexString()}</div>
-                        <div>Background: {colorPair.colorPair[1].toHexString()}</div>
-                        <div>Ratio: {colorPair.contrastRatings.ratio}</div>
-                        <div>AA: {colorPair.contrastRatings.AA}</div>
-                        <div>AA-Large: {colorPair.contrastRatings.AALarge}</div>
-                        <div>AAA: {colorPair.contrastRatings.AAA}</div>
-                        <div>AAA-large: {colorPair.contrastRatings.AAALarge}</div> 
+                        <div>
+                            <span className="card-label">Foreground: </span><span>{colorPair.colorPair[0].toHexString()}</span></div>
+                        <div><span className="card-label">Background: </span><span>{colorPair.colorPair[1].toHexString()}</span></div>
+                        <div><span className="card-label">Ratio: </span><span>{colorPair.contrastRatings.ratio}</span></div>
+                        <div><span className="card-label">AA: </span><span style={{color: colorPair.contrastRatings.AA === "pass" ? 'green' : 'red'}}>{colorPair.contrastRatings.AA}</span></div>
+                        <div><span className="card-label">AA-Large: </span><span style={{color: colorPair.contrastRatings.AALarge === "pass" ? 'green' : 'red'}}>{colorPair.contrastRatings.AALarge}</span></div>
+                        <div><span className="card-label">AAA: </span><span style={{color: colorPair.contrastRatings.AAA === "pass" ? 'green' : 'red'}}>{colorPair.contrastRatings.AAA}</span></div>
+                        <div><span className="card-label">AAA-large: </span><span style={{color: colorPair.contrastRatings.AAALarge === "pass" ? 'green' : 'red'}}>{colorPair.contrastRatings.AAALarge}</span></div> 
                     </div>
                 </div>
             </div>                                                               

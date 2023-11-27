@@ -1,7 +1,8 @@
 .AboutUs {
-    background-color: rgb(145, 145, 145);
+    background-color: rgb(225, 225, 225);
     color: black;
-    min-height: 100vh;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .AboutUs p {
@@ -11,8 +12,8 @@
 }
 
 .AboutUs h1 {
+    padding-top: 1em;
     font-weight: bold;
-    font-size: 2em;
     margin-left: .5em; 
     text-align: center;
 }
@@ -22,6 +23,7 @@
     font-size: 1.5em;
     margin-left: 1em; 
     text-align: center;
+    padding-bottom: 2em;
 
 }
 
@@ -29,6 +31,7 @@
     font-size: 1.25em;
     margin-left: 1em; 
     text-align: left;
+    font-weight: bold;
 }
 
 .AboutUs ul {

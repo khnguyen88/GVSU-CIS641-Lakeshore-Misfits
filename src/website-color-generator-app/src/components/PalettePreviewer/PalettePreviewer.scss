@@ -1,1 +1,15 @@
-.PalettePreviewer {}
+.PalettePreviewer {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.color-previewer-item{
+    min-height: 2em;
+    padding: .25em;
+    border: 1px solid #000;
+    padding-left: 1em;
+    width: 20em;
+}

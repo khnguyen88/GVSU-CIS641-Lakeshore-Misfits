@@ -14,7 +14,7 @@ const ActionButton = (props) => {
       onClick={() => {
         propAction();
       }}
-      style={{ backgroundColor: 'darkgrey', color: 'white' }}
+      style={{ color: 'black' }}
     >
       {name}
     </button>
