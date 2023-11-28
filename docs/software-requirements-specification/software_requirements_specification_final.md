@@ -16,7 +16,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
     FR3. The application must have a "panels" section that contains the control panel and navigation panel.
 
-    FR4. The application must have a "pages" section that load and routes to a new page when application's URL path changes.
+    FR4. The application must have a "pages" section that loads and routes to a new page when the application's URL path changes.
 
     FR5. The application shall have a two-section layout with the "panels" section displayed on the left or top of the application.
 
@@ -24,35 +24,35 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
     FR7. The control panel and navigation panel shall be accessible regardless of what page the user is on.
 
-    FR8. The application default background colors will either be white or a shade of gray with the exception of the error page.
+    FR8. The application's default background colors shall be white or a shade of gray, except for the error page.
 
 ### Color Palette
 
     FR9. The color palette shall be global within the application.
 
-    FR10. The global color palette shall have the ability to be replaced or changed by the user.
+    FR10. The global color palette shall be able to be replaced or changed by the user.
 
     FR11. The global color palette must be accessible by any components within the application.
 
-    FR12. The components and HTML elements that applies the global color palette to its style shall change when a new color palette is either generated or adjusted.
+    FR12. The components and HTML elements that apply the global color palette to its style shall change when a new color palette is generated or adjusted.
 
-    FR13. The default colors in the palette must have a hexadecimal values of "#ffffff", "#e6e6e6", "#808080", "#191919", "#000000."
+    FR13. The default colors in the palette must have hexadecimal values of "#ffffff," "#e6e6e6," "#808080," "#191919," and "#000000."
 
-    FR14. The application shall have the functionality to a palette's color saturation and brightness level.
+    FR14. The application shall have the functionality of a palette's color saturation and brightness level.
 
     FR15. The application shall be able to convert between the RGB, HSV, HSL, and HEX color values.
 
-    FR16. The application shall keep track of WCAG contrast ratings information of all possible color pair combination within the palette.
+    FR16. The application shall keep track of WCAG contrast rating information of all possible color pair combinations within the palette.
 
-    FR17. The application shall have the ability to estimate the contrast ratio and WCAG contrast ratings of a color pair on its own.
+    FR17. The application shall be able to estimate the contrast ratio and WCAG contrast ratings of a color pair independently of any API.
 
 ### Control Panel
 
-    FR18. The application's control panel shall have a button that allow users to generate a new color palette.
+    FR18. The application's control panel shall have a button that allows users to generate a new color palette.
 
-    FR19. The application's control panel shall have a button that allow users to adjust the current color palette.
+    FR19. The application's control panel shall have a button allowing users to adjust the color palette.
 
-    FR20. The application's control panel shall have a button that allow users to copy the color palette to the clipboard.
+    FR20. The application's control panel shall have a button that allows users to copy the color palette to the clipboard.
 
     FR21. The application's control panel shall have a display for the user to preview the current palette colors.
 
@@ -60,55 +60,55 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
     FR23. The color information displayed on the palette previewer shall show the color's HEX, HSL, and V information.
 
-    FR24. The control panel's buttons shall have black font color and a light cyan background color.
+    FR24. The control panel's buttons shall have a black font color and a light cyan background color.
 
-    FR25. The control panel's buttons shall change it's background color to gold when hovered over.
+    FR25. When hovered over, the control panel's buttons shall change its background color to gold.
 
-    FR26. The header and buttons in the control panel shall be centered align.
+    FR26. The header and buttons in the control panel shall be center-aligned.
 
 ### Navigation Panel
 
-    FR27. The application's navigation panel shall have a hyperlink that routes users to path of the mock site page.
+    FR27. The application's navigation panel shall have a hyperlink that routes users to the path of the Mock Site page.
 
-    FR28. The application's navigation panel shall have a hyperlink that routes users to path of the contrast checker page.
+    FR28. The application's navigation panel shall have a hyperlink that routes users to the path of the Contrast Checker page.
 
-    FR29. The application's navigation panel shall have a hyperlink that routes users to path of the about us page.
+    FR29. The application's navigation panel shall have a hyperlink that routes users to the path of the About Us page.
 
-    FR30. The navigation panel's hyperlinks shall have blue font color.
+    FR30. The navigation panel's hyperlinks shall have a blue font color.
 
-    FR31. The navigation panel's hyperlinks shall change it's background color to dark orange when hovered over.
+    FR31. The navigation panel's hyperlinks shall change its background color to dark orange when hovered over.
 
-    FR32. The header and hyperlinks in the control panel shall be centered align.
+    FR32. The header and hyperlinks in the control panel shall be center-aligned.
 
 ### Pages and Associated Components
 
-    FR33. The valid pages within the application shall all have headers.
+    FR33. The pages accessed via hyperlinks within the application shall all have headers.
 
-    FR34. The application must have a static mock site page where all elements’ background color and font styles update with the current global color palette.
+    FR34. The application must have a Mock Site page where all elements' background color and font styles update with the current global color palette.
 
-    FR35. The colors of the SVG images shown on the static mock site page shall update with the current global color palette.
+    FR35. The colors of the SVG images shown on the Mock Site page shall be updated with the current global color palette.
 
-    FR36. The application must have a contrast checker page that displays a set of cards that represents all possible combinations of color pairs in the palette.
+    FR36. The application must have a Contrast Checker page that displays cards representing all possible combinations of color pairs in the palette.
 
-    FR37. The cards shown on the contrast checker page shall display the hexadecimal values of a color pair.
+    FR37. The cards shown on the Contrast Checker page shall display the hexadecimal values of a color pair.
 
-    FR38. The cards shown on the contrast checker page shall display the contrast ratio and the WCAG's AA, AA Large, AAA, and AAA Large contrast ratings of a pair color.
+    FR38. The cards on the Contrast Checker page shall display the contrast ratio and the WCAG's AA, AA Large, AAA, and AAA Large contrast ratings of a pair color.
 
-    FR39. The cards shown on the contrast checker page shall display a green font color for contrast ratings with a "pass" value.
+    FR39. The cards on the Contrast Checker page shall display a green font color for contrast ratings with a "pass" value.
 
-    FR40. The cards shown on the contrast checker page shall display a red font color for contrast ratings with a "fail" value.
+    FR40. The cards on the Contrast Checker page shall display a red font color for contrast ratings with a "fail" value.
 
-    FR41. The cards shown on the contrast checker page shall provide a color pair previewer that set the content's background color and text color to color pair respectively.
+    FR41. The cards shown on the Contrast Checker page shall provide a color pair previewer that sets the content's background color and text color to color pair, respectively.
 
-    FR42. The color pairs used for all of the cards shown on the contrast checker page shall update with the current global color palette.
+    FR42. The color pairs used for all cards shown on the Contrast Checker page shall update with the current global color palette.
 
-    FR43. The application must have an about us page that provides information about the project and the team.
+    FR43. The application must have an About Us page that provides information about the project and the team.
 
-    FR44. The application must have an error page that indicate the user is on an invalid page or path within the application.
+    FR44. The application must have an Error page that indicates the user is on an invalid page or path within the application.
 
     FR45. The user shall be able to access the different pages within the application if they enter the correct URL path.
 
-    FR46. The user shall be be directed to the error page if they enter the invalid URL path.
+    FR46. The user shall be directed to the error page if they enter the invalid URL path.
 
 ### API Services
 
@@ -134,7 +134,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
     NFR4. The application shall still change between pages if the APIs are down.
 
-    NFR5. The application shall still work with limited functionality on mobile or tablet devices in horizontal view.
+    NFR5. The application shall still work with limited functionality on mobile or tablet devices when oriented in a horizontal view.
 
 ### Performance Requirements
 
@@ -148,7 +148,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
     NFR10. The application shall load all links within 10 seconds.
 
-    NFR11. The application shall complete all API call requests within 10 seconds, if the network and API server is functional.
+    NFR11. The application shall complete all API call requests within 10 seconds if the network and API servers are functional.
 
 ### Security Requirements
 
@@ -166,31 +166,31 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### Accessibility Requirements
 
-    NFR18. The headers in the application shall meet the WCAG AA Large contrast rating, at a minimum.
+    NFR18. The headers in the application shall meet the WCAG AA Large contrast rating at a minimum.
 
-    NFR19. The control panel's buttons shall meet the WCAG AA contrast rating, at a minimum.
+    NFR19. The control panel's buttons shall meet the WCAG AA contrast rating at a minimum.
 
-    NFR20. The navigation panel's hyperlinks shall meet the WCAG AA Large contrast rating, at a minimum.
+    NFR20. The navigation panel's hyperlinks shall meet the WCAG AA Large contrast rating at a minimum.
 
     NFR21. The control panel's previewer shall toggle between a white or black font color depending on the perceived lightness of the background color.
 
-    NFR22. The texts within the main section of the mock site page shall toggle between lightest or darkest color within the palette depending on the perceived lightness of the background color.
+    NFR22. The texts within the main section of the mock site page shall toggle between the lightest or darkest color within the palette depending on the perceived lightness of the background color.
 
-    NFR23. The headers and body texts of the mock site page shall meet the WCAG AA contrast ratings, at a minimum, when the color palette has been adjusted by the user.
+    NFR23. The headers and body texts of the mock site page shall meet the WCAG AA contrast ratings, at a minimum, when the user has adjusted the color palette.
 
 ### Usability Requirements
 
     NFR24. The application shall not require the user to perform more than one action or click to go to a new page within the application.
 
-    NFR25. The application shall not require the user to perform more than one action or click to go to generate a new color palette.
+    NFR25. The application shall not require the user to perform more than one action or click to generate a new color palette.
 
-    NFR26. The application shall not require the user to perform more than one action or click to go to adjust the current color palette.
+    NFR26. The application shall not require the user to perform more than one action or click to adjust the current color palette.
 
-    NFR27. The application shall not require the user to perform more than one action or click to go to copy the hexadecimal values of the color palette.
+    NFR27. The application shall not require the user to perform more than one action or click to copy the hexadecimal values of the color palette.
 
     NFR28. The application shall be simple and easy to use.
 
-    NFR29. The application's mock site page shall have an aesthetically pleasing layout with roughly follows the UI/UX 60-30-10 color rules.
+    NFR29. The application's mock site page shall have an aesthetically pleasing layout roughly following the UI/UX 60-30-10 color rules.
 
     NFR30. The cards displayed on the contrast checker page shall have an aesthetically pleasing layout.
 
