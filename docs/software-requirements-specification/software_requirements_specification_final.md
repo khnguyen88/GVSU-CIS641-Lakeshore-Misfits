@@ -122,7 +122,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
     FR51. The application shall alert the user if the accessibility contrast ratings of a pair color cannot be obtained through the Contrast Checker API.
 
-# Non-Functional Requirements
+## Non-Functional Requirements
 
 ### Operational Requirements
 
@@ -190,7 +190,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
     NFR28. The application shall be simple and easy to use.
 
-    NFR29. The application's mock site page shall have an aesthetically pleasing layout.
+    NFR29. The application's mock site page shall have an aesthetically pleasing layout with roughly follows the UI/UX 60-30-10 color rules.
 
     NFR30. The cards displayed on the contrast checker page shall have an aesthetically pleasing layout.
 
