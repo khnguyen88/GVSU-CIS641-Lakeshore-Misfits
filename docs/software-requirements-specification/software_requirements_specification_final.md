@@ -181,4 +181,33 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 <Describe the purpose of this section>
 
--   [I am a link](to_some_file.pdf)
+## Use Case Diagrams
+-   [Colors](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-01-Colors.pdf)
+-   [Color Pairs](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-02-Color-Pairs.pdf)
+-   [User Control Panel Interaction](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-03-User-Control-Panel-Interaction.pdf)
+-   [Page Viewing from Navigation Panel](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-04-Page-Viewing-from-Navigation-Panel.pdf)
+-   [Page Viewing from Address Bar](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-05-Page-Viewing-from-Address-Bar.pdf)
+-   [Context Hook](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-06-Context-Hook.pdf)
+-   [Color Mind API Service Color Generation](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-07-Color-Mind-API-Service-Color-Generation.pdf)
+-   [Contrast Cheker API Service](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-08-Contrast-Checker-API-Service.pdf)
+-   [Control Panel Display](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-09-Control-Panel-Display.pdf)
+-   [Contrast Checker Page](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-10-Contrast-Checker-Page.pdf)
+-   [Mock Site Page](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-11-Mock-Site-Page.pdf)
+
+## Class Diagrams 
+-   [Palette Class and Associated Class](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/class-diagrams/final-deliverables/Class-Diagrams-CD-01-Palette-Class-And-Associated-Classes.pdf)
+-   [Palette Class Descprition Methods, Preconditions, and Postconditions](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/class-diagrams/final-deliverables/Class-Diagrams-CD-01A-Palette-Class-Description-Methods-Preconditions-And-Postconditions.pdf)
+-   [TinyColor Class Description, Methods, Preconditions, and Postconditions](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/class-diagrams/final-deliverables/Class-Diagrams-CD-01B-TinyColor-Class-Description-Methods-Preconditions-And-Postconditions.pdf)
+-   [Associated Classes of Palette Descriptions, Methods, Preconditions, and Postconditions](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/class-diagrams/final-deliverables/Class-Diagrams-CD-01C-Associated-Classes-of-Palette-Descriptions-Methods-Preconditions-And-Postconditions.pdf)
+-   [API Component, Child Components, and Global Context State Classes](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/class-diagrams/final-deliverables/Class-Diagrams-CD-02-API-Component-Child-Components-and-Global-Context-State-Classes.pdf)
+
+## Acitivity Diagrams
+-   [Navigation and Page Viewing](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/activity-diagrams/final-deliverables/Activity-Diagrams-AD-01-Navigation-and-Page-Viewing.pdf)
+-   [User Control Panel Interaction](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/activity-diagrams/final-deliverables/Activity-Diagrams-AD-02-User-Control-Panel-Interaction.pdf)
+-   [Color Generation with Color Mind API Service](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/activity-diagrams/final-deliverables/Activity-Diagrams-AD-03-Color-Generation-with-Color-Mind-API-Service.pdf)
+-   [Updating Color Pairs with Contrast Checker API Service](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/activity-diagrams/final-deliverables/Activity-Diagrams-AD-04-Updating-Color-Pairs-with-Contrast-Checker-API-Service.pdf)
+-   [Palette Context and State](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/activity-diagrams/final-deliverables/Activity-Diagrams-AD-05-Palette-Context-and-State.pdf)
+-   [Palette Instantiation Process](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/activity-diagrams/final-deliverables/Activity-Diagrams-AD-06-Palette-Instantiation-Process.pdf)
+-   [Contrast Checker Page Display](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/activity-diagrams/final-deliverables/Activity-Diagrams-AD-07-Contrast-Checker-Page-Display.pdf)
+-   [Mock Site Page Display](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/activity-diagrams/final-deliverables/Activity-Diagrams-AD-08-Mock-Site-Page-Display.pdf)
+-   [Control Panel Display](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/activity-diagrams/final-deliverables/Activity-Diagrams-AD-09-Control-Panel-Display.pdf)
