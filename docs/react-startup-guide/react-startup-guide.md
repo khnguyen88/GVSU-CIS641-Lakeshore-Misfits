@@ -1,8 +1,82 @@
+# Deploying React Project onto GitHub Page
+
+-   This process assumes the users has a forked or cloned copy of the GitHub project repository
+
+-   First, turn on the GitHub repository's GitHub Pages or website
+
+    -   In the github repository, click on the **Settings** tab
+
+    -   In the Setting's **General** section, make sure the repository name and default branch is set
+
+    -   In the Setting's **Pages** section, under to **Build and Deployment - Source** header, select _Deploy From A Branch_ under the dropdown list
+
+    -   In the Setting's **Pages** section, under to **Build and Deployment - Branch** header, select our default branch under the dropdown list
+
+-   From the course root project folder, create a blank file called `.nojekyll`
+
+    -   This tells GitHub to bypass Jekyll processes and not to build the website main the README file. It will instead build it from other html files.
+
+-   From the course project root folder go into the react project directory (subdirectory):
+
+    -   `cd src/website-color-generator-app`
+
+-   In the package.json file, add or update the **homepage** attribute w/ the following setup:
+
+    -   **template** - `"homepage": "WEBSITE-ROOT-URL/REPOSITORY-DIRECTORY/SUB-DIRECTORY/FOLDER/PATH/YOU/WANT/PLACE/YOUR/APP/IN",`
+
+    -   **actual** - `"homepage": "https://khnguyen88.github.io/GVSU-CIS641-Lakeshore-Misfits/website/projects/website-color-generator-app",`
+
+-   Next, we need to adjust our Router component's **basename** attribute in the App parent componenet to reflect the sub-directory path or location of our deployed react application, or the links will direct to the root url.
+
+    -   In the react project folder, go into the `src/App.js` file, aka the Palette Model JS file
+
+    -   On line 17 of the Palette.js file, replace sub-directory paths in the **basename** attribute to your website.
+
+    -   The format should be akin to, `basename='/REPOSITORY-DIRECTORY/SUB-DIRECTORY/FOLDER/PATH/YOU/WANT/PLACE/YOUR/APP/IN`
+
+    -   Replace this old code **`colorGeneratorService = new ColorMindAPIService()`** with this new code **`colorGeneratorService = new RandomColorGeneratorService()`**
+
+-   Due to the Color Mind API Service Issue, we will have to swap out the Color Generation Service for deployment
+
+    -   In the react project folder, go into the `src/models/Palette.js` file, aka the Palette Model JS file
+
+    -   On line 23 of the Palette.js file, replace the service we are using for color generation.
+
+    -   Replace this old code **`colorGeneratorService = new ColorMindAPIService()`** with this new code **`colorGeneratorService = new RandomColorGeneratorService()`**
+
+-   To create a deployment build, in our react project directory, we simply run the react build command in the terminal:
+
+    -   Build command to run: `npm run build`
+
+-   Once the build is complete, we can see a bunch of file generated in the react project's **build** subdirectory or folder
+
+-   Copy the contents in the build folder and place the desired folder path within our github repository starting from the root level.
+
+    -   Note: A GitHub repository, it considers our root level to be `WEBSITE-ROOT-URL/REPOSITORY-DIRECTORY`, so we just need to make sure that our files are located in the subsequent subpath: `SUB-DIRECTORY/FOLDER/PATH/YOU/WANT/PLACE/YOUR/APP/IN`
+
+    -   **actual** - All files are placed under the GitHub repository's `website/projects/website-color-generator-app` subdirectory path
+
+-   Push the project code up to the GitHub repository, and wait a few minutes for the project to build and deploy your new application
+
 # Existing React Project Setup
+
+-   Fork or clone the project repository from the project GitHub repository
+
+    -   [https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits)
+
+-   For team members and collaborators looking to clone the repository
+
+    -   In the project Github repository, click on the green, **Code** button
+
+    -   Copy the HTTPS Web URL: **https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits.git**
+
+    -   Go to a project folder in your IDE and in your IDE terminal, type in: **git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY**
+
+    -   Alternatively, if you have an SSH setup, you can simply copy the SSH URL and past it into your GitHub.
 
 -   Open up the course project folder
 
--   From the VS Code terminal do the following steps below:
+-   From the VS Code (or preferred IDE) terminal do the following steps below:
 
 -   From the course project folder go into the react project directory (subdirectory):
 
