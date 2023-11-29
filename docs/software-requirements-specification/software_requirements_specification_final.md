@@ -177,6 +177,54 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 |  Page Viewing from Navigation Panel   |    Go to Contrast Cheker Page     |       …        |
 |  Page Viewing from Navigation Panel   |    Go to About Us Page     |       …        |
 |  Page Viewing from Navigation Panel   |    Click Page Links  |       …        |
+|  Page Viewing from Address Bar  |  View Page       |       …        |
+|  Page Viewing from Address Bar   |  Go to Mock Site Page |  ...        |
+|  Page Viewing from Address Bar  |  Go to Contrast Checker Page       |  ... |
+|  Page Viewing from Address Bar   |  Go to About Us Page       |  ...         |
+|  Page Viewing from Address Bar   |  Go to Error Page        |  ...           |
+|  Page Viewing from Address Bar   |  Type Page URL       |  ...        |
+|  Context Hook   |  Create Context      |       …        |
+|  Context Hook   |  Create Palette State       |       …        |
+|  Context Hook   |  Create Context Provider       |       …        |
+|  Context Hook   |  Assign State to Context Provider       |       …        |
+|  Context Hook   |  Set Palette State       |       …        |
+|  Context Hook   |  Use Context to Retrieve State       |       …        |
+|  Context Hook   |  Use Palette State       |       …        |
+|  Context Hook   |  Connect Children Components to Context Provider       |       …        |
+|  Color Mind API Service   |  Send Reponse       |       …        |
+|  Color Mind API Service   |  Send Request to API       |       …        |
+|  Color Mind API Service   |  Handle Response       |       …        |
+|  Color Mind API Service   |  Call API Service       |       …        |
+|  Color Mind API Service   |  Alert Error       |       …        |
+|  Color Mind API Service   |  Generate New Palette from Colors       |       …        |
+|  Color Mind API Service   |  Convert Response to Formatted Colors       |       …        |
+|  Contrast Checker API Service   |  Send Reponse       |       …        |
+|  Contrast Checker API Service   |  Send Request to API       |       …        |
+|  Contrast Checker API Service   |  Handle Response       |       …        |
+| Contrast Checker API Service   |  Call API Service       |       …        |
+|  Contrast Checker API Service   |  Alert Error       |       …        |
+|  Contrast Checker API Service   |  Provide Color Pairs       |       …        |
+|  Contrast Checker API Service   |  Update Color Pair Ratings       |       …        |
+|  Control Panel Display   |  Provide Palette State       |       …        |
+|  Control Panel Display   |  Provide Colors       |       …        |
+|  Control Panel Display   |  Display HTML Elements       |       …        |
+|  Control Panel Display   |  Assign Palette Method to Prop       |       …        |
+|  Control Panel Display   |  Assign Palette Method to Event Handler       |       …        |
+|  Control Panel Display   |  Set Palette in Prop       |       …        |
+|  Control Panel Display   |  Assign Palette to Prop       |       …        |
+|  Control Panel Display   |  Set Elements Styles with Colors       |       …        |
+|  Control Panel Display   |  Set Elements Text with Colors       |       …        |
+|  Contrast Checker Page   |  Provide Palette State       |       …        |
+|  Contrast Checker Page   |  Provide Color Pairs       |       …        |
+|  Contrast Checker Page   |  Display HTML Elements       |       …        |
+|  Contrast Checker Page   |  Set Elements Styles with Color Pairs       |       …        |
+|  Contrast Checker Page   |  Set Elements Text with Color Pairs       |       …        |
+|  Contrast Checker Page   |  Map Cards from Color Pairs       |       …        |
+|  Contrast Checker Page   |  Assign Color Pairs to Prop       |       …        |
+|  Mock Site Page   |  Display HTML Elements       |       …        |
+|  Mock Site Page   |  Provide Colors       |       …        |
+|  Mock Site Page   |  Provide Palette State       |       …        |
+|  Mock Site Page   |  Set Styles with Colors       |       …        |
 
 ## Class Diagram Traceability
 
