@@ -10,7 +10,8 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### Application Layout
 
-| ID | Requirement|
+| ID | Requirement |
+
 | FR1 | The application must have a control panel with actionable buttons that can manipulate or obtain information about a global color palette.|
 
 | FR2 | The application must have a navigation panel that allows access to all pages through hyperlinks.|
@@ -29,8 +30,9 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### Color Palette
 
-| ID | Requirement|
-| FR9 | The color palette shall be global within the application.|
+| ID  |                        Requirement                        |
+| :-: | :-------------------------------------------------------: |
+| FR9 | The color palette shall be global within the application. |
 
 | FR10 | The global color palette shall be able to be replaced or changed by the user.|
 
@@ -50,8 +52,9 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### Control Panel
 
-| ID | Requirement |
-| FR18 | The application's control panel shall have a button that allows users to generate a new color palette.|
+|  ID  |                                              Requirement                                               |
+| :--: | :----------------------------------------------------------------------------------------------------: |
+| FR18 | The application's control panel shall have a button that allows users to generate a new color palette. |
 
 | FR19 | The application's control panel shall have a button allowing users to adjust the color palette.|
 
@@ -71,8 +74,9 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### Navigation Panel
 
-| ID | Requirement |
-| FR27 | The application's navigation panel shall have a hyperlink that routes users to the path of the Mock Site page.|
+|  ID  |                                                  Requirement                                                   |
+| :--: | :------------------------------------------------------------------------------------------------------------: |
+| FR27 | The application's navigation panel shall have a hyperlink that routes users to the path of the Mock Site page. |
 
 | FR28 | The application's navigation panel shall have a hyperlink that routes users to the path of the Contrast Checker page.|
 
@@ -86,8 +90,9 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### Pages and Associated Components
 
-| ID | Requirement |
-| FR33 | The pages accessed via hyperlinks within the application shall all have headers.|
+|  ID  |                                   Requirement                                    |
+| :--: | :------------------------------------------------------------------------------: |
+| FR33 | The pages accessed via hyperlinks within the application shall all have headers. |
 
 | FR34 | The application must have a Mock Site page where all elements' background color and font styles update with the current global color palette.|
 
@@ -117,8 +122,9 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### API Services
 
-| ID | Requirement |
-| FR47 | The application shall generate a new palette if the Color Generator API works.|
+|  ID  |                                  Requirement                                   |
+| :--: | :----------------------------------------------------------------------------: |
+| FR47 | The application shall generate a new palette if the Color Generator API works. |
 
 | FR48 | The application shall get the contrast ratio and web accessibility ratings of a color pair if the Contrast Checker API works.|
 
@@ -132,8 +138,9 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### Operational Requirements
 
-| ID | Requirement |
-| NFR1 | The user shall be able to view the application even if the APIs are down.|
+|  ID  |                                Requirement                                |
+| :--: | :-----------------------------------------------------------------------: |
+| NFR1 | The user shall be able to view the application even if the APIs are down. |
 
 | NFR2 | The application shall still work with limited functionality even if the APIs are down.|
 
@@ -145,8 +152,9 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### Performance Requirements
 
-| ID | Requirement |
-| NFR6 | The application shall be able to load up all pages within 10 seconds.|
+|  ID  |                              Requirement                              |
+| :--: | :-------------------------------------------------------------------: |
+| NFR6 | The application shall be able to load up all pages within 10 seconds. |
 
 | NFR7 | The application shall generate a new color palette within 10 seconds.|
 
@@ -160,8 +168,9 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### Security Requirements
 
-| ID | Requirement |
-| NFR12 | The application must not request or store any personal user information.|
+|  ID   |                               Requirement                                |
+| :---: | :----------------------------------------------------------------------: |
+| NFR12 | The application must not request or store any personal user information. |
 
 | NFR13 | The application shall not share any personal user information to the API services.|
 
@@ -175,8 +184,9 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### Accessibility Requirements
 
-| ID | Requirement |
-| NFR18 | The headers in the application shall meet the WCAG AA Large contrast rating at a minimum.|
+|  ID   |                                        Requirement                                        |
+| :---: | :---------------------------------------------------------------------------------------: |
+| NFR18 | The headers in the application shall meet the WCAG AA Large contrast rating at a minimum. |
 
 | NFR19 | The control panel's buttons shall meet the WCAG AA contrast rating at a minimum.|
 
@@ -190,8 +200,9 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### Usability Requirements
 
-| ID | Requirement |
-| NFR24 | The application shall not require the user to perform more than one action or click to go to a new page within the application.|
+|  ID   |                                                           Requirement                                                           |
+| :---: | :-----------------------------------------------------------------------------------------------------------------------------: |
+| NFR24 | The application shall not require the user to perform more than one action or click to go to a new page within the application. |
 
 | NFR25 | The application shall not require the user to perform more than one action or click to generate a new color palette.|
 
