@@ -2,7 +2,7 @@
   "name": "website-color-generator-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./GVSU-CIS641-Lakeshore-Misfits/website/projects/website-color-generator-app",
+  "homepage": "https://khnguyen88.github.io/GVSU-CIS641-Lakeshore-Misfits/website/projects/website-color-generator-app/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
