@@ -27,7 +27,7 @@ export default class ColorMindApiService{
             //Updated Version, Restructured to get await return to work 
             //-------------------------------------------------------
             const res = await axios
-                .post('http://colormind.io/api/', '{"model":"ui"}');
+                .post('https://colormind.io/api/', '{"model":"ui"}');
             
             const itemJSON = res.data.result;
             const tinyColorArray = this.GetTinyColorArray(itemJSON);
