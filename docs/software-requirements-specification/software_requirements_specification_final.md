@@ -24,12 +24,12 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 ### Color Palette
 
 |  ID  |                                                                    Requirement                                                                    |
-| :--: | :-----------------------------------------------------------------------------------------------------------------------------------------------: | --- |
+| :--: | :-----------------------------------------------------------------------------------------------------------------------------------------------: |
 | FR9  |                                             The color palette shall be global within the application.                                             |
 | FR10 |                                   The global color palette shall be able to be replaced or changed by the user.                                   |
 | FR11 |                               The global color palette must be accessible by any components within the application.                               |
 | FR12 | The components and HTML elements that apply the global color palette to its style shall change when a new color palette is generated or adjusted. |
-| FR13 |            The default colors in the palette must have hexadecimal values of "#ffffff," "#e6e6e6," "#808080," "#191919," and "#000000.            | "   |
+| FR13 |           The default colors in the palette must have hexadecimal values of "#ffffff," "#e6e6e6," "#808080," "#191919," and "#000000."            |
 | FR14 |                        The application shall have the functionality of a palette's color saturation and brightness level.                         |
 | FR15 |                             The application shall be able to convert between the RGB, HSV, HSL, and HEX color values.                             |
 | FR16 |         The application shall keep track of WCAG contrast rating information of all possible color pair combinations within the palette.          |
