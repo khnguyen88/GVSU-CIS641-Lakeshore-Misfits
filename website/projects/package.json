@@ -2,7 +2,7 @@
   "name": "website-color-generator-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://khnguyen88.github.io/GVSU-CIS641-Lakeshore-Misfits/website/projects/website-color-generator-app",
+  "homepage": "./GVSU-CIS641-Lakeshore-Misfits/website/projects/website-color-generator-app",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && mv build docs",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
