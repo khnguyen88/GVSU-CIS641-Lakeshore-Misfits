@@ -180,6 +180,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 # Software Artifacts
 
 <Describe the purpose of this section>
+The purpose of this section..
 
 ## Use Case Diagrams
 -   [Colors](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-01-Colors.pdf)
