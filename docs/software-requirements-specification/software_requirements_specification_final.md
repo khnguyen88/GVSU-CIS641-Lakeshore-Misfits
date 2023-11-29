@@ -239,8 +239,51 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 | Artifact ID |    Artifact Name    | Requirement ID |
 | :---------: | :-----------------: | :------------: |
+| Navigation and Page Viewing  | Go to Mock Site |  FR1-5, NFR2   |
+| Navigation and Page Viewing  | View Mock Site  |       …        |
+| Navigation and Page Viewing  | Go to About Us Page |  FR1-5, NFR2   |
+| Navigation and Page Viewing  | View About Us Page |  FR1-5, NFR2   |
+| Navigation and Page Viewing  | Go to Error Page |  FR1-5, NFR2   |
+| Navigation and Page Viewing  | View Error Page |  FR1-5, NFR2   |
+| Navigation and Page Viewing  | Go to Contrast Checker Page |  FR1-5, NFR2   |
+| Navigation and Page Viewing  | View Contrast Checker Page |  FR1-5, NFR2   |
+| User Control Panel Interaction  | Get Palette State from Context |  FR1-5, NFR2   |
+| User Control Panel Interaction  | Press Generate Palette Button |  FR1-5, NFR2   |
+| User Control Panel Interaction  | Generate Palette |  FR1-5, NFR2   |
+| User Control Panel Interaction  | Press Adjust Palette Button |  FR1-5, NFR2   |
+| User Control Panel Interaction  | Adjust Palette |  FR1-5, NFR2   |
+| User Control Panel Interaction  | Keep Palette |  FR1-5, NFR2   |
+| User Control Panel Interaction  | Return New Palette |  FR1-5, NFR2   |
+| User Control Panel Interaction  | Set New Palette |  FR1-5, NFR2   |
+| User Control Panel Interaction  | Press Copy Palette Button |  FR1-5, NFR2   |
+| User Control Panel Interaction  | Copy Palette |  FR1-5, NFR2   |
+| User Control Panel Interaction  | Do Not Copy Palette |  FR1-5, NFR2   |
+| Color Generation with Color Mind API Service  | Call Color Mind API Service |  FR1-5, NFR2   |
+| Color Generation with Color Mind API Service  | Make API Request to Color Mind API |  FR1-5, NFR2   |
+| Color Generation with Color Mind API Service  | Handle Response |  FR1-5, NFR2   |
+| Color Generation with Color Mind API Service  | Convert Response to Formatted Colors |  FR1-5, NFR2   |
+| Color Generation with Color Mind API Service  | Return Colors |  FR1-5, NFR2   |
+| Color Generation with Color Mind API Service  | Log Error |  FR1-5, NFR2   |
+| Color Generation with Color Mind API Service  | Return Null |  FR1-5, NFR2   |
+| Color Generation with Color Mind API Service  | Alert Error |  FR1-5, NFR2   |
+| Color Generation with Color Mind API Service  | Convert Response to Formatted Colors |  FR1-5, NFR2   |
+| Color Generation with Color Mind API Service  | Generate New Palette From Colors |  FR1-5, NFR2   |
+| Color Generation with Color Mind API Service  | Return New Palette |  FR1-5, NFR2   |
 | <filename>  | Handle Player Input |  FR1-5, NFR2   |
-|      …      |          …          |       …        |
+| <filename>  | Handle Player Input |  FR1-5, NFR2   |
+| <filename>  | Handle Player Input |  FR1-5, NFR2   |
+| <filename>  | Handle Player Input |  FR1-5, NFR2   |
+| <filename>  | Handle Player Input |  FR1-5, NFR2   |
+| <filename>  | Handle Player Input |  FR1-5, NFR2   |
+| <filename>  | Handle Player Input |  FR1-5, NFR2   |
+| <filename>  | Handle Player Input |  FR1-5, NFR2   |
+| <filename>  | Handle Player Input |  FR1-5, NFR2   |
+| <filename>  | Handle Player Input |  FR1-5, NFR2   |
+| <filename>  | Handle Player Input |  FR1-5, NFR2   |
+| <filename>  | Handle Player Input |  FR1-5, NFR2   |
+| <filename>  | Handle Player Input |  FR1-5, NFR2   |
+| <filename>  | Handle Player Input |  FR1-5, NFR2   |
+| <filename>  | Handle Player Input |  FR1-5, NFR2   |
 
 # Software Artifacts
 
