@@ -25,10 +25,9 @@ export default class ColorMindApiService{
     async GetGeneratedColors() {
         try {
             //Updated Version, Restructured to get await return to work 
-            //Solution to issue: https://stackoverflow.com/questions/18251128/why-am-i-suddenly-getting-a-blocked-loading-mixed-active-content-issue-in-fire (removed the http, and let the browser auto-detect)
             //-------------------------------------------------------
             const res = await axios
-                .post('//colormind.io/api/', '{"model":"ui"}');
+                .post('http://colormind.io/api/', '{"model":"ui"}');
             
             const itemJSON = res.data.result;
             const tinyColorArray = this.GetTinyColorArray(itemJSON);
