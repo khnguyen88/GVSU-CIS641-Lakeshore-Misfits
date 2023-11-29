@@ -158,8 +158,25 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 | Artifact ID | Artifact Name | Requirement ID |
 | :---------: | :-----------: | :------------: |
-|  UseCase1   |  Move Player  |      FR5       |
-|      …      |       …       |       …        |
+|  Colors   |  Generate Colors  |      FR5       |
+|  Colors   |  Set Colors       |       …        |
+|  Colors   |  Receive Colors       |       …        |
+|  Colors   |  Adjust Colors       |       …        |
+|  Colors   |  Convert Color Models       |       …        |
+|  Colors   |  Format Colors       |       …        |
+|  Color Pairs |  Get Color Pair Contrast Ratings       |       …        |
+|  Color Pairs |  Create Color Pairs      |       …        |
+|  Color Pairs |  Update Color Pair Contrast Ratings      |       …        |
+|  User Control Panel Interaction   |   Click Generate Palette Button |       …        |
+|  User Control Panel Interaction   |   Click Adjust Palette Button |       …        |
+|  User Control Panel Interaction   |   Click Copy Palette Button |       …        |
+|  User Control Panel Interaction   |   Provide Palette State   |       …        |
+|  User Control Panel Interaction   |   Set Palette     |       …        |
+|  Page Viewing from Navigation Panel   |    View Page  |       …        |
+|  Page Viewing from Navigation Panel   |    Go to Mock Site Page     |       …        |
+|  Page Viewing from Navigation Panel   |    Go to Contrast Cheker Page     |       …        |
+|  Page Viewing from Navigation Panel   |    Go to About Us Page     |       …        |
+|  Page Viewing from Navigation Panel   |    Click Page Links  |       …        |
 
 ## Class Diagram Traceability
 
