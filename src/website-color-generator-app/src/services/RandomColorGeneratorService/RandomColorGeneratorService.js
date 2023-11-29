@@ -21,7 +21,7 @@ export default class RandomColorGeneratorService {
         newColor.complement().spin(-30).saturate(-30).brighten(20).toRgbString(),
         tetradColor[1],
         tinycolor(tetradColor[2]).saturate(10).saturate(-10).brighten(-20).toRgbString(),
-        tinycolor(tetradColor[3]).saturate(10).brighten(-35).toRgbString(),
+        tinycolor(tetradColor[3]).saturate(10).brighten(-25).toRgbString(),
         ];
 
         return newColors;
