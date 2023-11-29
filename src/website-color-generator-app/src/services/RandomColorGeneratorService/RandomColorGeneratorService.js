@@ -17,11 +17,11 @@ export default class RandomColorGeneratorService {
         });
 
         let newColors = [
-        newColor.toRgbString(),
-        newColor.complement().spin(-30).toRgbString(),
+        tinycolor(newColor.toRgbString()).saturate(-50).brighten(40).toRgbString(),
+        newColor.complement().spin(-30).saturate(-30).brighten(20).toRgbString(),
         tetradColor[1],
-        tetradColor[2],
-        tetradColor[3],
+        tinycolor(tetradColor[2]).saturate(10).saturate(-10).brighten(-20).toRgbString(),
+        tinycolor(tetradColor[3]).saturate(10).brighten(-35).toRgbString(),
         ];
 
         return newColors;
