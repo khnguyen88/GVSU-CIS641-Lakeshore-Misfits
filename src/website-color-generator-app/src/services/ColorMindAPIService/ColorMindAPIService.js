@@ -25,9 +25,10 @@ export default class ColorMindApiService{
     async GetGeneratedColors() {
         try {
             //Updated Version, Restructured to get await return to work 
+            //Note: https://stackoverflow.com/questions/50444571/cant-perform-get-request-with-axios-and-reactjs (solution for cross-domain issue for making api request to an HTTP path)
             //-------------------------------------------------------
             const res = await axios
-                .post('https://colormind.io/api/', '{"model":"ui"}');
+                .post('http://colormind.io/api/', '{"model":"ui"}', { crossDomain: true });
             
             const itemJSON = res.data.result;
             const tinyColorArray = this.GetTinyColorArray(itemJSON);
