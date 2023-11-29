@@ -9,7 +9,7 @@ export default class RandomColorGeneratorService {
         return Math.floor(Math.random() * 255);
     };
 
-    GetGeneratedHarmonizedColors() {
+    GetGeneratedColors() {
         let newColor = tinycolor(`rgb (${this.rngRGB()}, ${this.rngRGB()}, ${this.rngRGB()}`);
 
         let tetradColor = newColor.tetrad().map((c) => {
@@ -27,7 +27,7 @@ export default class RandomColorGeneratorService {
         return newColors;
     }
 
-    GetGeneratedColors() {
+    GetRandomGeneratedColors() {
         let newColors = [
             tinycolor(`rgb (${this.rngRGB()}, ${this.rngRGB()}, ${this.rngRGB()}`),
             tinycolor(`rgb (${this.rngRGB()}, ${this.rngRGB()}, ${this.rngRGB()}`),
