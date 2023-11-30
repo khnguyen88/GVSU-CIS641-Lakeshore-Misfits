@@ -70,9 +70,9 @@
 
     -   In the project GitHub repository, click on the green, **Code** button
 
-    -   Copy the HTTPS Web URL: `**https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits.git**`
+    -   Copy the HTTPS Web URL: `https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits.git`
 
-    -   Go to a project folder in your IDE, and in your IDE terminal, type in `**git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY**`
+    -   Go to a project folder in your IDE, and in your IDE terminal, type in `git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
 
     -   Alternatively, if you have an SSH setup, copy and paste the SSH URL into your GitHub.
 
