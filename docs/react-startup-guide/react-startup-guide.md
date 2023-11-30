@@ -4,7 +4,6 @@
 
 2.  First, turn on the GitHub repository's GitHub Pages or website
 
-
     -   In the GitHub repository, click on the **Settings** tab
 
     -   In the Setting's **General** section, make sure the repository name and default branch is set
@@ -15,23 +14,19 @@
 
 3.  From the project root folder, create a blank file called `.nojekyll`
 
-
     -   This tells GitHub to bypass Jekyll processes and not build the website from the main README file. It will instead make it from other HTML files.
 
 4.  From the project root folder , go into the React project directory (subdirectory):
 
-
     -   `cd src/website-color-generator-app`
 
 5.  In the package.json file, add or update the **homepage** attribute w/ the following setup:
-
 
     -   **template** - `"homepage": "WEBSITE-ROOT-URL/REPOSITORY-DIRECTORY/SUB-DIRECTORY/FOLDER/PATH/YOU/WANT/PLACE/YOUR/APP/IN",`
 
     -   **actual** - `"homepage": "https://khnguyen88.github.io/GVSU-CIS641-Lakeshore-Misfits/website/projects/website-color-generator-app",`
 
 6.  Next, the Router component's **basename** attribute in the App parent component needs to be updated to reflect the sub-directory path or location of our deployed React application, or the links will be directed to the root URL.
-
 
     -   In the React project folder, go into the `src/App.js` file, aka the Palette Model JS file
 
@@ -43,7 +38,6 @@
 
 7.  Due to the Color Mind API Service Issue, we will have to swap out the Color Generation Service for deployment
 
-
     -   In the React project folder, go into the `src/models/Palette.js` file, aka the Palette Model JS file
 
     -   On line 23 of the Palette.js file, replace the service we use for color generation.
@@ -52,37 +46,33 @@
 
 8.  To create a deployment build in our React project directory, we simply run the React build command in the terminal:
 
-
     -   Build command to run: `npm run build`
 
     -   Once the build is complete, there will be a bunch of files generated in the React project's **build** subdirectory or folder.
 
 9.  Copy the contents in the build folder and place the desired folder path within our GitHub repository starting from the root level.
 
-
     -   Note: A GitHub repository, considers our root level to be `WEBSITE-ROOT-URL/REPOSITORY-DIRECTORY`, so we need to make sure that our files are located in the subsequent subpath: `SUB-DIRECTORY/FOLDER/PATH/YOU/WANT/PLACE/YOUR/APP/IN`
 
     -   **actual** - All files are placed under the GitHub repository's `website/projects/website-color-generator-app` subdirectory path
 
-9.  Push the project code up to the GitHub repository, and wait a few minutes for the project to build and deploy your new application
+10. Push the project code up to the GitHub repository, and wait a few minutes for the project to build and deploy your new application
 
-10. Go to the website URL defined in the **homepage** attribute in the package.json file.
+11. Go to the website URL defined in the **homepage** attribute in the package.json file.
 
 # Existing React Project Setup
 
 1.  Fork or clone the project repository from the project GitHub repository
 
-
     -   [https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits)
 
 2.  For team members and collaborators looking to clone the repository
 
-
     -   In the project GitHub repository, click on the green, **Code** button
 
-    -   Copy the HTTPS Web URL: **https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits.git**
+    -   Copy the HTTPS Web URL: `**https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits.git**`
 
-    -   Go to a project folder in your IDE, and in your IDE terminal, type in **git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY**
+    -   Go to a project folder in your IDE, and in your IDE terminal, type in `**git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY**`
 
     -   Alternatively, if you have an SSH setup, copy and paste the SSH URL into your GitHub.
 
@@ -92,21 +82,17 @@
 
 5.  From the project root folder, go into the React project directory (subdirectory):
 
-
     -   `cd src/website-color-generator-app`
 
 6.  Install all dependencies
-
 
     -   `npm install`
 
 7.  If the previous steps does not work, try to enter this command before trying it again:
 
-
     -   `$env:NODE_OPTIONS='--openssl-legacy-provider'`
 
 8.  If you need to create a new component, go to the React project directory in the terminal, and use the follow commands:
-
 
     -   General Components: `npx generate-react-cli component <FileName>`
     -   Page Components: `npx generate-react-cli component <FileName> --type=page`
@@ -116,11 +102,9 @@
 
 9.  To Start The Application Locally:
 
-
-    -  `npm start`
+    -   `npm start`
 
 10. To quit the application while it's running:
-
 
     -   `CTRL+C`
 
