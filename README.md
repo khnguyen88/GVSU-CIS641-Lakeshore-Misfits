@@ -8,6 +8,8 @@ The website color generator is a lightweight web application and tool intended t
 -   [Selena Cade (Note Taker, Developer, etc. )](https://github.com/selenacade/CIS641-HW2-Cade)
 -   [Munmi Thakuria (Note Taker, Developer, etc.)](https://github.com/munmithakuria/CIS641-HW2-Thakuria)
 
+## Team and Project Websites
+
 ### Lakeshore Misfits' Team Website
 
 -   [Project Team Website](https://khnguyen88.github.io/GVSU-CIS641-Lakeshore-Misfits/website/index.html)
