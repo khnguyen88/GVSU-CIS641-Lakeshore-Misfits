@@ -148,11 +148,17 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 # Change management plan
 
-<Description of what this section is>
+This section is about how can we ensure if the application will be compatible with the users ecosystem and how we will handle any issues.
+-	How will you train people to use it?
+    - We will set up some training session with teams who will be using our application, and we can show them the demo of how the application works. We will also record and document the session, so that any new user in the future can refer easily.
+-	How will you ensure it integrates within their ecosystem / software?
+    - We will work on compatibilty testing, and maintaining proper industry standard. We will work on future releases which also helps in enhancing the compatibity with the ecosystem. We will also setup meetings with the teams who will also monitor and check for any issues after the integration.
+-	How will you ensure that it any discovered issues are resolved?
+    - We will ensure by tracking of the encountered bugs and to document the resolution steps, so that, if in future, the same bug arises, we can resolve it. Also, we will provide future updates to fix the bugs in the newer versions. We will provide them  the techincal support with respect to any issues with the application.
 
 # Traceability links
 
-<Description of this section>
+In this section, you will find a traceability matrix for our use case diagrams, class diagrams, and activity diagrams. The use case diagram traceability consists of the name of the use case diagram, the use case, and which requirement it is connected to. A similar process is created for both the class diagrams and activity diagrams. The class diagram traceability includes the class diagram and the requirement it is connected to. Lastly, the activity diagram traceability includes the activity diagram name, the present activity, and the requirement ID that is connected to it. 
 
 ## Use Case Diagram Traceability
 
