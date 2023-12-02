@@ -152,7 +152,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 # Traceability links
 
-<Description of this section>
+In this section, you will find a traceability matrix for our use case diagrams, class diagrams, and activity diagrams. The use case diagram traceability consists of the name of the use case diagram, the use case, and which requirement it is connected to. A similar process is created for both the class diagrams and activity diagrams. The class diagram traceability includes the class diagram and the requirement it is connected to. Lastly, the activity diagram traceability includes the activity diagram name, the present activity, and the requirement ID that is connected to it. 
 
 ## Use Case Diagram Traceability
 
