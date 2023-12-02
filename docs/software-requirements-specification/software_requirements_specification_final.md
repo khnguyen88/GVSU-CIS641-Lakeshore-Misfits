@@ -152,7 +152,7 @@ This section is about how can we ensure if the application will be compatible wi
 -	How will you train people to use it?
     - We will set up some training session with teams who will be using our application, and we can show them the demo of how the application works. We will also record and document the session, so that any new user in the future can refer easily.
 -	How will you ensure it integrates within their ecosystem / software?
-    - As this application is OS independent, it should not have any hard time in integration. We will work on compatibilty testing, and maintaining proper industry standard. We will work on future releases which also helps in enhancing the compatibity with the ecosystem.
+    - We will work on compatibilty testing, and maintaining proper industry standard. We will work on future releases which also helps in enhancing the compatibity with the ecosystem. We will also setup meetings with the teams who will also monitor and check for any issues after the integration.
 -	How will you ensure that it any discovered issues are resolved?
     - We will ensure by tracking of the encountered bugs and to document the resolution steps, so that, if in future, the same bug arises, we can resolve it. Also, we will provide future updates to fix the bugs in the newer versions. We will provide them  the techincal support with respect to any issues with the application.
 
