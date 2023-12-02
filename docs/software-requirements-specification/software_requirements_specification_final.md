@@ -239,14 +239,14 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 | Artifact ID |    Artifact Name    | Requirement ID |
 | :---------: | :-----------------: | :------------: |
-| Navigation and Page Viewing  | Go to Mock Site |  FR1-5, NFR2   |
+| Navigation and Page Viewing  | Go to Mock Site |  FR27   |
 | Navigation and Page Viewing  | View Mock Site  |       …        |
-| Navigation and Page Viewing  | Go to About Us Page |  FR1-5, NFR2   |
-| Navigation and Page Viewing  | View About Us Page |  FR1-5, NFR2   |
-| Navigation and Page Viewing  | Go to Error Page |  FR1-5, NFR2   |
-| Navigation and Page Viewing  | View Error Page |  FR1-5, NFR2   |
-| Navigation and Page Viewing  | Go to Contrast Checker Page |  FR1-5, NFR2   |
-| Navigation and Page Viewing  | View Contrast Checker Page |  FR1-5, NFR2   |
+| Navigation and Page Viewing  | Go to About Us Page |  FR29   |
+| Navigation and Page Viewing  | View About Us Page |    |
+| Navigation and Page Viewing  | Go to Error Page |     |
+| Navigation and Page Viewing  | View Error Page |     |
+| Navigation and Page Viewing  | Go to Contrast Checker Page |  FR28   |
+| Navigation and Page Viewing  | View Contrast Checker Page |     |
 | User Control Panel Interaction  | Get Palette State from Context |  FR1-5, NFR2   |
 | User Control Panel Interaction  | Press Generate Palette Button |  FR1-5, NFR2   |
 | User Control Panel Interaction  | Generate Palette |  FR1-5, NFR2   |
