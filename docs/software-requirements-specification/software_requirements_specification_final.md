@@ -158,31 +158,31 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 | Artifact ID | Artifact Name | Requirement ID |
 | :---------: | :-----------: | :------------: |
-|  Colors   |  Generate Colors  |      FR5       |
-|  Colors   |  Set Colors       |       …        |
-|  Colors   |  Receive Colors       |       …        |
-|  Colors   |  Adjust Colors       |       …        |
-|  Colors   |  Convert Color Models       |       …        |
-|  Colors   |  Format Colors       |       …        |
+|  Colors   |  Generate Colors  |      FR5,FR12       |
+|  Colors   |  Set Colors       |      FR10        |
+|  Colors   |  Receive Colors       |      FR9        |
+|  Colors   |  Adjust Colors       |       FR10, FR12       |
+|  Colors   |  Convert Color Models       |      FR15        |
+|  Colors   |  Format Colors       |      FR13        |
 |  Color Pairs |  Get Color Pair Contrast Ratings       |       …        |
 |  Color Pairs |  Create Color Pairs      |       …        |
 |  Color Pairs |  Update Color Pair Contrast Ratings      |       …        |
-|  User Control Panel Interaction   |   Click Generate Palette Button |       …        |
-|  User Control Panel Interaction   |   Click Adjust Palette Button |       …        |
-|  User Control Panel Interaction   |   Click Copy Palette Button |       …        |
-|  User Control Panel Interaction   |   Provide Palette State   |       …        |
-|  User Control Panel Interaction   |   Set Palette     |       …        |
+|  User Control Panel Interaction   |   Click Generate Palette Button |       FR18    |
+|  User Control Panel Interaction   |   Click Adjust Palette Button |       FR19       |
+|  User Control Panel Interaction   |   Click Copy Palette Button |       FR20       |
+|  User Control Panel Interaction   |   Provide Palette State   |      FR21        |
+|  User Control Panel Interaction   |   Set Palette     |      FR23        |
 |  Page Viewing from Navigation Panel   |    View Page  |       …        |
-|  Page Viewing from Navigation Panel   |    Go to Mock Site Page     |       …        |
-|  Page Viewing from Navigation Panel   |    Go to Contrast Cheker Page     |       …        |
-|  Page Viewing from Navigation Panel   |    Go to About Us Page     |       …        |
-|  Page Viewing from Navigation Panel   |    Click Page Links  |       …        |
+|  Page Viewing from Navigation Panel   |    Go to Mock Site Page     |      FR27        |
+|  Page Viewing from Navigation Panel   |    Go to Contrast Cheker Page     |      FR28        |
+|  Page Viewing from Navigation Panel   |    Go to About Us Page     |      FR29        |
+|  Page Viewing from Navigation Panel   |    Click Page Links  |       FR30, FR31        |
 |  Page Viewing from Address Bar  |  View Page       |       …        |
-|  Page Viewing from Address Bar   |  Go to Mock Site Page |  ...        |
-|  Page Viewing from Address Bar  |  Go to Contrast Checker Page       |  ... |
-|  Page Viewing from Address Bar   |  Go to About Us Page       |  ...         |
-|  Page Viewing from Address Bar   |  Go to Error Page        |  ...           |
-|  Page Viewing from Address Bar   |  Type Page URL       |  ...        |
+|  Page Viewing from Address Bar   |  Go to Mock Site Page |  FR34, FR35        |
+|  Page Viewing from Address Bar  |  Go to Contrast Checker Page       |  FR41, FR42 |
+|  Page Viewing from Address Bar   |  Go to About Us Page       |  FR43         |
+|  Page Viewing from Address Bar   |  Go to Error Page        |  FR44           |
+|  Page Viewing from Address Bar   |  Type Page URL       |  FR45        |
 |  Context Hook   |  Create Context      |       …        |
 |  Context Hook   |  Create Palette State       |       …        |
 |  Context Hook   |  Create Context Provider       |       …        |
@@ -215,13 +215,13 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 |  Control Panel Display   |  Set Elements Styles with Colors       |       …        |
 |  Control Panel Display   |  Set Elements Text with Colors       |       …        |
 |  Contrast Checker Page   |  Provide Palette State       |       …        |
-|  Contrast Checker Page   |  Provide Color Pairs       |       …        |
+|  Contrast Checker Page   |  Provide Color Pairs       |      FR36, FR37        |
 |  Contrast Checker Page   |  Display HTML Elements       |       …        |
 |  Contrast Checker Page   |  Set Elements Styles with Color Pairs       |       …        |
-|  Contrast Checker Page   |  Set Elements Text with Color Pairs       |       …        |
-|  Contrast Checker Page   |  Map Cards from Color Pairs       |       …        |
+|  Contrast Checker Page   |  Set Elements Text with Color Pairs       |      FR39, FR40, FR41        |
+|  Contrast Checker Page   |  Map Cards from Color Pairs       |      FR36        |
 |  Contrast Checker Page   |  Assign Color Pairs to Prop       |       …        |
-|  Mock Site Page   |  Display HTML Elements       |       …        |
+|  Mock Site Page   |  Display HTML Elements       |      FR34        |
 |  Mock Site Page   |  Provide Colors       |       …        |
 |  Mock Site Page   |  Provide Palette State       |       …        |
 |  Mock Site Page   |  Set Styles with Colors       |       …        |
