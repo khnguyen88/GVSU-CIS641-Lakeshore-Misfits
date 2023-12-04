@@ -44,7 +44,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 | FR17C |                                        The colors not of the standard class type shall be formatted to the standard class type.                                        |
 | FR17D |                                                         The global palette shall be able to call API services.                                                         |
 | FR17E |                   The global palette shall be able to generate (or create) and return a new palette based on the colors received by an API service.                    |
-| FR17F |                                   The global palette shall be able to create and return a new palette based on its adjusted colors.                                    |
+| FR17F |                               The global palette shall be able adjust its colors and return a new palette based on the adjusted colors.                                |
 | FR17G | All components shall be able to pass the global palette, the palette's properties, or palette's methods to their child components through the child component's props. |
 
 ### Control Panel
