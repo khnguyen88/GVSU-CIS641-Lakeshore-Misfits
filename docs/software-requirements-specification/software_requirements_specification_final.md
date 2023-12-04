@@ -25,9 +25,13 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 |  ID   |                                                                    Requirement                                                                    |
 | :---: | :-----------------------------------------------------------------------------------------------------------------------------------------------: |
-|  FR9  |                                 The color palette shall be global state within the application by way of context.                                 |
+|  FR9  |                    The color palette shall be a global state within the application through the context and context provider.                     |
+| FR9A  |                 The color palette state, context, and context provider shall be created and contained within the palette context.                 |
+| FR9B  |                                     The global color palette state shall be assigned to the context provider.                                     |
+| FR9C  | In the application, the top-level parent component shall connect the child components to the context provider to access the global color palette. |
 | FR10  |                             The global color palette state shall be able to be replaced, set, or updated by the user.                             |
-| FR11  |                               The global color palette must be accessible by any components within the application.                               |
+| FR11  |                The global color palette must be accessible by any components within the application by using the context provided.                |
+| FR11A |                  Any components within the application shall be able to utilize data provided by the global color palette state.                  |
 | FR12  | The components and HTML elements that apply the global color palette to its style shall change when a new color palette is generated or adjusted. |
 | FR13  |           The default colors in the palette must have hexadecimal values of "#ffffff," "#e6e6e6," "#808080," "#191919," and "#000000."            |
 | FR14  |                        The application shall have the functionality of a palette's color saturation and brightness level.                         |
