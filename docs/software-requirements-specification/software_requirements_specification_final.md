@@ -23,69 +23,79 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### Color Palette
 
-|  ID   |                                                                    Requirement                                                                    |
-| :---: | :-----------------------------------------------------------------------------------------------------------------------------------------------: |
-|  FR9  |                    The color palette shall be a global state within the application through the context and context provider.                     |
-| FR9A  |                 The color palette state, context, and context provider shall be created and contained within the palette context.                 |
-| FR9B  |                                     The global color palette state shall be assigned to the context provider.                                     |
-| FR9C  | In the application, the top-level parent component shall connect the child components to the context provider to access the global color palette. |
-| FR10  |                             The global color palette state shall be able to be replaced, set, or updated by the user.                             |
-| FR11  |                The global color palette must be accessible by any components within the application by using the context provided.                |
-| FR11A |                  Any components within the application shall be able to utilize data provided by the global color palette state.                  |
-| FR12  | The components and HTML elements that apply the global color palette to its style shall change when a new color palette is generated or adjusted. |
-| FR13  |           The default colors in the palette must have hexadecimal values of "#ffffff," "#e6e6e6," "#808080," "#191919," and "#000000."            |
-| FR14  |                        The application shall have the functionality of a palette's color saturation and brightness level.                         |
-| FR15  |                             The application shall be able to convert between the RGB, HSV, HSL, and HEX color values.                             |
-| FR16  |         The application shall keep track of WCAG contrast rating information of all possible color pair combinations within the palette.          |
-| FR16A |              When the global color palette state is set with a new palette, color pairs shall be updated to reflect the new colors.               |
-| FR17  |         The application shall be able to estimate the contrast ratio and WCAG contrast ratings of a color pair independently of any API.          |
-| FR17A |     When the global color palette state is set with a new palette, the WCAG contrast ratings shall be updated to reflect the new color pairs.     |
-| FR17B |                                The colors received and used in this application shall be of a standard class type.                                |
-| FR17C |                             The colors not of the standard class type shall be formatted to the standard class type.                              |
+|  ID   |                                                                              Requirement                                                                               |
+| :---: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|  FR9  |                               The color palette shall be a global state within the application through the context and context provider.                               |
+| FR9A  |                           The color palette state, context, and context provider shall be created and contained within the palette context.                            |
+| FR9B  |                                               The global color palette state shall be assigned to the context provider.                                                |
+| FR9C  |           In the application, the top-level parent component shall connect the child components to the context provider to access the global color palette.            |
+| FR10  |                                       The global color palette state shall be able to be replaced, set, or updated by the user.                                        |
+| FR11  |                          The global color palette must be accessible by any components within the application by using the context provided.                           |
+| FR11A |                            Any components within the application shall be able to utilize data provided by the global color palette state.                             |
+| FR12  |           The components and HTML elements that apply the global color palette to its style shall change when a new color palette is generated or adjusted.            |
+| FR13  |                      The default colors in the palette must have hexadecimal values of "#ffffff," "#e6e6e6," "#808080," "#191919," and "#000000."                      |
+| FR14  |                                   The application shall have the functionality of a palette's color saturation and brightness level.                                   |
+| FR15  |                                       The application shall be able to convert between the RGB, HSV, HSL, and HEX color values.                                        |
+| FR16  |                    The application shall keep track of WCAG contrast rating information of all possible color pair combinations within the palette.                    |
+| FR16A |                         When the global color palette state is set with a new palette, color pairs shall be updated to reflect the new colors.                         |
+| FR17  |                    The application shall be able to estimate the contrast ratio and WCAG contrast ratings of a color pair independently of any API.                    |
+| FR17A |               When the global color palette state is set with a new palette, the WCAG contrast ratings shall be updated to reflect the new color pairs.                |
+| FR17B |                                          The colors received and used in this application shall be of a standard class type.                                           |
+| FR17C |                                        The colors not of the standard class type shall be formatted to the standard class type.                                        |
+| FR17D |                                                         The global palette shall be able to call API services.                                                         |
+| FR17E |                   The global palette shall be able to generate (or create) and return a new palette based on the colors received by an API service.                    |
+| FR17F |                                   The global palette shall be able to create and return a new palette based on its adjusted colors.                                    |
+| FR17G | All components shall be able to pass the global palette, the palette's properties, or palette's methods to their child components through the child component's props. |
 
 ### Control Panel
 
-|  ID  |                                                    Requirement                                                    |
-| :--: | :---------------------------------------------------------------------------------------------------------------: |
-| FR18 |      The application's control panel shall have a button that allows users to generate a new color palette.       |
-| FR19 |          The application's control panel shall have a button allowing users to adjust the color palette.          |
-| FR20 | The application's control panel shall have a button that allows users to copy the color palette to the clipboard. |
-| FR21 |     The application's control panel shall have a display for the user to preview the current palette colors.      |
-| FR22 |      The control panel's palette previewer shall display color information of the colors within the palette.      |
-| FR23 |   The color information displayed on the palette previewer shall show the color's HEX, HSL, and V information.    |
-| FR24 |           The control panel's buttons shall have a black font color and a light cyan background color.            |
-| FR25 |             When hovered over, the control panel's buttons shall change its background color to gold.             |
-| FR26 |                       The header and buttons in the control panel shall be center-aligned.                        |
+|  ID   |                                                    Requirement                                                    |
+| :---: | :---------------------------------------------------------------------------------------------------------------: |
+| FR18  |      The application's control panel shall have a button that allows users to generate a new color palette.       |
+| FR19  |          The application's control panel shall have a button allowing users to adjust the color palette.          |
+| FR20  | The application's control panel shall have a button that allows users to copy the color palette to the clipboard. |
+| FR21  |     The application's control panel shall have a display for the user to preview the current palette colors.      |
+| FR22  |      The control panel's palette previewer shall display color information of the colors within the palette.      |
+| FR23  |   The color information displayed on the palette previewer shall show the color's HEX, HSL, and V information.    |
+| FR24  |           The control panel's buttons shall have a black font color and a light cyan background color.            |
+| FR24A |             When hovered over, the control panel's buttons shall change its background color to gold.             |
+| FR25  |                       The header and buttons in the control panel shall be center-aligned.                        |
+| FR26  |                    The control panel's button shall be able used the global palette's methods.                    |
+| FR26A |                The control panel's buttons shall assign the palette method it needs to its props.                 |
+| FR26B |                The control panel's buttons shall assign the palette method to it's event handler.                 |
+| FR26C |                The control panel shall display child components and all associated HTML elements.                 |
 
 ### Navigation Panel
 
-|  ID  |                                                      Requirement                                                      |
-| :--: | :-------------------------------------------------------------------------------------------------------------------: |
-| FR27 |    The application's navigation panel shall have a hyperlink that routes users to the path of the Mock Site page.     |
-| FR28 | The application's navigation panel shall have a hyperlink that routes users to the path of the Contrast Checker page. |
-| FR29 |     The application's navigation panel shall have a hyperlink that routes users to the path of the About Us page.     |
-| FR30 |                            The navigation panel's hyperlinks shall have a blue font color.                            |
-| FR31 |         The navigation panel's hyperlinks shall change its background color to dark orange when hovered over.         |
-| FR32 |                        The header and hyperlinks in the control panel shall be center-aligned.                        |
+|  ID   |                                                      Requirement                                                      |
+| :---: | :-------------------------------------------------------------------------------------------------------------------: |
+| FR27  |    The application's navigation panel shall have a hyperlink that routes users to the path of the Mock Site page.     |
+| FR28  | The application's navigation panel shall have a hyperlink that routes users to the path of the Contrast Checker page. |
+| FR29  |     The application's navigation panel shall have a hyperlink that routes users to the path of the About Us page.     |
+| FR30  |                            The navigation panel's hyperlinks shall have a blue font color.                            |
+| FR31  |         The navigation panel's hyperlinks shall change its background color to dark orange when hovered over.         |
+| FR32  |                        The header and hyperlinks in the control panel shall be center-aligned.                        |
+| FR32B |                 The navigation panel shall display child components and all associated HTML elements.                 |
 
 ### Pages and Associated Components
 
-|  ID  |                                                                              Requirement                                                                               |
-| :--: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| FR33 |                                            The pages accessed via hyperlinks within the application shall all have headers.                                            |
-| FR34 |             The application must have a Mock Site page where all elements' background color and font styles update with the current global color palette.              |
-| FR35 |                            The colors of the SVG images shown on the Mock Site page shall be updated with the current global color palette.                            |
-| FR36 |                   The application must have a Contrast Checker page that displays cards representing all combinations of color pairs in the palette.                   |
-| FR37 |                                   The cards shown on the Contrast Checker page shall display the hexadecimal values of a color pair.                                   |
-| FR38 |       The cards on the Contrast Checker page shall display the contrast ratio and the WCAG's AA, AA Large, AAA, and AAA Large contrast ratings of a pair color.        |
-| FR39 |                           The cards on the Contrast Checker page shall display a green font color for contrast ratings with a "pass" value.                            |
-| FR40 |                            The cards on the Contrast Checker page shall display a red font color for contrast ratings with a "fail" value.                             |
-| FR41 | The cards shown on the Contrast Checker page shall provide a color pair previewer that sets the content's background color and text color to color pair, respectively. |
-| FR42 |                       The color pairs used for all cards shown on the Contrast Checker page shall update with the current global color palette.                        |
-| FR43 |                                  The application must have an About Us page that provides information about the project and the team.                                  |
-| FR44 |                         The application must have an Error page that indicates the user is on an invalid page or path within the application.                          |
-| FR45 |                            The user shall be able to access the different pages within the application if they enter the correct URL path.                             |
-| FR46 |                                            The user shall be directed to the error page if they enter the invalid URL path.                                            |
+|  ID   |                                                                              Requirement                                                                               |
+| :---: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| FR33  |                                            The pages accessed via hyperlinks within the application shall all have headers.                                            |
+| FR34  |             The application must have a Mock Site page where all elements' background color and font styles update with the current global color palette.              |
+| FR35  |                            The colors of the SVG images shown on the Mock Site page shall be updated with the current global color palette.                            |
+| FR36  |              The application must have a Contrast Checker page that maps and displays cards representing all combinations of color pairs in the palette.               |
+| FR37  |                                   The cards shown on the Contrast Checker page shall display the hexadecimal values of a color pair.                                   |
+| FR38  |       The cards on the Contrast Checker page shall display the contrast ratio and the WCAG's AA, AA Large, AAA, and AAA Large contrast ratings of a pair color.        |
+| FR39  |                           The cards on the Contrast Checker page shall display a green font color for contrast ratings with a "pass" value.                            |
+| FR40  |                            The cards on the Contrast Checker page shall display a red font color for contrast ratings with a "fail" value.                             |
+| FR41  | The cards shown on the Contrast Checker page shall provide a color pair previewer that sets the content's background color and text color to color pair, respectively. |
+| FR42  |                       The color pairs used for all cards shown on the Contrast Checker page shall update with the current global color palette.                        |
+| FR42A |                                                  The cards shall be assigned it's color pair data through it's props.                                                  |
+| FR43  |                                  The application must have an About Us page that provides information about the project and the team.                                  |
+| FR44  |                         The application must have an Error page that indicates the user is on an invalid page or path within the application.                          |
+| FR45  |                            The user shall be able to access the different pages within the application if they enter the correct URL path.                             |
+| FR46  |                                            The user shall be directed to the error page if they enter the invalid URL path.                                            |
 
 ### API Services
 
@@ -96,6 +106,10 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 | FR49 |                                          The successful API responses shall be in proper JSON format.                                           |
 | FR50 |                          The application shall alert the user if the Color Generator API cannot create a new palette.                           |
 | FR51 | The application shall alert the user if the accessibility contrast ratings of a pair color cannot be obtained through the Contrast Checker API. |
+| FR52 |                               The application's API services shall handle the responses it receives from the API.                               |
+| FR53 |                                     The application's API services log any errors it receives from the API.                                     |
+| FR54 |     If the API services recieves a valid response, it shall format the response data to a standard type before it returns it to the caller.     |
+| FR55 |                         If the API services recieve an error response, it shall return a null value back to the caller.                         |
 
 ## Non-Functional Requirements
 
