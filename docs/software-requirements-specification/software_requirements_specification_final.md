@@ -47,8 +47,8 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 | FR17F |                                The global palette shall be able to adjust its colors and return a new palette based on the adjusted colors.                                |
 | FR17G |                                                     The global palette shall be able to copy its color to a clipboard.                                                     |
 | FR17H | All components shall be able to pass the global palette, the palette's properties, or the palette's methods to their child components through the child component's props. |
-| FR17I |                                              The global palette shall contain and provide data about the colors, color pairs.                                              |
-| FR17J |                                       The global palette's color pairs shall contain information about each pair's contrast ratings.                                       |
+| FR17I |                                            The global palette shall contain and provide data about the colors and color pairs.                                             |
+| FR17J |                                    The global palette's color pairs shall contain information about each color pair's contrast ratings.                                    |
 
 ### Control Panel
 
@@ -99,6 +99,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 | FR44  |                         The application must have an Error page that indicates the user is on an invalid page or path within the application.                          |
 | FR45  |                            The user shall be able to access the different pages within the application if they enter the correct URL path.                             |
 | FR46  |                                            The user shall be directed to the error page if they enter the invalid URL path.                                            |
+| FR46A |                                            The pages shall display their child components and all associated HTML elements.                                            |
 
 ### API Services
 
