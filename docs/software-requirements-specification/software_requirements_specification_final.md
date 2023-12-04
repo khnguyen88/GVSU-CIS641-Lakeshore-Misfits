@@ -49,6 +49,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 | FR17H | All components shall be able to pass the global palette, the palette's properties, or the palette's methods to their child components through the child component's props. |
 | FR17I |                                            The global palette shall contain and provide data about the colors and color pairs.                                             |
 | FR17J |                                    The global palette's color pairs shall contain information about each color pair's contrast ratings.                                    |
+| FR17K |                                      When a color palette recieves new colors, it shall assign and set those colors to its property.                                       |
 
 ### Control Panel
 
