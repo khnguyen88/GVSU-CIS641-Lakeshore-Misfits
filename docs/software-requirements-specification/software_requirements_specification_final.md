@@ -243,14 +243,38 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ## Class Diagram Traceability
 
-| Artifact Name | Requirement ID |
+| Artifact ID   | Artifact Name  | Requirement ID |
 | :-----------: | :------------: | --- |
-|  classPlayer  |   NFR3, FR5    |
-|       …       |       …        | …   |
+| Palette Class and Associated Classes  |   Palette    |
+| Palette Class and Associated Classes       |      ContrastCheckerAPIService       | …   |
+| Palette Class and Associated Classes       |      ContrastRating       | …   |
+| Palette Class and Associated Classes      |      ColorMindAPIService        | …   |
+| Palette Class and Associated Classes       |      TinyColor        | …   |
+| Palette Class and Associated Classes       |      ColorPair        | …   |
+| API Component, Child Components, Global Context State Classes       |      App        | …   |
+| API Component, Child Components, Global Context State Classes       |      PaletteProvider        | …   |
+| API Component, Child Components, Global Context State Classes       |      PaletteContext        | …   |
+| API Component, Child Components, Global Context State Classes      |        Router        | …   |
+| API Component, Child Components, Global Context State Classes       |       PagesSection       | …   |
+| API Component, Child Components, Global Context State Classes       |      Routes        | …   |
+| API Component, Child Components, Global Context State Classes       |      Route        | …   |
+|  API Component, Child Components, Global Context State Classes       |       ErrorPage        | …   |
+|  API Component, Child Components, Global Context State Classes      |      AboutUs        | …   |
+| API Component, Child Components, Global Context State Classes       |      ContrastChecker        | …   |
+| API Component, Child Components, Global Context State Classes      |      MockSite        | …   |
+| API Component, Child Components, Global Context State Classes       |      ColorPairContrastCard        | …   |
+| API Component, Child Components, Global Context State Classes       |      PanelsSection        | …   |
+| API Component, Child Components, Global Context State Classes       |      NavigationPanel        | …   |
+| API Component, Child Components, Global Context State Classes       |      Link       | …   |
+| API Component, Child Components, Global Context State Classes       |      React Context        | …   |
+| API Component, Child Components, Global Context State Classes       |      ControlPanel        | …   |
+| API Component, Child Components, Global Context State Classes       |      PalettePreviewer        | …   |
+| API Component, Child Components, Global Context State Classes      |      ReactState        | …   |
+| API Component, Child Components, Global Context State Classes       |      ActionButton        | …   |
+| API Component, Child Components, Global Context State Classes       |      Palette        | …   |
+
 
 ## Activity Diagram Traceability
-
-<In this case, it makes more sense (I think, feel free to disagree) to link to the file and to those requirements impacted>
 
 | Artifact ID |    Artifact Name    | Requirement ID |
 | :---------: | :-----------------: | :------------: |
