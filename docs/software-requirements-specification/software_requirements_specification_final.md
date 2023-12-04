@@ -179,8 +179,7 @@ In this section, you will find a traceability matrix for our use case diagrams, 
 
 # Software Artifacts
 
-<Describe the purpose of this section>
-The purpose of this section..
+In this section, there are hyperlinks to all our use case diagrams, class diagrams, and activity diagrams. There are 11 use case diagrams, 5 class diagrams, and 9 activity diagrams. 
 
 ## Use Case Diagrams
 -   [Colors](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-01-Colors.pdf)
