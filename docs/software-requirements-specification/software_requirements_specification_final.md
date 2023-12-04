@@ -23,17 +23,19 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### Color Palette
 
-|  ID  |                                                                    Requirement                                                                    |
-| :--: | :-----------------------------------------------------------------------------------------------------------------------------------------------: |
-| FR9  |                                             The color palette shall be global within the application.                                             |
-| FR10 |                                   The global color palette shall be able to be replaced or changed by the user.                                   |
-| FR11 |                               The global color palette must be accessible by any components within the application.                               |
-| FR12 | The components and HTML elements that apply the global color palette to its style shall change when a new color palette is generated or adjusted. |
-| FR13 |           The default colors in the palette must have hexadecimal values of "#ffffff," "#e6e6e6," "#808080," "#191919," and "#000000."            |
-| FR14 |                        The application shall have the functionality of a palette's color saturation and brightness level.                         |
-| FR15 |                             The application shall be able to convert between the RGB, HSV, HSL, and HEX color values.                             |
-| FR16 |         The application shall keep track of WCAG contrast rating information of all possible color pair combinations within the palette.          |
-| FR17 |         The application shall be able to estimate the contrast ratio and WCAG contrast ratings of a color pair independently of any API.          |
+|  ID   |                                                                    Requirement                                                                    |
+| :---: | :-----------------------------------------------------------------------------------------------------------------------------------------------: |
+|  FR9  |                                             The color palette shall be global within the application.                                             |
+| FR10  |                                   The global color palette shall be able to be replaced or changed by the user.                                   |
+| FR11  |                               The global color palette must be accessible by any components within the application.                               |
+| FR12  | The components and HTML elements that apply the global color palette to its style shall change when a new color palette is generated or adjusted. |
+| FR13  |           The default colors in the palette must have hexadecimal values of "#ffffff," "#e6e6e6," "#808080," "#191919," and "#000000."            |
+| FR14  |                        The application shall have the functionality of a palette's color saturation and brightness level.                         |
+| FR15  |                             The application shall be able to convert between the RGB, HSV, HSL, and HEX color values.                             |
+| FR16  |         The application shall keep track of WCAG contrast rating information of all possible color pair combinations within the palette.          |
+| FR17  |         The application shall be able to estimate the contrast ratio and WCAG contrast ratings of a color pair independently of any API.          |
+| FR17A |                                The colors received and used in this application shall be of a standard class type.                                |
+| FR17B |                             The colors not of the standard class type shall be formatted to the standard class type.                              |
 
 ### Control Panel
 
@@ -149,16 +151,17 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 # Change management plan
 
 This section is about how can we ensure if the application will be compatible with the users ecosystem and how we will handle any issues.
--	How will you train people to use it?
-    - We will set up some training session with teams who will be using our application, and we can show them the demo of how the application works. We will also record and document the session, so that any new user in the future can refer easily.
--	How will you ensure it integrates within their ecosystem / software?
-    - We will work on compatibilty testing, and maintaining proper industry standard. We will work on future releases which also helps in enhancing the compatibity with the ecosystem. We will also setup meetings with the teams who will also monitor and check for any issues after the integration.
--	How will you ensure that it any discovered issues are resolved?
-    - We will ensure by tracking of the encountered bugs and to document the resolution steps, so that, if in future, the same bug arises, we can resolve it. Also, we will provide future updates to fix the bugs in the newer versions. We will provide them  the techincal support with respect to any issues with the application.
+
+-   How will you train people to use it?
+    -   We will set up some training session with teams who will be using our application, and we can show them the demo of how the application works. We will also record and document the session, so that any new user in the future can refer easily.
+-   How will you ensure it integrates within their ecosystem / software?
+    -   We will work on compatibilty testing, and maintaining proper industry standard. We will work on future releases which also helps in enhancing the compatibity with the ecosystem. We will also setup meetings with the teams who will also monitor and check for any issues after the integration.
+-   How will you ensure that it any discovered issues are resolved?
+    -   We will ensure by tracking of the encountered bugs and to document the resolution steps, so that, if in future, the same bug arises, we can resolve it. Also, we will provide future updates to fix the bugs in the newer versions. We will provide them the techincal support with respect to any issues with the application.
 
 # Traceability links
 
-In this section, you will find a traceability matrix for our use case diagrams, class diagrams, and activity diagrams. The use case diagram traceability consists of the name of the use case diagram, the use case, and which requirement it is connected to. A similar process is created for both the class diagrams and activity diagrams. The class diagram traceability includes the class diagram and the requirement it is connected to. Lastly, the activity diagram traceability includes the activity diagram name, the present activity, and the requirement ID that is connected to it. 
+In this section, you will find a traceability matrix for our use case diagrams, class diagrams, and activity diagrams. The use case diagram traceability consists of the name of the use case diagram, the use case, and which requirement it is connected to. A similar process is created for both the class diagrams and activity diagrams. The class diagram traceability includes the class diagram and the requirement it is connected to. Lastly, the activity diagram traceability includes the activity diagram name, the present activity, and the requirement ID that is connected to it.
 
 ## Use Case Diagram Traceability
 
@@ -189,6 +192,7 @@ In this section, you will find a traceability matrix for our use case diagrams, 
 The purpose of this section..
 
 ## Use Case Diagrams
+
 -   [Colors](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-01-Colors.pdf)
 -   [Color Pairs](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-02-Color-Pairs.pdf)
 -   [User Control Panel Interaction](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-03-User-Control-Panel-Interaction.pdf)
@@ -201,7 +205,8 @@ The purpose of this section..
 -   [Contrast Checker Page](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-10-Contrast-Checker-Page.pdf)
 -   [Mock Site Page](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/use-case-diagrams/final-deliverables/Use-Case-Diagrams-UC-11-Mock-Site-Page.pdf)
 
-## Class Diagrams 
+## Class Diagrams
+
 -   [Palette Class and Associated Class](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/class-diagrams/final-deliverables/Class-Diagrams-CD-01-Palette-Class-And-Associated-Classes.pdf)
 -   [Palette Class Descprition Methods, Preconditions, and Postconditions](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/class-diagrams/final-deliverables/Class-Diagrams-CD-01A-Palette-Class-Description-Methods-Preconditions-And-Postconditions.pdf)
 -   [TinyColor Class Description, Methods, Preconditions, and Postconditions](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/class-diagrams/final-deliverables/Class-Diagrams-CD-01B-TinyColor-Class-Description-Methods-Preconditions-And-Postconditions.pdf)
@@ -209,6 +214,7 @@ The purpose of this section..
 -   [API Component, Child Components, and Global Context State Classes](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/class-diagrams/final-deliverables/Class-Diagrams-CD-02-API-Component-Child-Components-and-Global-Context-State-Classes.pdf)
 
 ## Acitivity Diagrams
+
 -   [Navigation and Page Viewing](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/activity-diagrams/final-deliverables/Activity-Diagrams-AD-01-Navigation-and-Page-Viewing.pdf)
 -   [User Control Panel Interaction](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/activity-diagrams/final-deliverables/Activity-Diagrams-AD-02-User-Control-Panel-Interaction.pdf)
 -   [Color Generation with Color Mind API Service](https://github.com/khnguyen88/GVSU-CIS641-Lakeshore-Misfits/blob/main/docs/activity-diagrams/final-deliverables/Activity-Diagrams-AD-03-Color-Generation-with-Color-Mind-API-Service.pdf)
