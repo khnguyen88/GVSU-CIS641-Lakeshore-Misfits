@@ -158,73 +158,88 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 | Artifact ID | Artifact Name | Requirement ID |
 | :---------: | :-----------: | :------------: |
-|  Colors   |  Generate Colors  |      FR5,FR12       |
+|  Colors   |  Generate Colors  |      FR18, FR47, FR49       |
+|  Colors   |  Return Colors       |      FR47        |
 |  Colors   |  Set Colors       |      FR10        |
-|  Colors   |  Receive Colors       |      FR9        |
-|  Colors   |  Adjust Colors       |       FR10, FR12       |
+|  Colors   |  Receive Colors       |      FR10, FR17B        |
+|  Colors   |  Adjust Colors       |       FR14, FR17F      |
 |  Colors   |  Convert Color Models       |      FR15        |
-|  Colors   |  Format Colors       |      FR13        |
-|  Color Pairs |  Get Color Pair Contrast Ratings       |       …        |
-|  Color Pairs |  Create Color Pairs      |       …        |
-|  Color Pairs |  Update Color Pair Contrast Ratings      |       …        |
+|  Colors   |  Format Colors       |      FR17B, FR17C        |
+|  Color Pairs |  Get Color Pair Contrast Ratings       |       FR48       |
+|  Color Pairs |  Return Color Pair Contrast Ratings       |       FR48       |
+|  Color Pairs |  Create Color Pairs      |      FR16, FR17A, FR17I        |
+|  Color Pairs | Estimate Color Pair's Contrast Ratings      |       FR17       |
+|  Color Pairs |  Store Color Pairs in Array      |       FR16, FR17I       |
+|  Color Pairs |  Update Color Pair Contrast Ratings      |       FR42, FR17, FR17J       |
 |  User Control Panel Interaction   |   Click Generate Palette Button |       FR18    |
+|  User Control Panel Interaction   |   Generate Palette     |      FR18        |
 |  User Control Panel Interaction   |   Click Adjust Palette Button |       FR19       |
+|  User Control Panel Interaction   |   Adjust Palette     |      FR17f        |
 |  User Control Panel Interaction   |   Click Copy Palette Button |       FR20       |
-|  User Control Panel Interaction   |   Provide Palette State   |      FR21        |
-|  User Control Panel Interaction   |   Set Palette     |      FR23        |
-|  Page Viewing from Navigation Panel   |    View Page  |       …        |
-|  Page Viewing from Navigation Panel   |    Go to Mock Site Page     |      FR27        |
-|  Page Viewing from Navigation Panel   |    Go to Contrast Cheker Page     |      FR28        |
-|  Page Viewing from Navigation Panel   |    Go to About Us Page     |      FR29        |
-|  Page Viewing from Navigation Panel   |    Click Page Links  |       FR30, FR31        |
-|  Page Viewing from Address Bar  |  View Page       |       …        |
-|  Page Viewing from Address Bar   |  Go to Mock Site Page |  FR34, FR35        |
-|  Page Viewing from Address Bar  |  Go to Contrast Checker Page       |  FR41, FR42 |
-|  Page Viewing from Address Bar   |  Go to About Us Page       |  FR43         |
+|  User Control Panel Interaction   |   Copy Palette     |      FR20       |
+|  User Control Panel Interaction   |   Provide Palette State   |      FR9        |
+|  User Control Panel Interaction   |   Set Palette     |      FR10        |
+|  User Control Panel Interaction   |   Return Palette     |      FR17E, FR17F       |
+|  Page Viewing from Navigation Panel   |    View Page  |      FR4, NFR1        |
+|  Page Viewing from Navigation Panel   |    Go to Mock Site Page     |      FR2, FR27, FR34        |
+|  Page Viewing from Navigation Panel   |    Go to Contrast Cheker Page     |      FR2, FR28        |
+|  Page Viewing from Navigation Panel   |    Go to About Us Page     |      FR2, FR29        |
+|  Page Viewing from Navigation Panel   |    Click Page Links  |       FR2, FR27, FR28, FR29        |
+|  Page Viewing from Address Bar  |  View Page       |       FR4, NFR1        |
+|  Page Viewing from Address Bar   |  Go to Mock Site Page |  FR4, FR27, FR34        |
+|  Page Viewing from Address Bar  |  Go to Contrast Checker Page       |  FR4, FR28|
+|  Page Viewing from Address Bar   |  Go to About Us Page       |  FR4, FR29         |
 |  Page Viewing from Address Bar   |  Go to Error Page        |  FR44           |
-|  Page Viewing from Address Bar   |  Type Page URL       |  FR45        |
-|  Context Hook   |  Create Context      |       …        |
-|  Context Hook   |  Create Palette State       |       …        |
-|  Context Hook   |  Create Context Provider       |       …        |
-|  Context Hook   |  Assign State to Context Provider       |       …        |
-|  Context Hook   |  Set Palette State       |       …        |
-|  Context Hook   |  Use Context to Retrieve State       |       …        |
-|  Context Hook   |  Use Palette State       |       …        |
-|  Context Hook   |  Connect Children Components to Context Provider       |       …        |
-|  Color Mind API Service   |  Send Reponse       |       …        |
-|  Color Mind API Service   |  Send Request to API       |       …        |
-|  Color Mind API Service   |  Handle Response       |       …        |
-|  Color Mind API Service   |  Call API Service       |       …        |
-|  Color Mind API Service   |  Alert Error       |       …        |
-|  Color Mind API Service   |  Generate New Palette from Colors       |       …        |
-|  Color Mind API Service   |  Convert Response to Formatted Colors       |       …        |
-|  Contrast Checker API Service   |  Send Reponse       |       …        |
-|  Contrast Checker API Service   |  Send Request to API       |       …        |
-|  Contrast Checker API Service   |  Handle Response       |       …        |
-| Contrast Checker API Service   |  Call API Service       |       …        |
-|  Contrast Checker API Service   |  Alert Error       |       …        |
-|  Contrast Checker API Service   |  Provide Color Pairs       |       …        |
-|  Contrast Checker API Service   |  Update Color Pair Ratings       |       …        |
-|  Control Panel Display   |  Provide Palette State       |       …        |
-|  Control Panel Display   |  Provide Colors       |       …        |
-|  Control Panel Display   |  Display HTML Elements       |       …        |
-|  Control Panel Display   |  Assign Palette Method to Prop       |       …        |
-|  Control Panel Display   |  Assign Palette Method to Event Handler       |       …        |
-|  Control Panel Display   |  Set Palette in Prop       |       …        |
-|  Control Panel Display   |  Assign Palette to Prop       |       …        |
-|  Control Panel Display   |  Set Elements Styles with Colors       |       …        |
-|  Control Panel Display   |  Set Elements Text with Colors       |       …        |
-|  Contrast Checker Page   |  Provide Palette State       |       …        |
-|  Contrast Checker Page   |  Provide Color Pairs       |      FR36, FR37        |
-|  Contrast Checker Page   |  Display HTML Elements       |       …        |
-|  Contrast Checker Page   |  Set Elements Styles with Color Pairs       |       …        |
-|  Contrast Checker Page   |  Set Elements Text with Color Pairs       |      FR39, FR40, FR41        |
+|  Page Viewing from Address Bar   |  Type Page URL       |  FR4, FR44, FR45        |
+|  Page Viewing from Address Bar   |  Type Invalid Page URL       |  FR46       |
+|  Context Hook   |  Create Context      |      FR9, FR9A        |
+|  Context Hook   |  Create Palette State       |       FR9, FR9A       |
+|  Context Hook   |  Create Context Provider       |       FR9, FR9A        |
+|  Context Hook   |  Assign State to Context Provider       |       FR9, FR9B        |
+|  Context Hook   |  Set Palette State       |       FR10        |
+|  Context Hook   |  Use Context to Retrieve State       |       FR11        |
+|  Context Hook   |  Use Palette State       |      FR11A        |
+|  Context Hook   |  Connect Children Components to Context Provider       |       FR9C        |
+|  Color Mind API Service   |  Send Request to API       |      FR47, FR47A        |
+|  Color Mind API Service   |  Handle Response       |      FR52        |
+|  Color Mind API Service   |  Log Error       |       FR53        |
+|  Color Mind API Service   |  Return Colors or Null       |       FR47, FR54, FR55        |
+|  Color Mind API Service   |  Convert Response to Formatted Colors       |       FR47, FR54, FR55        |
+|  Color Mind API Service   |  Send Reponse       |      FR52        |
+|  Color Mind API Service   |  Call API Service       |       FR17D        |
+|  Color Mind API Service   |  Alert Error       |       FR50        |
+|  Color Mind API Service   |  Generate New Palette from Colors       |      FR17E        |
+|  Color Mind API Service   | Return (New) Palette       |       FR17E       |
+|  Contrast Checker API Service   |  Send Request to API       |       FR48, FR48A        |
+|  Contrast Checker API Service   |  Handle Response       |       FR52        |
+|  Contrast Checker API Service   |  Log Error       |       FR53        |
+|  Contrast Checker API Service   |  Return Contrast Ratings or Null       |       FR48, FR54, FR55       |
+|  Contrast Checker API Service   |  Send Reponse       |      FR52        |
+| Contrast Checker API Service   |  Call API Service       |       FR17D       |
+|  Contrast Checker API Service   |  Alert Error       |      FR50        |
+|  Contrast Checker API Service   |  Provide Color Pairs       |       FR16, FR17I       |
+|  Contrast Checker API Service   |  Update Color Pair Ratings       |       FR17A        |
+|  Control Panel Display   |  Provide Palette State       |       FR9        |
+|  Control Panel Display   |  Provide Colors       |       FR11, FR17I        |
+|  Control Panel Display   |  Display HTML Elements       |       FR18, FR19, FR20, FR21, FR22, FR23, FR24, FR24A, FR25, FR26C        |
+|  Control Panel Display   |  Display Components       |       FR18, FR19, FR20, FR21, FR22, FR23, FR26C        |
+|  Control Panel Display   |  Assign Palette Method to Prop       |       FR1, FR11A, R17H, FR26A        |
+|  Control Panel Display   |  Assign Palette Method to Event Handler       |       FR1, FR26B        |
+|  Control Panel Display   |  Assign Palette to Prop       |       FR11A, FR12, FR22        |
+|  Control Panel Display   |  Set Elements Styles with Colors       |      FR11A, FR12, FR22       |
+|  Control Panel Display   |  Set Elements Text with Colors       |     FR11A        |
+|  Contrast Checker Page   |  Provide Palette State       |       FR9       |
+|  Contrast Checker Page   |  Provide Color Pairs       |      FR11, FR17I        |
 |  Contrast Checker Page   |  Map Cards from Color Pairs       |      FR36        |
-|  Contrast Checker Page   |  Assign Color Pairs to Prop       |       …        |
-|  Mock Site Page   |  Display HTML Elements       |      FR34        |
-|  Mock Site Page   |  Provide Colors       |       …        |
-|  Mock Site Page   |  Provide Palette State       |       …        |
-|  Mock Site Page   |  Set Styles with Colors       |       …        |
+|  Contrast Checker Page   |  Display HTML Elements       |       FR36, FR37, FR38, FR39, FR40, FR41, FR46A        |
+|  Contrast Checker Page   |  Display Component       |       FR46A        |
+|  Contrast Checker Page   |  Assign Color Pairs to Prop       |       FR42A, FR17H, FR11A        |
+|  Contrast Checker Page   |  Set Elements Styles with Color Pairs       |      FR41, FR11A        |
+|  Contrast Checker Page   |  Set Elements Text with Color Pairs       |      FR37, FR38, FR11A        |
+|  Mock Site Page   |  Display HTML Elements       |      FR34, FR35, FR46A        |
+|  Mock Site Page   |  Provide Colors       |       FR11, FR17I        |
+|  Mock Site Page   |  Provide Palette State       |      FR9       |
+|  Mock Site Page   |  Set Styles with Colors       |       FR34, FR35, FR11A        |
 
 ## Class Diagram Traceability
 
