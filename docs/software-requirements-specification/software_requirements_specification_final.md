@@ -25,17 +25,19 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 |  ID   |                                                                    Requirement                                                                    |
 | :---: | :-----------------------------------------------------------------------------------------------------------------------------------------------: |
-|  FR9  |                                             The color palette shall be global within the application.                                             |
-| FR10  |                                   The global color palette shall be able to be replaced or changed by the user.                                   |
+|  FR9  |                                 The color palette shall be global state within the application by way of context.                                 |
+| FR10  |                             The global color palette state shall be able to be replaced, set, or updated by the user.                             |
 | FR11  |                               The global color palette must be accessible by any components within the application.                               |
 | FR12  | The components and HTML elements that apply the global color palette to its style shall change when a new color palette is generated or adjusted. |
 | FR13  |           The default colors in the palette must have hexadecimal values of "#ffffff," "#e6e6e6," "#808080," "#191919," and "#000000."            |
 | FR14  |                        The application shall have the functionality of a palette's color saturation and brightness level.                         |
 | FR15  |                             The application shall be able to convert between the RGB, HSV, HSL, and HEX color values.                             |
 | FR16  |         The application shall keep track of WCAG contrast rating information of all possible color pair combinations within the palette.          |
+| FR16A |              When the global color palette state is set with a new palette, color pairs shall be updated to reflect the new colors.               |
 | FR17  |         The application shall be able to estimate the contrast ratio and WCAG contrast ratings of a color pair independently of any API.          |
-| FR17A |                                The colors received and used in this application shall be of a standard class type.                                |
-| FR17B |                             The colors not of the standard class type shall be formatted to the standard class type.                              |
+| FR17A |     When the global color palette state is set with a new palette, the WCAG contrast ratings shall be updated to reflect the new color pairs.     |
+| FR17B |                                The colors received and used in this application shall be of a standard class type.                                |
+| FR17C |                             The colors not of the standard class type shall be formatted to the standard class type.                              |
 
 ### Control Panel
 
@@ -151,12 +153,13 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 # Change management plan
 
 This section is about how can we ensure if the application will be compatible with the users ecosystem and how we will handle any issues.
--	How will you train people to use it?
-    - We will set up some training session with teams who will be using our application, and we can show them the demo of how the application works. We will also record and document the session, so that any new user in the future can refer easily.
--	How will you ensure it integrates within their ecosystem / software?
-    - As it's a web application, we can check if they are able to access the application in the browser without any issues. We can ask them to test the beta version before they start using the final version, so that they get the hang of the environment. We will work on future releases which also helps in enhancing the compatibity with the ecosystem. We will also setup meetings with the teams who will also monitor and check for any issues after the integration.
--	How will you ensure that it any discovered issues are resolved?
-    - We will ensure by tracking of the encountered bugs and to document the resolution steps, so that, if in future, the same bug arises, we can resolve it. Also, we will provide future updates to fix the bugs in the newer versions. We will provide them  the techincal support with respect to any issues with the application.
+
+-   How will you train people to use it?
+    -   We will set up some training session with teams who will be using our application, and we can show them the demo of how the application works. We will also record and document the session, so that any new user in the future can refer easily.
+-   How will you ensure it integrates within their ecosystem / software?
+    -   As it's a web application, we can check if they are able to access the application in the browser without any issues. We can ask them to test the beta version before they start using the final version, so that they get the hang of the environment. We will work on future releases which also helps in enhancing the compatibity with the ecosystem. We will also setup meetings with the teams who will also monitor and check for any issues after the integration.
+-   How will you ensure that it any discovered issues are resolved?
+    -   We will ensure by tracking of the encountered bugs and to document the resolution steps, so that, if in future, the same bug arises, we can resolve it. Also, we will provide future updates to fix the bugs in the newer versions. We will provide them the techincal support with respect to any issues with the application.
 
 # Traceability links
 
