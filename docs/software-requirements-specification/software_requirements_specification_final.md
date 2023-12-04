@@ -47,6 +47,8 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 | FR17F |                                The global palette shall be able to adjust its colors and return a new palette based on the adjusted colors.                                |
 | FR17G |                                                     The global palette shall be able to copy its color to a clipboard.                                                     |
 | FR17H | All components shall be able to pass the global palette, the palette's properties, or the palette's methods to their child components through the child component's props. |
+| FR17I |                                              The global palette shall contain and provide data about the colors, color pairs.                                              |
+| FR17J |                                       The global palette's color pairs shall contain information about each pair's contrast ratings.                                       |
 
 ### Control Panel
 
