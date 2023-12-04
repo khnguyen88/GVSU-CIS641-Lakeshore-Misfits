@@ -100,17 +100,19 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 ### API Services
 
-|  ID  |                                                                   Requirement                                                                   |
-| :--: | :---------------------------------------------------------------------------------------------------------------------------------------------: |
-| FR47 |                                 The application shall generate a new palette if the Color Generator API works.                                  |
-| FR48 |          The application shall get the contrast ratio and web accessibility ratings of a color pair if the Contrast Checker API works.          |
-| FR49 |                                          The successful API responses shall be in proper JSON format.                                           |
-| FR50 |                          The application shall alert the user if the Color Generator API cannot create a new palette.                           |
-| FR51 | The application shall alert the user if the accessibility contrast ratings of a pair color cannot be obtained through the Contrast Checker API. |
-| FR52 |                               The application's API services shall handle the responses it receives from the API.                               |
-| FR53 |                                     The application's API services log any errors it receives from the API.                                     |
-| FR54 |     If the API services recieves a valid response, it shall format the response data to a standard type before it returns it to the caller.     |
-| FR55 |                         If the API services recieve an error response, it shall return a null value back to the caller.                         |
+|  ID   |                                                                   Requirement                                                                   |
+| :---: | :---------------------------------------------------------------------------------------------------------------------------------------------: |
+| FR47  |                                 The application shall generate a new palette if the Color Generator API works.                                  |
+| FR47A |                            The application shall have a service that makes request calls to the Color Generator API.                            |
+| FR48  |          The application shall get the contrast ratio and web accessibility ratings of a color pair if the Contrast Checker API works.          |
+| FR48A |                           The application shall have a service that makes request calls to the Contrast Checker API.                            |
+| FR49  |                                          The successful API responses shall be in proper JSON format.                                           |
+| FR50  |                          The application shall alert the user if the Color Generator API cannot create a new palette.                           |
+| FR51  | The application shall alert the user if the accessibility contrast ratings of a pair color cannot be obtained through the Contrast Checker API. |
+| FR52  |                               The application's API services shall handle the responses it receives from the API.                               |
+| FR53  |                                     The application's API services log any errors it receives from the API.                                     |
+| FR54  |     If the API services recieves a valid response, it shall format the response data to a standard type before it returns it to the caller.     |
+| FR55  |                         If the API services recieve an error response, it shall return a null value back to the caller.                         |
 
 ## Non-Functional Requirements
 
