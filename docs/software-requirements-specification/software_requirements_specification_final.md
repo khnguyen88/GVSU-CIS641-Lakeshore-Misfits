@@ -185,9 +185,9 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 |  Page Viewing from Navigation Panel   |    Go to Contrast Cheker Page     |      FR2, FR28        |
 |  Page Viewing from Navigation Panel   |    Go to About Us Page     |      FR2, FR29        |
 |  Page Viewing from Navigation Panel   |    Click Page Links  |       FR2, FR27, FR28, FR29        |
-|  Page Viewing from Address Bar  |  View Page       |       FR4, NFR1        |
+|  Page Viewing from Address Bar   |  View Page       |       FR4, NFR1        |
 |  Page Viewing from Address Bar   |  Go to Mock Site Page |  FR4, FR27, FR34        |
-|  Page Viewing from Address Bar  |  Go to Contrast Checker Page       |  FR4, FR28|
+|  Page Viewing from Address Bar   |  Go to Contrast Checker Page       |  FR4, FR28|
 |  Page Viewing from Address Bar   |  Go to About Us Page       |  FR4, FR29         |
 |  Page Viewing from Address Bar   |  Go to Error Page        |  FR44           |
 |  Page Viewing from Address Bar   |  Type Page URL       |  FR4, FR44, FR45        |
@@ -215,7 +215,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 |  Contrast Checker API Service   |  Log Error       |       FR53        |
 |  Contrast Checker API Service   |  Return Contrast Ratings or Null       |       FR48, FR54, FR55       |
 |  Contrast Checker API Service   |  Send Reponse       |      FR52        |
-| Contrast Checker API Service   |  Call API Service       |       FR17D       |
+| Contrast Checker API Service    |  Call API Service       |       FR17D       |
 |  Contrast Checker API Service   |  Alert Error       |      FR50        |
 |  Contrast Checker API Service   |  Provide Color Pairs       |       FR16, FR17I       |
 |  Contrast Checker API Service   |  Update Color Pair Ratings       |       FR17A        |
@@ -239,7 +239,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 |  Mock Site Page   |  Display HTML Elements       |      FR34, FR35, FR46A        |
 |  Mock Site Page   |  Provide Colors       |       FR11, FR17I        |
 |  Mock Site Page   |  Provide Palette State       |      FR9       |
-|  Mock Site Page   |  Set Styles with Colors       |       FR34, FR35, FR11A        |
+|  Mock Site Page   |  Set Styles with Colors      |       FR34, FR35, FR11A        |
 
 ## Class Diagram Traceability
 
@@ -254,14 +254,14 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 | API Component, Child Components, Global Context State Classes       |      App        | FR1, FR2, FR3, FR4, FR5, FR6, FR7   |
 | API Component, Child Components, Global Context State Classes       |      PaletteProvider        |FR9C   |
 | API Component, Child Components, Global Context State Classes       |      PaletteContext        | FR9B, FR11A  |
-| API Component, Child Components, Global Context State Classes      |        Router        | FR4, FR45, FR46   |
+| API Component, Child Components, Global Context State Classes       |        Router        | FR4, FR45, FR46   |
 | API Component, Child Components, Global Context State Classes       |       PagesSection       |  FR4  |
 | API Component, Child Components, Global Context State Classes       |      Routes        | FR4, FR45, FR46   |
 | API Component, Child Components, Global Context State Classes       |      Route        | FR4, FR45, FR46   |
-|  API Component, Child Components, Global Context State Classes       |       ErrorPage        | FR4, FR44, FR46   |
+|  API Component, Child Components, Global Context State Classes      |       ErrorPage        | FR4, FR44, FR46   |
 |  API Component, Child Components, Global Context State Classes      |      AboutUs        | FR4, FR29, FR43, FR45  |
 | API Component, Child Components, Global Context State Classes       |      ContrastChecker        | FR4, FR12 FR28, FR36, FR45   |
-| API Component, Child Components, Global Context State Classes      |      MockSite        | FR4, FR12, FR27, FR34, FR35, FR45  |
+| API Component, Child Components, Global Context State Classes       |      MockSite        | FR4, FR12, FR27, FR34, FR35, FR45  |
 | API Component, Child Components, Global Context State Classes       |      ColorPairContrastCard        | FR12, FR17H, FR36, FR37, FR38, FR39, FR40, FR41, FR41, FR42A   |
 | API Component, Child Components, Global Context State Classes       |      PanelsSection        | FR3, FR7  |
 | API Component, Child Components, Global Context State Classes       |      NavigationPanel        | FR2, FR32B   |
@@ -269,7 +269,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 | API Component, Child Components, Global Context State Classes       |      React Context        | FR9, FR11, FR11A   |
 | API Component, Child Components, Global Context State Classes       |      ControlPanel        | FR1, FR25, FR26C  |
 | API Component, Child Components, Global Context State Classes       |      PalettePreviewer        | FR12, FR17H, FR21, FR22, FR23, FR24, FR24A, FR25, FR26A, FR26B   |
-| API Component, Child Components, Global Context State Classes      |      ReactState        | FR9, FR9B   |
+| API Component, Child Components, Global Context State Classes       |      ReactState        | FR9, FR9B   |
 | API Component, Child Components, Global Context State Classes       |      ActionButton        | FR1, FR10, FR17H, R18, FR19, FR20   |
 | API Component, Child Components, Global Context State Classes       |      Palette        | FR9, FR13, FR14, FR16, FR16A, FR17, FR17A, FR17B, FR17C, FR17D, FR17E, FR17E, FR17F, FR17G, FR17I, FR17J, FR17K, FR50, FR51   |
 
@@ -349,7 +349,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 | Mock Site Page Display  |  Obtain Colors from Palette |  FR11, FR17I   |
 | Mock Site Page Display  | Set Element Styles with Color Data |  FR34, FR35, FR11A   |
 | Mock Site Page Display  | Display Elements |  FR34, FR35, FR46A   |
-| Control Panel Display  | Load Section | FR4, FR6    |
+| Control Panel Display  | Load Section | FR4, FR6  |
 | Control Panel Display  | Retrieve Palette State from Context | FR9    |
 | Control Panel Display  | Assign Palette's Method as Prop for Action Button Components |  	FR1, FR11A, FR17H, FR26A   |
 | Control Panel Display  | Set Palette in Action Button Prop |  	FR1, FR10, FR16A, FR17A   |
