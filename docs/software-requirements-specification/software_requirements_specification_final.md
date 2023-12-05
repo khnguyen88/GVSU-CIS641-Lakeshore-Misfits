@@ -245,78 +245,82 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 | Artifact ID   | Artifact Name  | Requirement ID |
 | :-----------: | :------------: | --- |
-| Palette Class and Associated Classes  |   Palette    |
-| Palette Class and Associated Classes       |      ContrastCheckerAPIService       | …   |
-| Palette Class and Associated Classes       |      ContrastRating       | …   |
-| Palette Class and Associated Classes      |      ColorMindAPIService        | …   |
-| Palette Class and Associated Classes       |      TinyColor        | …   |
-| Palette Class and Associated Classes       |      ColorPair        | …   |
-| API Component, Child Components, Global Context State Classes       |      App        | …   |
-| API Component, Child Components, Global Context State Classes       |      PaletteProvider        | …   |
-| API Component, Child Components, Global Context State Classes       |      PaletteContext        | …   |
-| API Component, Child Components, Global Context State Classes      |        Router        | …   |
-| API Component, Child Components, Global Context State Classes       |       PagesSection       | …   |
-| API Component, Child Components, Global Context State Classes       |      Routes        | …   |
-| API Component, Child Components, Global Context State Classes       |      Route        | …   |
-|  API Component, Child Components, Global Context State Classes       |       ErrorPage        | …   |
-|  API Component, Child Components, Global Context State Classes      |      AboutUs        | …   |
-| API Component, Child Components, Global Context State Classes       |      ContrastChecker        | …   |
-| API Component, Child Components, Global Context State Classes      |      MockSite        | …   |
-| API Component, Child Components, Global Context State Classes       |      ColorPairContrastCard        | …   |
-| API Component, Child Components, Global Context State Classes       |      PanelsSection        | …   |
-| API Component, Child Components, Global Context State Classes       |      NavigationPanel        | …   |
-| API Component, Child Components, Global Context State Classes       |      Link       | …   |
-| API Component, Child Components, Global Context State Classes       |      React Context        | …   |
-| API Component, Child Components, Global Context State Classes       |      ControlPanel        | …   |
-| API Component, Child Components, Global Context State Classes       |      PalettePreviewer        | …   |
-| API Component, Child Components, Global Context State Classes      |      ReactState        | …   |
-| API Component, Child Components, Global Context State Classes       |      ActionButton        | …   |
-| API Component, Child Components, Global Context State Classes       |      Palette        | …   |
+| Palette Class and Associated Classes  |   Palette    | FR9, FR13, FR14, FR16, FR16A, FR17, FR17A, FR17B, FR17C, FR17D, FR17E, FR17E, FR17F, FR17G, FR17I, FR17J, FR17K, FR50, FR51
+| Palette Class and Associated Classes       |      ContrastCheckerAPIService       | FR17B, FR17C, FR48, FR48A, FR52, FR53, FR54, FR55  |
+| Palette Class and Associated Classes       |      ContrastRating       | FR16, FR17, FR17A, FR17J, FR38, FR39, FR40 NFR18, NFR19, NFR20   |
+| Palette Class and Associated Classes      |      ColorMindAPIService        | FR17B, FR17X, R47, FR47A, R49, FR52, FR53, FR54, FR55    |
+| Palette Class and Associated Classes       |      TinyColor        | FR14, FR15, FR17B, FR17C   |
+| Palette Class and Associated Classes       |      ColorPair        |  FR16, FR16A, FR17, FR17A, FR17B, FR17C, FR36, FR37, FR41, FR42, FR48   |
+| API Component, Child Components, Global Context State Classes       |      App        | FR1, FR2, FR3, FR4, FR5, FR6, FR7   |
+| API Component, Child Components, Global Context State Classes       |      PaletteProvider        |FR9C   |
+| API Component, Child Components, Global Context State Classes       |      PaletteContext        | FR9B, FR11A  |
+| API Component, Child Components, Global Context State Classes      |        Router        | FR4, FR45, FR46   |
+| API Component, Child Components, Global Context State Classes       |       PagesSection       |  FR4  |
+| API Component, Child Components, Global Context State Classes       |      Routes        | FR4, FR45, FR46   |
+| API Component, Child Components, Global Context State Classes       |      Route        | FR4, FR45, FR46   |
+|  API Component, Child Components, Global Context State Classes       |       ErrorPage        | FR4, FR44, FR46   |
+|  API Component, Child Components, Global Context State Classes      |      AboutUs        | FR4, FR29, FR43, FR45  |
+| API Component, Child Components, Global Context State Classes       |      ContrastChecker        | FR4, FR12 FR28, FR36, FR45   |
+| API Component, Child Components, Global Context State Classes      |      MockSite        | FR4, FR12, FR27, FR34, FR35, FR45  |
+| API Component, Child Components, Global Context State Classes       |      ColorPairContrastCard        | FR12, FR17H, FR36, FR37, FR38, FR39, FR40, FR41, FR41, FR42A   |
+| API Component, Child Components, Global Context State Classes       |      PanelsSection        | FR3, FR7  |
+| API Component, Child Components, Global Context State Classes       |      NavigationPanel        | FR2, FR32B   |
+| API Component, Child Components, Global Context State Classes       |      Link       | FR2   |
+| API Component, Child Components, Global Context State Classes       |      React Context        | FR9, FR11, FR11A   |
+| API Component, Child Components, Global Context State Classes       |      ControlPanel        | FR1, FR25, FR26C  |
+| API Component, Child Components, Global Context State Classes       |      PalettePreviewer        | FR12, FR17H, FR21, FR22, FR23, FR24, FR24A, FR25, FR26A, FR26B   |
+| API Component, Child Components, Global Context State Classes      |      ReactState        | FR9, FR9B   |
+| API Component, Child Components, Global Context State Classes       |      ActionButton        | FR1, FR10, FR17H, R18, FR19, FR20   |
+| API Component, Child Components, Global Context State Classes       |      Palette        | FR9, FR13, FR14, FR16, FR16A, FR17, FR17A, FR17B, FR17C, FR17D, FR17E, FR17E, FR17F, FR17G, FR17I, FR17J, FR17K, FR50, FR51   |
 
 
 ## Activity Diagram Traceability
 
 | Artifact ID |    Artifact Name    | Requirement ID |
 | :---------: | :-----------------: | :------------: |
-| Navigation and Page Viewing  | Go to Mock Site |  FR2, FR27, FR34   |
-| Navigation and Page Viewing  | View Mock Site  |      FR4, NFR1       |
-| Navigation and Page Viewing  | Go to About Us Page |  FR2, FR29   |
-| Navigation and Page Viewing  | View About Us Page |  FR4, NFR1  |
-| Navigation and Page Viewing  | Go to Error Page |  FR44   |
-| Navigation and Page Viewing  | View Error Page | FR4, NFR1    |
-| Navigation and Page Viewing  | Go to Contrast Checker Page |  FR4, FR28   |
-| Navigation and Page Viewing  | View Contrast Checker Page | FR4, NFR1    |
-| User Control Panel Interaction  | Get Palette State from Context |     |
+| Navigation and Page Viewing  | load Application |  FR3, FR4, FR5, FR6   |
+| Navigation and Page Viewing  | Go to Mock Site |  FR2, FR27   |
+| Navigation and Page Viewing  | View Mock Site  |      FR34, NFR1       |
+| Navigation and Page Viewing  | Go to About Us Page |  FR2, FR4, FR29, FR45   |
+| Navigation and Page Viewing  | View About Us Page |  FR43, NFR1  |
+| Navigation and Page Viewing  | Go to Error Page |  FR2, FR4, FR46  |
+| Navigation and Page Viewing  | View Error Page | FR44, NFR1    |
+| Navigation and Page Viewing  | Go to Contrast Checker Page |  FR2, FR4, FR28, FR45   |
+| Navigation and Page Viewing  | View Contrast Checker Page | FR29, FR36, NFR1    |
+| Navigation and Page Viewing  | Close Application |  FR3, FR4, FR5, FR6   |
+| User Control Panel Interaction  | Start Application |  FR3, FR4, FR5, FR6   |
+| User Control Panel Interaction  | Get Palette State from Context |  FR9   |
 | User Control Panel Interaction  | Press Generate Palette Button | FR18    |
 | User Control Panel Interaction  | Generate Palette |  FR18   |
 | User Control Panel Interaction  | Press Adjust Palette Button |  FR19   |
-| User Control Panel Interaction  | Adjust Palette |  FR17F   |
-| User Control Panel Interaction  | Keep Palette |     |
+| User Control Panel Interaction  | Adjust Palette |  FR19   |
+| User Control Panel Interaction  | Keep Palette |  FR11A, FR20   |
 | User Control Panel Interaction  | Return New Palette |  FR17E, FR17F   |
-| User Control Panel Interaction  | Set New Palette |   FR10  |
+| User Control Panel Interaction  | Set New Palette |   FR1, FR10, FR16A, FR17A  |
 | User Control Panel Interaction  | Press Copy Palette Button |  FR20  |
 | User Control Panel Interaction  | Copy Palette | FR20    |
-| User Control Panel Interaction  | Do Not Copy Palette |    |
-| Color Generation with Color Mind API Service  | Call Color Mind API Service |     |
+| User Control Panel Interaction  | Do Not Copy Palette | FR20   |
+| Color Generation with Color Mind API Service  | Call Color Mind API Service |  FR17D   |
 | Color Generation with Color Mind API Service  | Make API Request to Color Mind API |  FR47, FR47A   |
 | Color Generation with Color Mind API Service  | Handle Response |  FR52   |
-| Color Generation with Color Mind API Service  | Convert Response to Formatted Colors |  FR47, FR54, FR55   |
-| Color Generation with Color Mind API Service  | Return Colors |  FR47, FR54, FR55   |
+| Color Generation with Color Mind API Service  | Convert Response to Formatted Colors |  FR17E  |
+| Color Generation with Color Mind API Service  | Return Colors |  FR47   |
 | Color Generation with Color Mind API Service  | Log Error |  FR53   |
-| Color Generation with Color Mind API Service  | Return Null |  FR47, FR54, FR55  |
+| Color Generation with Color Mind API Service  | Return Null |  FR55  |
 | Color Generation with Color Mind API Service  | Alert Error |   FR50  |
+| Color Generation with Color Mind API Service  | Convert Response to Formatted Colors | FR54  |
 | Color Generation with Color Mind API Service  | Generate New Palette From Colors | FR17E  |
 | Color Generation with Color Mind API Service  | Return New Palette |  FR17E   |
-| Updating Color Pairs with Contrast Checker API Service  | Retrieve Palette's Color Pairs |     |
-| Updating Color Pairs with Contrast Checker API Service  | Iterate Through Color Pairs |    |
-| Updating Color Pairs with Contrast Checker API Service  | Call Checker API Service |  FR48, FR48A  |
+| Updating Color Pairs with Contrast Checker API Service  | Retrieve Palette's Color Pairs |   FR17I, FR17J  |
+| Updating Color Pairs with Contrast Checker API Service  | Iterate Through Color Pairs |  FR16  |
+| Updating Color Pairs with Contrast Checker API Service  | Call Checker API Service |  FR17D  |
 | Updating Color Pairs with Contrast Checker API Service  | Make API Request to Contrast Checker API |  FR48, FR48A   |
 | Updating Color Pairs with Contrast Checker API Service  | Handle Response |  FR52   |
-| Updating Color Pairs with Contrast Checker API Service  | Return Contrast Ratings |  FR48, FR54, FR55   |
-| Updating Color Pairs with Contrast Checker API Service | Update ColorPair Contrast Ratings |  FR17A  |
+| Updating Color Pairs with Contrast Checker API Service  | Return Contrast Ratings |  FR48, FR54   |
+| Updating Color Pairs with Contrast Checker API Service | Update ColorPair Contrast Ratings |  FR16A  |
 | Updating Color Pairs with Contrast Checker API Service  | Log Error | FR53   |
-|  Updating Color Pairs with Contrast Checker API Service  | Return Null |   FR48, FR54, FR55  |
-|  Updating Color Pairs with Contrast Checker API Service  | Alert Error | FR50   |
+|  Updating Color Pairs with Contrast Checker API Service  | Return Null |   FR55  |
+|  Updating Color Pairs with Contrast Checker API Service  | Alert Error | FR51   |
 | Palette Context and State | Create Context | FR9, FR9A    |
 | Palette Context and State | Create Context Provider | FR9, FR9A    |
 | Palette Context and State  | Create Palette State |  FR9, FR9A   |
@@ -325,13 +329,14 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 | Palette Context and State  | Connect Children Components to Context Provider |   FR9C  |
 | Palette Context and State  | Use Context to Retrieve State |   FR11  |
 | Palette Context and State  | Use Palette State |  FR11A   |
-| Palette Instantiation Process  | Instantiate Palette with New Colors |   FR18, FR47, FR49  |
-| Palette Instantiation Process  | Receive New Colors |  FR10, FR17B   |
+| Palette Instantiation Process  | Instantiate Palette with New Colors |   FR9, FR10  |
+| Palette Instantiation Process  | Receive New Colors |  FR17E, FR17F, FR47   |
 | Palette Instantiation Process  | Format Colors|   FR17B, FR17C  |
-| Palette Instantiation Process  | Set Colors |  FR10   |
-| Palette Instantiation Process  | Create Color Pair |  FR16, FR17A, FR17I   |
+| Palette Instantiation Process  | Set Colors |  FR10, FR17K   |
+| Palette Instantiation Process  | Create Color Pair |  FR16, FR17I   |
 | Palette Instantiation Process  | Estimate Color Pair's Contrast Ratings |  FR17   |
-| Palette Instantiation Process  | Store Color Pairs in Array |  FR16, FR17I   |
+| Palette Instantiation Process  | Store Color Pairs in Array | FR17I   |
+| Contrast Checker Page Display  | Load Page |  FR4, FR6   |
 | Contrast Checker Page Display  | Retrieve Palette State from Context |  FR9   |
 | Contrast Checker Page Display  | Obtain Color Pairs from Palette |  FR11, FR17I   |
 | Contrast Checker Page Display  | Map Card Components from Color Pairs |  FR36   |
@@ -339,15 +344,16 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 | Contrast Checker Page Display  | Set Element Styles with Color Pair Data | FR41, FR11A    |
 | Contrast Checker Page Display  | Set Element Texts with Color Pair Data |   FR37, FR38, FR11A  |
 | Contrast Checker Page Display  | Display Components and Elements |  FR36, FR37, FR38, FR39, FR40, FR41, FR46A   |
+| Mock Site Page Display  |  Load Page |  FR4, FR6   |
 | Mock Site Page Display  |  Retrieve Palette State from Context |  FR9   |
 | Mock Site Page Display  |  Obtain Colors from Palette |  FR11, FR17I   |
 | Mock Site Page Display  | Set Element Styles with Color Data |  FR34, FR35, FR11A   |
-| Mock Site Page Display | Set Element Text with Color Data |     |
 | Mock Site Page Display  | Display Elements |  FR34, FR35, FR46A   |
+| Control Panel Display  | Load Section | FR4, FR6    |
 | Control Panel Display  | Retrieve Palette State from Context | FR9    |
-| Control Panel Display  | Assign Palette's Method as Prop for Action Button Components |  	FR1, FR11A, R17H, FR26A   |
-| Control Panel Display  | Set Palette in Action Button Prop |  	FR1, FR11A, R17H, FR26A   |
-| Control Panel Display | Assign Palette's Method as Prop for Palette Previewer Component |  FR1, FR26B   |
+| Control Panel Display  | Assign Palette's Method as Prop for Action Button Components |  	FR1, FR11A, FR17H, FR26A   |
+| Control Panel Display  | Set Palette in Action Button Prop |  	FR1, FR10, FR16A, FR17A   |
+| Control Panel Display | Assign Palette's Method as Prop for Palette Previewer Component |  FR11, FR12, FR22   |
 | Control Panel Display  | Obtain Colors from Palette |  FR11, FR17I   |
 | Control Panel Display  | Set Element Styles with Palette's Color Data |  FR11A, FR12, FR22   |
 | Control Panel Display  | Set Element Text with Palette's Color Data |  FR11A   |
