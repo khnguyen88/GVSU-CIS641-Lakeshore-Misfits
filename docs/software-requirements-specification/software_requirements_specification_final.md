@@ -203,7 +203,7 @@ In this section, you will find a traceability matrix for our use case diagrams, 
 |  Color Pairs |  Get Color Pair Contrast Ratings       |       FR48       |
 |  Color Pairs |  Return Color Pair Contrast Ratings       |       FR48       |
 |  Color Pairs |  Create Color Pairs      |      FR16, FR17A, FR17I        |
-|  Color Pairs | Estimate Color Pair's Contrast Ratings      |       FR17       |
+|  Color Pairs |  Estimate Color Pair's Contrast Ratings      |       FR17       |
 |  Color Pairs |  Store Color Pairs in Array      |       FR16, FR17I       |
 |  Color Pairs |  Update Color Pair Contrast Ratings      |       FR42, FR17, FR17J       |
 |  User Control Panel Interaction   |   Click Generate Palette Button |       FR18    |
@@ -250,7 +250,7 @@ In this section, you will find a traceability matrix for our use case diagrams, 
 |  Contrast Checker API Service   |  Log Error       |       FR53        |
 |  Contrast Checker API Service   |  Return Contrast Ratings or Null       |       FR48, FR54, FR55       |
 |  Contrast Checker API Service   |  Send Reponse       |      FR52        |
-| Contrast Checker API Service    |  Call API Service       |       FR17D       |
+|  Contrast Checker API Service    |  Call API Service       |       FR17D       |
 |  Contrast Checker API Service   |  Alert Error       |      FR50        |
 |  Contrast Checker API Service   |  Provide Color Pairs       |       FR16, FR17I       |
 |  Contrast Checker API Service   |  Update Color Pair Ratings       |       FR17A        |
@@ -293,8 +293,8 @@ In this section, you will find a traceability matrix for our use case diagrams, 
 | API Component, Child Components, Global Context State Classes       |       PagesSection       |  FR4  |
 | API Component, Child Components, Global Context State Classes       |      Routes        | FR4, FR45, FR46   |
 | API Component, Child Components, Global Context State Classes       |      Route        | FR4, FR45, FR46   |
-|  API Component, Child Components, Global Context State Classes      |       ErrorPage        | FR4, FR44, FR46   |
-|  API Component, Child Components, Global Context State Classes      |      AboutUs        | FR4, FR29, FR43, FR45  |
+| API Component, Child Components, Global Context State Classes      |       ErrorPage        | FR4, FR44, FR46   |
+| API Component, Child Components, Global Context State Classes      |      AboutUs        | FR4, FR29, FR43, FR45  |
 | API Component, Child Components, Global Context State Classes       |      ContrastChecker        | FR4, FR12 FR28, FR36, FR45   |
 | API Component, Child Components, Global Context State Classes       |      MockSite        | FR4, FR12, FR27, FR34, FR35, FR45  |
 | API Component, Child Components, Global Context State Classes       |      ColorPairContrastCard        | FR12, FR17H, FR36, FR37, FR38, FR39, FR40, FR41, FR41, FR42A   |
@@ -354,8 +354,8 @@ In this section, you will find a traceability matrix for our use case diagrams, 
 | Updating Color Pairs with Contrast Checker API Service  | Return Contrast Ratings |  FR48, FR54   |
 | Updating Color Pairs with Contrast Checker API Service | Update ColorPair Contrast Ratings |  FR16A  |
 | Updating Color Pairs with Contrast Checker API Service  | Log Error | FR53   |
-|  Updating Color Pairs with Contrast Checker API Service  | Return Null |   FR55  |
-|  Updating Color Pairs with Contrast Checker API Service  | Alert Error | FR51   |
+| Updating Color Pairs with Contrast Checker API Service  | Return Null |   FR55  |
+| Updating Color Pairs with Contrast Checker API Service  | Alert Error | FR51   |
 | Palette Context and State | Create Context | FR9, FR9A    |
 | Palette Context and State | Create Context Provider | FR9, FR9A    |
 | Palette Context and State  | Create Palette State |  FR9, FR9A   |
