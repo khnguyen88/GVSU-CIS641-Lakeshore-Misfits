@@ -177,14 +177,14 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 # Change management plan
 
-This section is about how can we ensure if the application will be compatible with the users ecosystem and how we will handle any issues.
+This section is about how we can ensure that the application will be compatible with the users' ecosystem and how we will handle any issues.
 
 -   How will you train people to use it?
-    -   We will set up some training session with teams who will be using our application, and we can show them the demo of how the application works. We will also record and document the session, so that any new user in the future can refer easily.
+    -   The team will set up some training sessions with teams using our application, and we can show them a demo of how the application works. We will also record and document the session so that any new user can refer to it easily in the future.
 -   How will you ensure it integrates within their ecosystem / software?
-    -   As it's a web application, we can check if they are able to access the application in the browser without any issues. We can ask them to test the beta version before they start using the final version, so that they get the hang of the environment. We will work on future releases which also helps in enhancing the compatibity with the ecosystem. We will also setup meetings with the teams who will also monitor and check for any issues after the integration.
+    -   As it's a web application, we can check if they can access it in the browser without any issues. We can ask them to test the beta version before they start using the final version so that they get the hang of the environment. We will work on future releases, which will also help enhance compatibility with the ecosystem. We will also set up meetings with the teams, who will also monitor and check for any issues after the integration.
 -   How will you ensure that it any discovered issues are resolved?
-    -   We will ensure by tracking of the encountered bugs and to document the resolution steps, so that, if in future, the same bug arises, we can resolve it. Also, we will provide future updates to fix the bugs in the newer versions. We will provide them the techincal support with respect to any issues with the application.
+    -   We will ensure this by tracking the bugs encountered and documenting the resolution steps so that, if the same bug arises in the future, we can resolve it. Also, we will provide future updates to fix the bugs in the newer versions. We will give them technical support concerning any issues with the application.
 
 # Traceability links
 
