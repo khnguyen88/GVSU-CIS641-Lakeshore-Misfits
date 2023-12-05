@@ -13,7 +13,8 @@ function App() {
   return (
     <PaletteProvider>
       <div className="App">
-        <Router>
+        {/* Need to add basename that reflects the path we want to store our files in */}
+        <Router basename='/GVSU-CIS641-Lakeshore-Misfits/website/projects/website-color-generator-app'> 
           <PanelsSection />
           <PagesSection />
         </Router>
