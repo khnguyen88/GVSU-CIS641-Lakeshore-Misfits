@@ -1,6 +1,6 @@
 # Overview
 
-The purpose of this SRS document is to provide a set of software requirements, the software artifacts, the traceability links, and the change management plans for the Website Color Generator Application. The requirements specify the features and functionalities that the application should have and exhibit. The software artifacts are the UML diagrams created during the analysis and design phases of the software development lifecycle. The traceability links are tables that map the requirements to the items within the diagrams, such as use cases, activities, and classes. The change management plans discuss the team's plans for incorporating the application into the users' business and ecosystem.
+The purpose of this SRS document is to provide a set of software requirements, the software artifacts, the traceability links, and the change management plans for the Website Color Generator Application. The requirements specify the features and functionalities that the application should have and exhibit. The software artifacts are the UML diagrams created and updated during the analysis and design phases of the software development lifecycle. The traceability links are tables that map the requirements to the items within the diagrams, such as use cases, activities, and classes. The change management plans discuss the team's plans for incorporating the application into the users' business and ecosystem.
 
 # Software Requirements
 
