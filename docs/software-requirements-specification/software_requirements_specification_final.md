@@ -49,6 +49,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 | FR17H | All components shall be able to pass the global palette, the palette's properties, or the palette's methods to their child components through the child component's props. |
 | FR17I |                                            The global palette shall contain and provide data about the colors and color pairs.                                             |
 | FR17J |                                    The global palette's color pairs shall contain information about each color pair's contrast ratings.                                    |
+| FR17K |                                      When a color palette recieves new colors, it shall assign and set those colors to its property.                                       |
 
 ### Control Panel
 
@@ -77,7 +78,7 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 | FR29  |     The application's navigation panel shall have a hyperlink that routes users to the path of the About Us page.     |
 | FR30  |                            The navigation panel's hyperlinks shall have a blue font color.                            |
 | FR31  |         The navigation panel's hyperlinks shall change its background color to dark orange when hovered over.         |
-| FR32  |                        The header and hyperlinks in the control panel shall be center-aligned.                        |
+| FR32  |                      The header and hyperlinks in the navigation panel shall be center-aligned.                       |
 | FR32B |                 The navigation panel shall display child components and all associated HTML elements.                 |
 
 ### Pages and Associated Components
@@ -176,20 +177,44 @@ The purpose of this SRS document is a list out the a requirements for Website Co
 
 # Change management plan
 
-This section is about how can we ensure if the application will be compatible with the users ecosystem and how we will handle any issues.
+This section is about how we can ensure that the application will be compatible with the users' ecosystem and how we will handle any issues.
 
 -   How will you train people to use it?
-    -   We will set up some training session with teams who will be using our application, and we can show them the demo of how the application works. We will also record and document the session, so that any new user in the future can refer easily.
+
+    -   The team can train people, such as developers and designers, who are interested in our application in several ways. The team can set up in-person or video-chat training sessions for any group who contacts us to show and demo how the application works.
+
+    -   The team will set up a "How-To" or "Tutorial" page on the web application that will provide written step-by-step instructions with screenshots to aid first-time users with the application. The team will include the instructions on our GitHub repository's README file under a "How-To" or "Tutorial" section.
+
+    -   The team will also record a walkthrough session of the application and host the recording on a video streaming website like YouTube. Links to the tutorial video will provided on our application's "How-To" or "Tutorial" page and our GitHub repository's README file so that any new user can refer to it easily in the future.
+
 -   How will you ensure it integrates within their ecosystem / software?
-    -   As it's a web application, we can check if they are able to access the application in the browser without any issues. We can ask them to test the beta version before they start using the final version, so that they get the hang of the environment. We will work on future releases which also helps in enhancing the compatibity with the ecosystem. We will also setup meetings with the teams who will also monitor and check for any issues after the integration.
+
+    -   As our system is a web application, the team can check to see if users can access and use the application on their browser and device without issues. Suppose a lot of users contact us about usability and compatibility problems. In that case, we will do our best to patch the issues in future releases to ensure a smooth user experience and help enhance compatibility with the ecosystem.
+
+    -   Ideally, the team would like to partner with a small group of users from various businesses or organizations who believe in and support our product to perform user-acceptance tests of any new versions of our application in development before and after we deploy the latest version publically. The small group of users will have some privileges on our GitHub site to submit issue tickets and will have access to our contacts for immediate feedback. The users will also have access to a private development version of our application to become familiar with the environment and make suggestions if needed. The team and the selected group of users can set up meetings to discuss improvements that can enhance the user and integration experiences.
+
+    -   The goal is a dedicated group of users who continuously monitor and check for issues before and after releases/integration. If any problem arises, the team hopes it is resolved and fixed before publicly releasing it to a broader audience to mitigate the messages we may receive.
+
+    -   To keep our users informed of any updates to our applications, the team will provide a pop-up notification in our application about any upcoming future version releases before deployment and provide change details. To ensure user satisfaction, the team will ensure users can access all prior application versions through links in the footer or navigation panel.
+
 -   How will you ensure that it any discovered issues are resolved?
-    -   We will ensure by tracking of the encountered bugs and to document the resolution steps, so that, if in future, the same bug arises, we can resolve it. Also, we will provide future updates to fix the bugs in the newer versions. We will provide them the techincal support with respect to any issues with the application.
+
+    -   The team will set up several means to provide technical support for users experiencing issues with our application.
+
+    -   The team will set up a contact page with a form allowing users to submit any problems they discovered and wish the team would resolve. The form will have a dropdown enabling users to select from a list of common issue types and provide a description of it. The information in this form will be forwarded to our team email address; a copy will be stored in a database for analysis and metric-tracking purposes.
+
+    -   The team will develop a partnership with a small group of users from various businesses and organizations to perform user-acceptance tests and track and monitor issues they may discover from the development version before deployment so that they can be resolved before the production version is released publically. This small group of users will have limited access to our GitHub and submit the issues directory to our remote repository. The group of users can also set up a meeting with us to review the issue and proposed solutions.
+
+    -   The team will collect and aggregate the issues into various categories and levels of severity and frequency and will prioritize resolving the major bug fixes first through patches or version releases. The team will do our best to pinpoint the source of the bug, propose several solutions to our small group of users, and fix the bug based on the solution the extended team agrees on. All patched updates will get tested thoroughly before being deployed for production.
+
+    -   Ideally, bug fixes are identified and resolved before the public production releases. Also, all bug fixes will be announced to the users by a notice pop-up message appearing on our application for a limited period.
 
 # Traceability links
 
 In this section, you will find a traceability matrix for our use case diagrams, class diagrams, and activity diagrams. The use case diagram traceability consists of the name of the use case diagram, the use case, and which requirement it is connected to. A similar process is created for both the class diagrams and activity diagrams. The class diagram traceability includes the class diagram and the requirement it is connected to. Lastly, the activity diagram traceability includes the activity diagram name, the present activity, and the requirement ID that is connected to it.
 
 ## Use Case Diagram Traceability
+
 
 | Artifact ID | Artifact Name | Requirement ID |
 | :---------: | :-----------: | :------------: |
@@ -310,7 +335,6 @@ In this section, you will find a traceability matrix for our use case diagrams, 
 
 
 ## Activity Diagram Traceability
-
 | Artifact ID |    Artifact Name    | Requirement ID |
 | :---------: | :-----------------: | :------------: |
 | Navigation and Page Viewing  | load Application |  FR3, FR4, FR5, FR6   |
@@ -394,9 +418,10 @@ In this section, you will find a traceability matrix for our use case diagrams, 
 | Control Panel Display  | Set Element Text with Palette's Color Data |  FR11A   |
 | Control Panel Display  | Display Components and Elements |  FR18, FR19, FR20, FR21, FR22, FR23, FR24, FR24A, FR25, FR26C   |
 
+
 # Software Artifacts
 
-In this section, there are hyperlinks to all our use case diagrams, class diagrams, and activity diagrams. There are 11 use case diagrams, 5 class diagrams, and 9 activity diagrams. 
+In this section, there are hyperlinks to all our use case diagrams, class diagrams, and activity diagrams. There are 11 use case diagrams, 5 class diagrams, and 9 activity diagrams.
 
 ## Use Case Diagrams
 
