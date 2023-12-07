@@ -185,19 +185,20 @@ This section is about how we can ensure that the application will be compatible 
 
 -   How will you train people to use it?
 
-    -   The team can train people, such as developers and designers, who are interested in our application in several ways. The team can set up in-person or video-chat training sessions for any group who contacts us to show and demo how the application works.
-
+    -   The team can train people, such as developers and designers, who are interested in our applications in several ways. The team can set up in-person or video-chat training sessions for any group who contacts us to show and demo how the application works.
+    
     -   The team will set up a "How-To" or "Tutorial" page on the web application that will provide written step-by-step instructions with screenshots to aid first-time users with the application. The team will include the instructions on our GitHub repository's README file under a "How-To" or "Tutorial" section.
+    
+    -   The team will also record a walkthrough session of the application and host the recording on a video streaming website like YouTube. Links to the tutorial video will be provided on our application's "How-To" or "Tutorial" page and our GitHub repository's README file so that any new user can refer to it easily in the future.
 
-    -   The team will also record a walkthrough session of the application and host the recording on a video streaming website like YouTube. Links to the tutorial video will provided on our application's "How-To" or "Tutorial" page and our GitHub repository's README file so that any new user can refer to it easily in the future.
 
 -   How will you ensure it integrates within their ecosystem / software?
 
     -   As our system is a web application, the team can check to see if users can access and use the application on their browser and device without issues. Suppose a lot of users contact us about usability and compatibility problems. In that case, we will do our best to patch the issues in future releases to ensure a smooth user experience and help enhance compatibility with the ecosystem.
 
-    -   Ideally, the team would like to partner with a small group of users from various businesses or organizations who believe in and support our product to perform user-acceptance tests of any new versions of our application in development before and after we deploy the latest version publically. The small group of users will have some privileges on our GitHub site to submit issue tickets and will have access to our contacts for immediate feedback. The users will also have access to a private development version of our application to become familiar with the environment and make suggestions if needed. The team and the selected group of users can set up meetings to discuss improvements that can enhance the user and integration experiences.
+    -   Ideally, the team would like to partner with a small group of users from various businesses or organizations who believe in and support our product to perform user-acceptance tests of any new versions of our application in development before and after we deploy the latest version publicly. The small group of users will have some privileges on our GitHub site to submit issue tickets and will have access to our contacts for immediate feedback. The users will also have access to a private development version of our application to become familiar with the environment and make suggestions if needed. The team and the selected group of users can set up meetings to discuss improvements that can enhance the user and integration experiences.
 
-    -   The goal is a dedicated group of users who continuously monitor and check for issues before and after releases/integration. If any problem arises, the team hopes it is resolved and fixed before publicly releasing it to a broader audience to mitigate the messages we may receive.
+    -   The goal is a dedicated group of users who continuously monitor and check for issues before and after releases/integration. If any problem arises, the team hopes it is resolved and fixed before officially releasing it to a broader audience to mitigate the messages we may receive.
 
     -   To keep our users informed of any updates to our applications, the team will provide a pop-up notification in our application about any upcoming future version releases before deployment and provide change details. To ensure user satisfaction, the team will ensure users can access all prior application versions through links in the footer or navigation panel.
 
@@ -209,13 +210,13 @@ This section is about how we can ensure that the application will be compatible 
 
     -   The team will develop a partnership with a small group of users from various businesses and organizations to perform user-acceptance tests and track and monitor issues they may discover from the development version before deployment so that they can be resolved before the production version is released publically. This small group of users will have limited access to our GitHub and submit the issues directory to our remote repository. The group of users can also set up a meeting with us to review the issue and proposed solutions.
 
-    -   The team will collect and aggregate the issues into various categories and levels of severity and frequency and will prioritize resolving the major bug fixes first through patches or version releases. The team will do our best to pinpoint the source of the bug, propose several solutions to our small group of users, and fix the bug based on the solution the extended team agrees on. All patched updates will get tested thoroughly before being deployed for production.
+    -  The team will collect and aggregate the issues into various categories and levels of severity and frequency and will prioritize resolving the major bug fixes first through patches or version releases. The team will do our best to pinpoint the source of the bug, propose several solutions to our small group of users, and fix the bug based on the solution the extended team agrees on. All patched updates will get tested thoroughly before being deployed for production.
 
     -   Ideally, bug fixes are identified and resolved before the public production releases. Also, all bug fixes will be announced to the users by a notice pop-up message appearing on our application for a limited period.
 
 # Traceability links
 
-In this section, you will find a traceability matrix for our use case diagrams, class diagrams, and activity diagrams. The use case diagram traceability consists of the name of the use case diagram, the use case, and which requirement it is connected to. A similar process is created for both the class diagrams and activity diagrams. The class diagram traceability includes the class diagram and the requirement it is connected to. Lastly, the activity diagram traceability includes the activity diagram name, the present activity, and the requirement ID that is connected to it.
+In this section, you will find a traceability matrix for our use case diagrams, class diagrams, and activity diagrams. The use case diagram traceability consists of the name of the use case diagram, the use case, and which requirement it is connected to. A similar process is created for both the class diagrams and activity diagrams. The class diagram traceability includes the class diagram and the requirement to which it is connected. Lastly, the activity diagram traceability includes the activity diagram name, the present activity, and the requirement ID that is connected to it.
 
 ## Use Case Diagram Traceability
 
